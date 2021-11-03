@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-form</title>
+  </head>
+
+  <style>
+    /* Import font */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+    /* ================ Selector  ================*/
+    /* by tag */
+    * {
+      /* box-sizing */
+      box-sizing: border-box;
+    }
+
+    body {
+      /* bg color  */
+      background-color: #f9fbff;
+
+      /* font-family: */
+      font-family: "Poppins", sans-serif;
+
+      /* font color */
+      color: #333;
+    }
+    p {
+      font-size: 1rem;
+    }
+    input,
+    label {
+      display: block;
+      margin-bottom: 20px;
+    }
+    /* by id & class */
+    .wrapper {
+      top: 50%;
+      left: 50%;
+
+      /* position */
+      position: fixed;
+
+      /* transform and translate */
+      transform: translate(-50%, -50%);
+    }
+
+    .form_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 10px 1.5px rgba(0, 0, 0, 0.2);
+    }
+
+    .form_heading {
+      margin-bottom: 3rem;
+      line-height: 1.8;
+      border-bottom: 1px solid black;
+    }
+
+    .form_heading h2 {
+      font-weight: bold;
+      position: relative;
+    }
+
+    form {
+      font-size: 20px;
+      padding: 20px 40px;
+      overflow: hidden;
+    }
+
+    /* before after  */
+    h2::after {
+      content: "....";
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="form_wrapper">
+        <form action="" target="_blank">
+          <div class="form_heading">
+            <h2>Sign in</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+              modi.
+            </p>
+          </div>
+          <div class="form_content">
+            <label for="username">Username</label>
+            <input type="text" name="" id="username" />
+            <label for="password">Password</label>
+            <input type="password" name="" id="password" />
+          </div>
+          <div class="form_submit">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
