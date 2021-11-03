@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style the table*/
+        table, th, td {
+            border:1px solid black;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 0px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: right;
+            padding: 0px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2><b>Attribute</b></h2>
+    <div class="Attribute">
+        <img src="pepescare.jpg" width="500" height="600" alt="scare pepe"><br>
+        <p style="color:black;">This is a pepe that scare.</p>
+        <p title="I'm a pepe">Test HTML5</p>
+    </div>
+    <h2><b>Heading</b></h2>
+    <div class="Heading">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <h1 style="font-size:60px;">Heading 1</h1>
+    </div>
+    <br>
+    <h2><b>Text</b></h2>
+    <div class="Text">
+        <p>Text</p>
+        <b>Text-bold</b>
+        <i>Text-italic</i>
+    </div>
+    <br>
+    <h2><b>Form</b></h2>
+    <div class="Form">
+        <form>
+            <label for="name">Your name:</label><br>
+            <label for="age">Your age:</label>
+        </form>
+    </div>
+    <br>
+    <h2><b>Form-element</b></h2>
+    <div class="Form-element">
+        <div class="Form-input">
+            <label for="game">Enter game:</label>
+            <input type="text" id="game" name="game">
+        </div>
+        <br>
+        <div class="Form-select">
+            <label for="game">Choose a game:</label>
+            <select id="games" name="games">
+            <option value="minecraft">Minecraft</option>
+            <option value="lol">League of Legend</option>
+            <option value="genshin">Genshin Impact</option>
+            <option value="maple">Maple Story</option>
+            </select>
+        </div>
+        <br>
+        <div class="Form-textarea">
+            <textarea name="message" rows="10" cols="30">
+                We are here to shit talking you :3.
+            </textarea>
+        </div>
+    </div>
+    <h2><b>Input-types</b></h2>
+    <div class="Input-Types">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <br><input type="button" onclick="alert('Yo')" value="Click this Button!">
+        </form>
+
+    </div>
+    <br>
+    <h2><b>Input-Attributes</b></h2>
+    <div class="Input-Attributes">
+        <h3><b>Readonly</b></h3>
+        <div class="Input-Attributes-readonly">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Kay" readonly><br>
+              </form>
+        </div>
+        <h3><b>Disabled</b></h3>
+        <div class="Input-Attributes-disabled">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Liz" disabled><br>
+            </form>
+        </div>
+    </div>
+    <h2><b>Table</b></h2>
+    <div class="Table">
+        <table>
+            <tr>
+                <th>Games</th>
+                <th>Players</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Maplestory</td>
+                <td>180M</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>PSO2</td>
+                <td>10M</td>
+                <td>Offline</td>
+            </tr>
+          </table>
+    </div>
+    <br>
+    <h2><b>List</b></h2>
+    <div class="List">
+        <div class="List-unordered">
+            <ul>
+                <li>A</li>
+                <li>C</li>
+                <li>B</li>
+            </ul>
+        </div>
+        <div class="List-Ordered">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h2><b>Links</b></h2>
+    <div class="Links">
+        <a href="https://www.w3schools.com/html/html_links.asp">link to HTML links</a>
+    </div>
+    <br>
+    <h2><b>Iframe</b></h2>
+    <div class="Iframe">
+
+    </div>
+    <br>
+    <h2><b>Layout</b></h2>
+    <div class="Layout">
+        <header>
+            <Layout>
+                <h2>Layout</h2>
+            </Layout>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                </ul>
+            </nav>
+            <article>
+                <h1>A</h1>
+                <p>This a test layout</p>
+            </article>
+        </section>
+        <footer>
+            <p>Made by Kay</p>
+        </footer>
+    </div>
+</body>
+</html>
