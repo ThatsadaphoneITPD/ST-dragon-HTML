@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ======================= Head =======================-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- ======================= HTML =======================-->
@@ -91,14 +95,25 @@
         <option value="YAMAHA">YAMAHA</option>
     </select>
     <!-- ======================= List ul>li*5{$} =======================-->
+    <h2>An Unordered HTML List</h2>
     <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li>Milk</li>
+        <li>Chiken</li>
+        <li>Kill</li>
+        <li>Cup</li>
+        <li>Superman</li>
     </ul>
     <br>
+    <h2>An Ordered HTML List</h2>
+    <ol>
+        <li>Boy</li>
+        <li>Girl</li>
+    </ol>
+    <h2> Dl HTML List</h2>
+    <dl>
+        <dt>Cat</dt>
+        <dt>Doy</dt>
+    </dl>
     <!-- ======================= Block - inline  =======================-->
     <div>Content Block</div>
     <span>Content Inline-block</span>
@@ -108,20 +123,50 @@
     <br>
     <!-- ======================= Image =======================-->
     <img src="Earth.jpg" width="200" height="400" alt="Earth">
+    <br>
+    <img src="Earth.jpg" alt="Eath1" style="width:500px;height:600px;">
+    <br>
+    <img src="Earth.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="Shionne.png">
+    </map>
     <!-- ======================= Link =======================-->
+    <br>
     <a href="https://www.youtube.com/watch?v=_jOqYe0eFqY">Youture</a>
     <button onclick="document.location='www.youtube.com/watch?v=_jOqYe0eFqY'">Link</button>
     <br>
     <!-- ======================= Iframe =======================-->
-    <iframe
-    width="1519"
-    height="613"
-    src="https://www.youtube.com/embed/SWYqp7iY_Tc"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/SWYqp7iY_Tc" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- ======================= Responsive =======================-->
+  <img src="Shionne.png" style="width:100%;height:auto;">
+  <dvi class="container">
+      <div class="jumbotron">
+          <h1>Bootstrap</h1>
+      </div>
+      <div class="col-sm-4">
+          ......
+      </div>
+  </dvi>
+  <!-- ======================= Layout =======================-->
+  <header><h2>Cities Layout</h2></header>
+  <section>
+  <nau>
+      <ul>
+          <li><a href="#">Pakse</a></li>
+          <li><a href="#">Da Nang</a></li>
+          <li><a href="#">HCM</a></li>
+      </ul>
+  </nau>
+  <article>
+      <h1>Pakse</h1>
+      <p>Nice City ever</p>
+  </article>
+</section>
+<footer>
+    <p>footer</p>
+</footer>
+  <!-- ======================= Semantic =======================-->
+  <!-- ======================= Style Guide and Coding Conventions =======================-->
 </body>
 </html>
