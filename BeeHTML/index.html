@@ -7,11 +7,121 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- ======================= HTML =======================-->
     <h1>What is HMTL</h1>
     <p>
     HTML stands for Hyper Text Markup Language for creating Web pages, the structure of a Web page, consists of a series of elements
     HTML elements tell the browser how to display the content
     HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
     </p>
+    <!-- ======================= Attributes =======================-->
+    <h1>The concept of tags, attributes</h1>
+    <p> 
+        Attributes define additional characteristics or properties of the element such as 
+        width and height of an image. Attributes are always 
+        specified in the start tag (or opening tag) and usually consists of name/value pairs like name="value". Attribute values should always be enclosed in quotation marks.
+    </p>
+    <div>
+        <div>
+            <img src="Earth.jpg" width="160" height="80" alt="Earth">
+        </div>
+        <div>
+            <a href="https://www.google.com/" title="Search Engine">Google</a>
+        </div>
+        <div>
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+        </div>
+        <div>
+            <p style="color:red;">This is a red paragraph.</p>
+        </div>
+        <div>
+            <p title="I'm a tooltip">This is a paragraph.</p>
+        </div>
+        <div>
+            <input type="text" value="John Doe">
+        </div>
+    </div>
+    <!-- ======================= Head =======================-->
+    <div>
+        <h1>HTML headings are titles or subtitles that you want to display on a webpage.</h1>
+        <h2>HEAD2</h2>
+        <h3>HEAD3</h3>
+        <h4>HEAD4</h4>
+        <h5>HEAD5</h5>
+        <h6>HEAD6</h6>
+        <h1 style="font-size:60px;">Heading 1 with style=""</h1>
+    </div>
+    <!-- ======================= Text =======================-->
+    <div>
+        <h1>Text</h1>
+        <p><b>This text is bold</b></p>
+        <p><i>This text is italic</i></p>
+        <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    </div>
+    <div id="">
+        <h1>Text Formatting</h1>
+        <p>
+        <b>width</b> and 
+        <strong>of an image</strong> . 
+        <em>Attributes</em> are 
+        <mar>always</mar> 
+        <small>Smallllll</small> in the 
+        <del>start</del> tag
+         <ins>(or opening tag)</ins> and 
+         <sub>consists</sub>  of 
+         <sup>name/value pairs</sup> like name
+        </p>
+    </div>
+    <!-- ======================= FORM =======================-->
+    <div>
+        <h1>Form</h1>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+        </form>
+    </div>
+    <br>
+    <!-- ======================= FORM element =======================-->
+    <label for="fname"> First time HTML</label>
+    <input type="text" >
+    <br>
+    <label for="cars">Car</label>
+    <select id="cars" name="cars">
+        <option value="HODA">HODA</option>
+        <option value="YAMAHA">YAMAHA</option>
+    </select>
+    <!-- ======================= List ul>li*5{$} =======================-->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <br>
+    <!-- ======================= Block - inline  =======================-->
+    <div>Content Block</div>
+    <span>Content Inline-block</span>
+    <span>Content Inline-block</span>
+    <span>Content Inline-block</span>
+    <span>Content Inline-block</span>
+    <br>
+    <!-- ======================= Image =======================-->
+    <img src="Earth.jpg" width="200" height="400" alt="Earth">
+    <!-- ======================= Link =======================-->
+    <a href="https://www.youtube.com/watch?v=_jOqYe0eFqY">Youture</a>
+    <button onclick="document.location='www.youtube.com/watch?v=_jOqYe0eFqY'">Link</button>
+    <br>
+    <!-- ======================= Iframe =======================-->
+    <iframe
+    width="1519"
+    height="613"
+    src="https://www.youtube.com/embed/SWYqp7iY_Tc"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+
 </body>
 </html>
