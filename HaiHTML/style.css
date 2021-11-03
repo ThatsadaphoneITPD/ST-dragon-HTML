@@ -1,0 +1,97 @@
+#div2 {
+    text-align: center;
+    font-size:2vw;
+}
+
+#para1 {
+    text-align: center;
+    color: blueviolet;
+    background-color: #ffa500;
+    font-size:5vw;
+}
+
+p.class1 {
+    text-align: center;
+    color: brown;
+    border: 2px solid yellow;
+    background-color: rgb(238, 130, 257);
+}
+p.large1 {
+    font-size: 200%;
+    background-color: blue;
+}
+
+p.font1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+p.font2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+p.font3 {
+    font-family: "Lucida console", "Courier New", monospace;
+    font-style: oblique;
+    font-weight: bold;
+}
+p.font4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+body {
+    background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+
+div.box1 {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.relative {
+    position: relative;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid palevioletred;
+}
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
