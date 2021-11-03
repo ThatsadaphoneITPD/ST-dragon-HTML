@@ -1,0 +1,81 @@
+body {
+    background-color:whitesmoke;
+}
+
+h1 {
+    background-image: url(https://i.ytimg.com/vi/sIFFywo_-1w/maxresdefault.jpg);
+    color:red;
+    text-align: center;
+}
+
+div {
+    background-color: beige;
+    opacity: 0.9;
+    border: 2px salmon;
+    padding: 20px;
+    margin: 5px;
+}
+
+.static{
+    position: static;
+    background-color: beige;
+    opacity: 0.9;
+    border: 2px solid salmon;
+}
+
+.relative{
+    position: relative;
+    left: 50px;
+    height: 100px;
+    background-color: beige;
+    opacity: 0.9;
+    border: 2px solid salmon;
+}
+
+.absolute{
+    position: absolute;
+    z-index: 1;
+    background-color: beige;
+    opacity: 0.9;
+    border: 2px solid salmon;
+}
+
+.sticky{
+    position: sticky;
+    background-color: beige;
+    top:10px;
+    opacity: 0.9;
+    border: 2px solid salmon;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: beige;
+    border: 2px solid salmon;
+}
+
+p {
+    font-family: 'Arial', Times, serif;
+    font-size: 30px;
+}
+
+p.question {
+    color: palevioletred;
+    font-size: 30px;
+}
+
+#property{
+    color: blue;
+    text-align: center;
+}
+
+#font{
+    font-family: sans-serif, Times;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
