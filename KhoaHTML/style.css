@@ -1,0 +1,82 @@
+body{
+    background:linen;
+}
+
+header{
+    width: auto; /*  */     
+    height: auto; 
+    background-image: url(logo_background.jpg); 
+}
+
+header h1{
+    color: white;
+    font-family: fantasy;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+header h1.center{
+    text-align: center;
+    color: red;
+    text-transform: lowercase;
+}
+header h1.large{
+    font-size: 300%;
+}
+
+nav {
+    background-color: BlUe;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 400px;
+    border: 5px solid black;
+    padding: 20px;
+    outline: 10px dotted burlywood;
+}
+
+nav a{
+    color: white;
+}
+
+article{
+    background:burlywood no-repeat;
+    border: 5px crimson;
+    margin-top: 50px;
+}
+article div.static{
+    position: static;
+    border: 3px solid black;   
+}
+
+article div.relative{
+    position: relative;
+    border: 3px solid black;
+    left: 150px;
+    width: 500px;
+    height: 300px;
+}
+
+article div.absolute{
+    position: absolute;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    left: 200px;
+    top: 80px;
+}
+
+article div.fixed{
+    position: fixed;
+    border: 3px solid black;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background:blanchedalmond;
+}
+
+article div.sticky{
+    position: sticky;
+    border: 3px solid black;
+    top: 0;
+    width: 300px;
+    background:blanchedalmond;
+}
