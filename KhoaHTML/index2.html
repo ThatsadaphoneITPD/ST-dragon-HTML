@@ -4,7 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoa HTML</title>
-    
+    <style>
+        table,th,td
+        {
+            border: 1px black;
+        }
+    </style>
     <hr>
 </head>
 <body> 
@@ -12,7 +17,7 @@
         <h1 style="text-align: center;">This is the example for html</h1>
     </div>
 
-    <div class="Index_Image" style="text-align: center;">
+    <div class="Index_Image" style="text-align: center;width: 100%">
         <img  src="download.png" alt="IMG logo">
         <br>
         <p>This is the example of an image</p>
@@ -37,7 +42,7 @@
         <hr>         
     </div>
 
-    <div class="Index_Form">
+    <div class="Index_Form" style="border: black;">
         <h3><strong> Please input your credital information</strong></h3>
         <form>
             <label for="CreditNum">Credit card number</label><br>
@@ -53,8 +58,32 @@
         </form>
     </div>
 
-    <div>
+    <div class="Index_Table">
+        <table> 
+            <tr>
+                <th>Collum 1</th>
+                <th>Collum 2</th>
+                <th>Collum 3</th>
+            </tr>
+            <tr>
+                <td>test 2</td>
+                <td>Hey hey</td>
+                <td>HAHAHAHA</td>
+            </tr>
+            <tr>
+                <td>test 3</td>
+                <td>hey hey hey</td>
+                <td>hohoho</td>
+            </tr>
+            <tr>
+                <td>test 4</td>
+            </tr>
+        </table>
         
+    </div>
+
+    <div class="Index_Iframe">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w0AOGeqOnFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>
