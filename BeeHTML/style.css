@@ -387,3 +387,54 @@ input:hover {
 .af p::after{
   content: " - after Read this";
 }
+/* Pseudo-classes */
+div a.highlight:hover{
+  color: yellow;
+  font-size: 40px;
+}
+
+
+div.hoverblock:hover p{
+  display: block;
+}
+.hoverblock p{
+  display: none;
+  background-color: violet;
+  padding: 20px;
+}
+
+.fristch p:first-child{
+  font-size: 20px;
+  color: rgb(175, 231, 19);
+}
+/* Match the first <i> element in all <p> */
+.Mfriofp p i:first-child{
+  color: red;
+  font-size: 20px;
+}
+/* Match all <i> elements in all first child <p> */
+.Malliinp p:first-child i{
+  color: green;
+  font-size: 20px;
+}
+/* define special rules for different languages */
+q:lang(no){
+  quotes: "  +++====++" "===++===  ";
+  color: violet;
+  font-size: 30px;
+}
+/* Anchor */
+.Anchor p a:link{
+  color: red;
+}
+.Anchor p a:visited{
+  color: green;
+}
+/* mouse over  */
+.Anchor p b:hover{
+  color: hotpink;
+}
+/* selected clink */
+.Anchor p b:active{
+  color: blue;
+}
