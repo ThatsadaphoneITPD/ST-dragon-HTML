@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /*Font*/
+        pmain {
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p1 {
+            background-color: black;
+            color: white;
+            border: 5px solid dodgerblue;
+            font-size: 40px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        pgoogle{
+            font-size: 20px;
+            color: white;
+            font-family: 'Pacifico', cursive;
+        }
+        /*Background*/
+        body {
+            background-image: url("blackscreen.jpg");
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
+        /*Box model*/
+        div.box {
+            width: 500px;
+            border: 9px solid whitesmoke;
+            padding: 20px;
+            margin: 50px;
+        }
+        /*Position*/
+        div.static {
+            color: white;
+            position: static;
+            text-align: center;
+            border: 3px solid #ecf0bc50;
+        }
+        div.relative{
+            position: relative;
+            color: white;
+            width: 400px;
+            height: 200px;
+            border: 3px solid white;
+        }
+        div.fixed {
+            position: fixed;
+            color: white;
+            top: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid red;
+        }
+        div.absolute{
+            position: absolute;
+            color: white;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+        }
+        div.sticky {
+            position: sticky;
+            color: white;
+            text-align: center;
+            top: 0;
+            background-color: green;
+            border: 3px solid #0af10a50;
+        }
+        /*Box Shadow*/
+        div.BoxShadow1{
+            color: white;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px red;
+        }
+        div.BoxShadow2{
+            color: white;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px red, 5px 5px blue;
+        }
+        div.BoxShadow3{
+            color: white;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px red, 10px 10px blue;
+        }
+        div.BoxShadow4{
+            color: white;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px red, 10px 10px blue, 15px 15px green, 20px 20px white;
+        }
+        div.polaroid {
+            width: 284px;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid #BFBFBF;
+            background-color: white;
+            box-shadow: 10px 10px 5px #e0e0e0;
+        }
+        div.rotate_right {
+            float: left;
+            transform: rotate(7deg);
+        }
+
+        div.rotate_left {
+            float: left;
+            transform: rotate(-8deg);
+        }
+        /* Form */
+        * {
+            box-sizing: border-box;
+        }
+        div.container {
+            height: auto;
+            width: auto;
+            border: 5px solid green;
+            background-color: #f2f2f249;
+            padding: 20px;
+        }
+
+        label {
+            color: white;
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            color: white;
+            border: 2px solid blue;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=text]:focus {
+            background-color: rgb(48, 194, 19);
+        }
+
+        input[type=password]{
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            color: white;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=password]:focus {
+            background-color: rgb(194, 45, 19);
+        }
+
+        input[type=number]{
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            background-color: #218169;
+            color: black;
+            box-sizing: border-box;
+        }
+
+        input[type=number]:focus {
+            background-color: rgba(170, 199, 164, 0.459);
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+
+        select {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        input[type=submit] {
+            background-color: #d40909;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit] :hover {
+            background-color: white;
+            color: black;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        
+
+    </style>
+    <title>CSS Testing</title>
+</head>
+
+<body>
+    <header><h1 style="color: white; text-align: center;">CSS Testing</h1></header>
+    <!-- Color and font -->
+    <div class="box">
+        <pmain style="color:black; background-color: LightGray; border:2px solid Tomato;">
+            i like Liz
+        </pmain><br><br>
+        <p1>
+            I dont like chilly
+        </p1><br><br>
+        <pgoogle>
+            This is a phase using one of google fonts
+        </pgoogle>
+    </div>
+
+    <!-- Position -->
+    <div class="static">
+        <p>Just here for nothing</p>
+    </div>
+    <div class="sticky">This line is sticky AF</div> <!---This position not support on any web browser outside of Safiri-->
+    <div class="relative">This div element has relative position
+        <div class="absolute">This div element has absolute position</div>
+    </div>
+    <div class="fixed">This div element has fixed position on the screen</div>
+
+    <!-- Box shadow -->
+    <div class="BoxShadow1">
+        <p>This is a box with shadow</p>
+    </div><br>
+
+    <div class="BoxShadow2">
+        <p>This is a box with 2 shadows with same position value</p>
+    </div><br>
+
+    <div class="BoxShadow3">
+        <p>This is a box with 2 shadows with diff position value</p>
+    </div><br>
+
+    <div class="BoxShadow4">
+        <p>This is a box with many shadows</p>
+    </div><br><br><br>
+
+    <!-- Box shadow using multiple class -->
+    <div class="polaroid rotate_left">
+        <img src="pepescare.jpg" alt="PePe with sweat" width="284" height="213">
+        <p>I roll all my primogem.</p>
+    </div>
+
+    <div class="polaroid rotate_right">
+        <img src="pepegun.jpg" alt="PePe with a gun" width="284" height="213">
+        <p>Now give me more.</p>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Form -->
+    <div class="container">
+        <h2>Test Form</h2>
+        <div class="row">
+            <div class="col-25">
+                <label for="uname">Username</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="uname" name="username" placeholder="Your username...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="pw">Password</label>
+            </div>
+            <div class="col-75">
+                <input type="password" id="pw" name="password" placeholder="Your password...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="phone">Phone number</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="phone" name="Phone number" placeholder="Your phone number...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Role</label>
+            </div>
+            <div class="col-75">
+                <select id="role" name="Role">
+                <option value="intern">Intern</option>
+                <option value="mentor">Mentor</option>
+                <option value="passtime">Pass-time employey</option>
+                <option value="fulltime">Full-time employey</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Thing to noted</label>
+            </div>
+            <div class="col-75">
+                <textarea id="note" name="Note" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+
+    
+    
+    <br><br><br>
+
+
+</body>
+</html>
