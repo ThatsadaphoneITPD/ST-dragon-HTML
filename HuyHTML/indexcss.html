@@ -10,16 +10,16 @@
     <h1>Hello there</h1>
     <nav>
         <ul->
-            <li href="#">Home</li>
-            <li href="#">About</li>
-            <li href="#">Contact</li>
+            <a href="indexcss.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a  >
         </ul->
     </nav>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, facere.</p>
-    <div class="body">
+    <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, facere.</p>
+    <div>
         <!-- What is CSS -->
         <p>1. What is CSS</p>
         <ul>
@@ -40,15 +40,56 @@
         <ul>
             <li>Box model refers to a box that wraps around every HTML element</li>
         </ul>
-    </div>
-    <div class="static">position: static will not be affected by top, bottom, left, right</div>
-    <div class="relative">
-        position: relative will make the element move relative to the original position
-        <div class="absolute">
-            position: absolute will make the element position itself to the nearest ancestor?
+        <!-- Position -->
+        <p class="question">4. Position</p>
+        <div class="static">position: static will not be affected by top, bottom, left, right</div>
+        <div class="relative">
+            position: relative will make the element move relative to the original position
+            <div class="absolute">
+                position: absolute will make the element position itself to the nearest ancestor?
+            </div>
         </div>
+        <div class="sticky">position: sticky will make the element position stick to a place when given an offset</div>
+        <div class="fixed">position: fixed will make the element position stays in the same place even if the page is scrolled</div>
+
+        <!-- Box Shadows -->
+        <p class="question">5. Box Shadows</p>
+        <section class="area">
+            <div class="outer">
+                <img src="600x400.jpg" width="300px" length="200px">
+                <div class="inner">
+                    random picture
+                </div>
+            </div>
+            <div class="outer">
+                <img src="600x400.jpg" width="300px" length="200px">
+                <div class="inner">
+                    random picture
+                </div>
+            </div>
+            <div class="outer">
+                <img src="600x400.jpg" width="300px" length="200px">
+                <div class="inner">
+                    random picture
+                </div>
+            </div>
+        </section>
+        <!-- Form -->
+        <p class="question">6. Forms</p>
+        <form>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="firstname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <input type="submit">
+
+            
+        </form>
+
     </div>
-    <div class="sticky">position: sticky will make the element position stick to a place when given an offset</div>
-    <div class="fixed">position: fixed will make the element position stays in the same place even if the page is scrolled</div>
 </body>
 </html>

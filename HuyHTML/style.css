@@ -1,58 +1,66 @@
-body {
-    background-color:whitesmoke;
+html {
+    background-color: #4075B1;
 }
 
+
 h1 {
-    background-image: url(https://i.ytimg.com/vi/sIFFywo_-1w/maxresdefault.jpg);
-    color:red;
+    
+    color:#F58129;
     text-align: center;
 }
 
+#lorem {
+    background-image: url(https://i.ytimg.com/vi/sIFFywo_-1w/maxresdefault.jpg);
+    color: #FEFCFB;
+    width: 66%;
+}
+
 div {
-    background-color: beige;
+    background-color: #FEFCFB;
     opacity: 0.9;
     border: 2px salmon;
     padding: 20px;
     margin: 5px;
 }
 
-.static{
+.static {
     position: static;
-    background-color: beige;
+    background-color: white;
     opacity: 0.9;
     border: 2px solid salmon;
 }
 
-.relative{
+.relative {
     position: relative;
     left: 50px;
+    width: 500px;
     height: 100px;
-    background-color: beige;
+    background-color: white;
     opacity: 0.9;
     border: 2px solid salmon;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 1;
-    background-color: beige;
+    background-color: white;
     opacity: 0.9;
     border: 2px solid salmon;
 }
 
-.sticky{
+.sticky {
     position: sticky;
-    background-color: beige;
+    background-color: white;
     top:10px;
     opacity: 0.9;
     border: 2px solid salmon;
 }
 
-.fixed{
+.fixed {
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
-    background-color: beige;
+    background-color: white;
     border: 2px solid salmon;
 }
 
@@ -62,20 +70,69 @@ p {
 }
 
 p.question {
-    color: palevioletred;
+    color: #113644;
     font-size: 30px;
 }
 
-#property{
-    color: blue;
+#property {
+    color: #FB9902;
     text-align: center;
 }
 
-#font{
+#font {
     font-family: sans-serif, Times;
 }
 
 li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+
+.outer {
+    position: relative;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #FEFCFB;
+    box-shadow: 0 0 7px grey;
+}
+
+.inner {
+    font-size: large;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFCFB;
+}
+
+input {
+    margin: 6px 0;
+    padding: 6px 10px;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+.area {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+input:focus {
+    background-color: cyan;
+}
+
+input[type=text] {
+    background-image: url('human.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input[type=submit] {
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 0;
 }
