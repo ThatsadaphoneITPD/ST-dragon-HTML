@@ -6,10 +6,11 @@
     <title>Grid</title>
 
     <style>
+      /* ======================== Grid display  ========================*/
       .grid_collection {
         display: grid;
-        grid-template-columns: repeat(3, minmax(50px, 1fr));
-        grid-template-rows: 1fr 1fr 1fr;
+        /* responsive by auto fit  */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 10px;
       }
 
