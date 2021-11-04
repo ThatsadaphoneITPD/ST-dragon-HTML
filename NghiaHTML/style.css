@@ -47,6 +47,8 @@ body {
   width: 50vw;
   height: 50vh;
 
+  position: relative;
+
   /* object-fit: */
   object-fit: cover;
 }
