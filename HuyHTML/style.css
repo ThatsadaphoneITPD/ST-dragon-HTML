@@ -16,14 +16,14 @@ div {
     margin: 5px;
 }
 
-.static{
+.static {
     position: static;
     background-color: beige;
     opacity: 0.9;
     border: 2px solid salmon;
 }
 
-.relative{
+.relative {
     position: relative;
     left: 50px;
     height: 100px;
@@ -32,7 +32,7 @@ div {
     border: 2px solid salmon;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 1;
     background-color: beige;
@@ -40,7 +40,7 @@ div {
     border: 2px solid salmon;
 }
 
-.sticky{
+.sticky {
     position: sticky;
     background-color: beige;
     top:10px;
@@ -48,9 +48,9 @@ div {
     border: 2px solid salmon;
 }
 
-.fixed{
+.fixed {
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     background-color: beige;
     border: 2px solid salmon;
@@ -66,16 +66,33 @@ p.question {
     font-size: 30px;
 }
 
-#property{
+#property {
     color: blue;
     text-align: center;
 }
 
-#font{
+#font {
     font-family: sans-serif, Times;
 }
 
 li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+div.shadow {
+    width: 200px;
+    box-shadow: 6px 6px 5px grey;
+}
+
+#shadow-relative {
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+
+#shadow-absolute {
+    margin: 0;
+    background-color: white;
+
 }
