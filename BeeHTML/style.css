@@ -171,3 +171,219 @@ body {
     line-height: 75px;
     font-size: 20px;
    }
+   .flex-container4 {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container4 > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container5 {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container5 > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  /* Grid */
+.item1{ grid-area: header;}
+.item2{ grid-area: menu;}
+.item3{ grid-area: main;}
+.item4{ grid-area: right;}
+.item5{ grid-area: footer;}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: brown;
+  padding: 15px;
+}
+
+.grid-container > div{
+  background-color: chartreuse;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container1 {
+  display: inline-grid;
+  grid-template-columns: 
+  auto 
+  auto 
+  100px;
+  background-color: orangered;
+  padding: 10px;
+}
+.grid-item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 80px 120px auto;
+  grid-gap: 10px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.grid-container2 > div {
+  background-color: rosybrown;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: yellow;
+  padding: 10px;
+}
+.item11 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item12 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item15 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.item21 {
+  grid-column: 1 / 5;
+}
+.item30 {
+  grid-column: 1 / span 3;
+}
+.item34 {
+  grid-row: 1 / 4;
+}
+.item45 {
+  grid-row: 1 / span 2;
+}
+/* Box shadow */
+div.shadow {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: violet;
+  box-shadow: 10px 10px;
+}
+div.shadowcor {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: violet;
+  box-shadow: 10px 10px grey;
+}
+div.shadowbur {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: violet;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.Boxgrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+  background-color: white;
+  padding: 10px;
+}
+div.polaroid {
+  width: 400px;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+  text-align: center;
+}
+div.container {
+  padding: 10px;
+}
+/* From */
+div.form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select{
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=text] {
+  background-color: white;
+  background-image: url('user.png');
+  background-position: 10px, 10px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+input[type=submit] {
+  width: 300px;
+  background-color: brown;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text]:focus{
+  background-color: rgb(155, 235, 238);
+}
+input:hover {
+  background-color: #6b93e7;
+}
+
+.bf p::before{
+  content: "Read this Before - ";
+}
+.af p::after{
+  content: " - after Read this";
+}

@@ -94,6 +94,7 @@
     <p>Scroll back up to remove the stickyness.</p>
     </div>
     <!-- ====== Flex layout ====== -->
+    <h1>3.9 Flex Layout</h1>
     <div class="flex-container">
         <div>MRT</div>
         <div>Here</div>
@@ -118,10 +119,166 @@
         <div style="order: 4">3</div> 
         <div style="order: 1">4</div>
     </div>
+    <!-- Make the third flex item grow eight times faster than the other flex items: -->
     <div class="flex-container3">
         <div style="flex-grow: 1">1</div>
         <div style="flex-grow: 1">2</div>
         <div style="flex-grow: 8">3</div>
-      </div>
+    </div>
+    <!-- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. -->
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <!-- The flex-basis property specifies the initial length of a flex item. -->
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 200px">3</div>
+        <div>4</div>
+    </div>
+
+    <!-- The align-self property specifies the alignment for the selected item inside the flexible container. overrides the default alignment set by the container's align-items property.-->
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+    <div class="flex-container5">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+    <!-- Grid Layout -->
+    <h1>3.9 Grid Laoyout</h1>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>  
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+    <div class="grid-container1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+    </div>
+    <div class="grid-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+    <div class="grid-container3">
+        <div class="grid-item item11">1</div>
+        <div class="grid-item item12">2</div>
+        <div class="grid-item item13">3</div>  
+        <div class="grid-item item14">4</div>
+        <div class="grid-item item15">5</div>
+    </div>
+    <div class="grid-container4">
+        <div class="item21">1</div>
+        <div class="item22">2</div>
+        <div class="item23">3</div>  
+        <div class="item24">4</div>
+        <div class="item25">5</div>
+        <div class="item26">6</div>
+        <div class="item27">7</div>
+        <div class="item28">8</div>  
+        <div class="item29">9</div>
+        <div class="item30">10</div>
+        <div class="item31">11</div>
+        <div class="item32">12</div>
+        <div class="item33">13</div>
+    </div>
+    <div class="grid-container4">
+        <div class="item34">14</div>
+        <div class="item35">15</div>
+        <div class="item36">16</div>
+        <div class="item37">17</div>
+        <div class="item38">18</div>
+        <div class="item39">19</div>
+        <div class="item40">20</div>
+        <div class="item41">21</div>
+        <div class="item42">22</div>
+        <div class="item43">23</div>
+        <div class="item44">24</div>
+        <div class="item45">25</div>
+        <div class="item46">26</div>
+        <div class="item47">27</div>
+        <div class="item48">28</div>
+        <div class="item49">29</div>
+        <div class="item50">30</div>
+        <div class="item51">31</div>
+    </div>
+    <!-- Box shadow -->
+    <h1>3.13 Box Shadow</h1>
+    <!-- horizontal shadow and the vertical shadow -->
+    <div class="shadow">This is a div element with a box-shadow</div>
+    <br>
+    <div class="shadowcor">This is a div element with a box-shadow</div>
+    <br>
+    <div class="shadowbur">This is a div element with a box-shadow</div>
+
+    <div class="Boxgrid">
+        <div class="polaroid">
+            <img src="puffin.jpg" alt="puffin" style="width: 100%; height: 70%;">
+            <div class="container">
+                <p>Puffin</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="Hero.jpg" alt="Hero" style="width: 100%; height: 80%;">
+            <div class="container">
+                <p>Hero</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="Shionne.png" alt="Shionne" style="width: 100%; height: 80%;">
+            <div class="container">
+                <p>Shionne</p>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <h1>3.14 Form</h1>
+    <div class="form">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname">
+            <label for="fname">Last Name</label>
+            <input type="text" id="lname">
+            <label for="country"></label>
+            <label for="country">Country</label>
+            <select name="country" name="country">
+                <option value="Laos">Laos</option>
+                <option value="Vietnam">Vietnam</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- ::before ::after -->
+    <div class="bf">
+        <p>My name is Donald</p>
+        <p>I live in Ducksburg</p>
+    </div>
+    <div class="af">
+        <p>My name is Donald</p>
+        <p>I live in Ducksburg</p>
+    </div>
+
 </body>
 </html>
