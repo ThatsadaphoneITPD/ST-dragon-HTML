@@ -13,22 +13,32 @@
         <h1 class="large">Bye</h1>
     </header>
     
-    <nav class="box_model">
-        <ul>
+    <div class="section">
+        <p> 1. Box Model</p>
+    </div>
+    <nav>
+        <ul class="box_model">
             <li><a href="google.com" title="google">Press this to go to google</a></li>
             <li><a href="youtube.com" title="youtube"> Press this to go to youtube</a></li>
         </ul>
+        <div>
+            <p>The blue is the content</p><br>
+            <p>The black is the border</p><br>
+            <p>The dot is the margin</p>
+        </div>
     </nav>
 
+    <div class="section">
+        <p>2. Position</p>
+    </div> 
     <article>
         <div class="static">
             <p>This is static</p>
         </div>
-
         <div class="relative">
             <p>hi i am relative</p>
             <div class="absolute">
-                <p>relative is taking my bed</p>
+                <p>relative is taking my bed .Im absolute</p>
             </div>
         </div>
         <div class="fixed">
@@ -39,17 +49,63 @@
         </div>
         <div style="padding-bottom: 1000px; ;">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eveniet sequi dolor nihil rem! Perferendis, sunt. Molestias voluptatibus laudantium cupiditate inventore magnam error voluptatum. Eaque quisquam amet omnis aperiam vel quos dicta impedit sit aspernatur. Corporis eveniet reprehenderit illo ad sunt beatae maiores dolorem omnis distinctio inventore, praesentium quisquam quasi!</p>
-        </div>
-        
+        </div>       
     </article>
 
-    <aside>
-        <p>Im article big cousin</p>
-    </aside>
-    
-    <footer>
-        <p>fOoT</p>
-    </footer>
+    <div class="section">
+        <p>3. Text and box shadow</p>
+    </div>
+    <div class="polaroid">
+        <img src="polaroid.jpg" alt="polaroid" style="width: 100%; " >
+        <div class="container">
+            <p>This is to create layers of box shadow</p>
+        </div>
+    </div>
+    <div class="test_shadow">
+        <h1>This is a big world</h1>
+    </div>
+    <div class="section">
+        <p>4. Form</p>
+    </div>
+    <div class="form">  
+        <form action="">
+            <fieldset>
+                <legend>Credit card submission</legend>
+                <div class="inputinformation">
+                <label for="inputname">Plz input your name:</label>
+                <input type="text" id="inputname" placeholder="Input your name here"><br>
+                <label for="inputcreditcardid">Plz input your credit card number:</label>
+                <input type="text" id="inputcreditcardid" placeholder="Input your credit card number">
+                </div>               
+                <div class="selectcardtypes">
+                    <label for="selecttype">Select your card types</label>
+                    <select name="selecttype" id="selecttype" aria-placeholder="Choose Visa types">
+                        <option value="visa">Visa</option>
+                        <option value="master">Master</option>
+                        <option value="debit">debit</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" onclick="alert('Thank u for your cooperation')">Click to sum</button>
+                </div>
+            </fieldset>         
+            <!-- pseudo element -->
+            <div class="pseudo">
+                <p>This gonna be red and big, Lore ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatum, illo tempore dolore placeat, tempora odit quas numquam deleniti aperiam expedita consequuntur inventore voluptatem ullam hic iusto itaque debitis est nihil magni optio cum eum! Minus quas ea illo adipisci itaque ratione voluptate excepturi dignissimos? Reprehenderit nihil sit corrupti repellat!</p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Flex -->
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>       
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
 </body>
 </body>
 </html>
