@@ -47,7 +47,7 @@ body {
   .bgimage{
     width: 600px;
     height: 300px;
-    background-image: url("Earth.jpg");
+    background-image: url("image/Earth.jpg");
     position: center;
   }
   .Box1{
@@ -307,7 +307,7 @@ body {
 .animation{
 width: 400px;
 height: 400px;
-background-image: url('puffin.jpg');
+background-image: url('image/puffin.jpg');
 background-size: 300px 300px;
 background-position: center;
 background-repeat: no-repeat;
@@ -318,14 +318,14 @@ animation-iteration-count: infinite;
 }
 
 @keyframes example {
-from {background-image: url('Hero.jpg'); background-size: 300px 300px;}
-to {background-image: url('Shionne.png'); background-size: 300px 300px;}
+from {background-image: url('image/Hero.jpg'); background-size: 300px 300px;}
+to {background-image: url('image/Shionne.png'); background-size: 300px 300px;}
 }
 
 .head {
   width: 400px;
   height: 400px;
-  background-image: url('Head.png');
+  background-image: url('image/Head.png');
   background-size: 280px 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -339,11 +339,11 @@ to {background-image: url('Shionne.png'); background-size: 300px 300px;}
   animation-iteration-count: infinite;
 }
 @keyframes head {
-  0%   {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:0px;}
-  25%  {background-image: url('Head.png'); background-size: 280px 300px; left:200px; top:0px;}
-  50%  {background-image: url('Head.png'); background-size: 280px 300px; left:200px; top:200px;}
-  75%  {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:200px;}
-  100% {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:0px;}
+  0%   {background-image: url('image/Head.png'); background-size: 280px 300px; left:0px; top:0px;}
+  25%  {background-image: url('image/Head.png'); background-size: 280px 300px; left:200px; top:0px;}
+  50%  {background-image: url('image/Head.png'); background-size: 280px 300px; left:200px; top:200px;}
+  75%  {background-image: url('image/Head.png'); background-size: 280px 300px; left:0px; top:200px;}
+  100% {background-image: url('image/Head.png'); background-size: 280px 300px; left:0px; top:0px;}
 }
 
 .cl div{
@@ -395,7 +395,7 @@ to {background-image: url('Shionne.png'); background-size: 300px 300px;}
 .Roll {
   width: 400px;
   height: 400px;
-  background-image: url('Head.png');
+  background-image: url('image/Head.png');
   background-size: 280px 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -557,7 +557,7 @@ input[type=text], select{
 }
 input[type=text] {
   background-color: white;
-  background-image: url('user.png');
+  background-image: url('image/user.png');
   background-position: 10px, 10px;
   background-size: 30px 30px;
   background-repeat: no-repeat;
