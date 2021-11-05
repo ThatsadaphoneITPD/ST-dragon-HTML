@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- ====== CSS ====== -->
+    <div class="css">
+        <h1>What is CSS?</h1>
+        <p>
+            CSS is the language we use to style an HTML document.<br>
+            CSS describes how HTML elements should be displayed.<br>
+        </p>
+    </div>
+    <!-- ====== Selector and Property ====== -->
+    <div class="selector">
+        <h1> Hello</h1>
+        <h2> Hello Hello </h2>
+        <h3 class="center large">Property value in HTML</h3>
+    </div>
+    <div class="group">
+        <h2>How are you?</h2>
+        <p>i wana sleep</p>
+    </div>
+    <!-- ====== Front ====== -->
+    <div class="front">
+        <p class="p1">Let goo </p>
+        <p class="p2">let gooo</p>
+        <p class="p3">let goooo</p>
+        <p class="p4">let goooo home</p>
+    </div>
+    <!-- ====== color ====== -->
+    <div>
+        <h1 style="background-color:Tomato;">Tomato</h1>
+        <h1 style="background-color:Orange;">Orange</h1>
+    </div>
+    <div>
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+    </div>
+    <div>
+        <h1 style="border: 2px solid DodgerBlue;">KoooHooooHahahahaha</h1>
+        <h1 style="border: 2px solid Violet;">KoooHooooHahahahaha</h1>
+    </div>
+    <div>
+        <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+        <h1 style="background-color:#3cb371;">#3cb371</h1>
+    </div>
+    <!-- ====== background ====== -->
+    <div class="bg2">
+        <h1>background</h1>
+    </div>
+    <div class="first">
+        <h1>opacity 0.1</h1>
+    </div>
+    <div class="bgimage">
+        <h1>background image</h1>
+        <p>
+            When using the opacity property to ,<br> add transparency to the background of,<br> an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:
+        </p>
+    </div>
+    <!-- ====== Box modle ====== -->
+    <div class="Box1">
+        <h1>Box modle</h1>
+        This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </div>
+        <!-- ====== position ====== -->
+    <div class="static">
+        <h1>position has position: stactic;</h1> 
+    </div>
+    <div class="relative">
+        <h1>position has position: relative;</h1> 
+    </div>
+    <div class="fixed">
+        <h1>position has position: fixed;</h1>
+    </div>
+
+    <div class="relative1">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+    <div class="sticky">I am sticky!</div>
+    <div style="padding-bottom:600px">
+    <p>In this example, the sticky croll position.</p>
+    <p>Scroll back up to remove the stickyness.</p>
+    </div>
+    <!-- ====== Flex layout ====== -->
+    <h1>3.9 Flex Layout</h1>
+    <div class="flex-container">
+        <div>MRT</div>
+        <div>Here</div>
+        <div>1per</div>
+    </div>
+    <div class="flex-container1">
+        <div>4</div>
+        <div>5</div>
+        <div>7</div>
+    </div>
+    <div class="box">
+        <div><a href="#">1</a></div>
+        <div><a href="#">2</a></div>
+        <div><a href="#">3</a></div>
+        <div><a href="#">4</a></div>
+        <div><a href="#">5</a></div>
+    </div>
+
+    <div class="flex-container2">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+    </div>
+    <!-- Make the third flex item grow eight times faster than the other flex items: -->
+    <div class="flex-container3">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+    <!-- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. -->
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <!-- The flex-basis property specifies the initial length of a flex item. -->
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 200px">3</div>
+        <div>4</div>
+    </div>
+
+    <!-- The align-self property specifies the alignment for the selected item inside the flexible container. overrides the default alignment set by the container's align-items property.-->
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+    <div class="flex-container5">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+    <!-- Grid Layout -->
+    <h1>3.9 Grid Laoyout</h1>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>  
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+    <div class="grid-container1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+    </div>
+    <div class="grid-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+    <div class="grid-container3">
+        <div class="grid-item item11">1</div>
+        <div class="grid-item item12">2</div>
+        <div class="grid-item item13">3</div>  
+        <div class="grid-item item14">4</div>
+        <div class="grid-item item15">5</div>
+    </div>
+    <div class="grid-container4">
+        <div class="item21">1</div>
+        <div class="item22">2</div>
+        <div class="item23">3</div>  
+        <div class="item24">4</div>
+        <div class="item25">5</div>
+        <div class="item26">6</div>
+        <div class="item27">7</div>
+        <div class="item28">8</div>  
+        <div class="item29">9</div>
+        <div class="item30">10</div>
+        <div class="item31">11</div>
+        <div class="item32">12</div>
+        <div class="item33">13</div>
+    </div>
+    <div class="grid-container4">
+        <div class="item34">14</div>
+        <div class="item35">15</div>
+        <div class="item36">16</div>
+        <div class="item37">17</div>
+        <div class="item38">18</div>
+        <div class="item39">19</div>
+        <div class="item40">20</div>
+        <div class="item41">21</div>
+        <div class="item42">22</div>
+        <div class="item43">23</div>
+        <div class="item44">24</div>
+        <div class="item45">25</div>
+        <div class="item46">26</div>
+        <div class="item47">27</div>
+        <div class="item48">28</div>
+        <div class="item49">29</div>
+        <div class="item50">30</div>
+        <div class="item51">31</div>
+    </div>
+    <!-- Animation -->
+    <h1>3.10 Animation </h1>
+
+    <!-- Box shadow -->
+    <h1>3.13 Box Shadow</h1>
+    <!-- horizontal shadow and the vertical shadow -->
+    <div class="shadow">This is a div element with a box-shadow</div>
+    <br>
+    <div class="shadowcor">This is a div element with a box-shadow</div>
+    <br>
+    <div class="shadowbur">This is a div element with a box-shadow</div>
+
+    <div class="Boxgrid">
+        <div class="polaroid">
+            <img src="puffin.jpg" alt="puffin" style="width: 100%; height: 70%;">
+            <div class="container">
+                <p>Puffin</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="Hero.jpg" alt="Hero" style="width: 100%; height: 80%;">
+            <div class="container">
+                <p>Hero</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="Shionne.png" alt="Shionne" style="width: 100%; height: 80%;">
+            <div class="container">
+                <p>Shionne</p>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <h1>3.14 Form</h1>
+    <div class="form">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname">
+            <label for="fname">Last Name</label>
+            <input type="text" id="lname">
+            <label for="country"></label>
+            <label for="country">Country</label>
+            <select name="country" name="country">
+                <option value="Laos">Laos</option>
+                <option value="Vietnam">Vietnam</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- ::before ::after -->
+    <h1>3.15 ::before ::after</h1>
+    <div class="bf">
+        <p>My name is Donald</p>
+        <p>I live in Ducksburg</p>
+    </div>
+    <div class="af">
+        <p>My name is Donald</p>
+        <p>I live in Ducksburg</p>
+    </div>
+    <!-- Pseudo-classes -->
+    
+    <h1>3.16 Pseudo-classes</h1>
+    <div>
+        <p>
+            <a class="highlight" href="">Pseudo CSS syntax</a>
+        </p>
+    </div>
+
+    <div class="hoverblock">Hover over this div element to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+
+    <div class="fristch">
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <div>
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+        </div>
+    </div>
+    <div class="Mfriofp">
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+    <div class="Malliinp">
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+
+    <div class="Lang">
+        <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+        <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+    </div>
+
+    <div class="Anchor">
+        <p>
+            <b>
+                <a href="https://github.com/ThatsadaphoneITPD/ST-dragon-HTML">
+                    This is a link
+                </a>
+            </b>
+        </p>
+        <p>
+            <b>Note:</b> 
+            a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+        </p>
+    </div>
+    
+    <!-- 3.17 - Mobile First (Responsive) -->
+    <div style="width: 1000px;">
+        <h1>3.17 - Mobile First (Responsive) </h1>
+        <p style="font-size: 28px;">
+            The mobile-first approach is a tenet of progressive enhancement. It is the ideology that mobile design, as the hardest, should be done first. Once the mobile design questions are answered, designing for other devices will be easier. What it boils down to is that, the smallest of the designs will have only the essential features, so right away you have designed the heart of your UX.
+            <br>
+            The opposite approach is graceful degradation. This incorporates all of the complexities right from the start, then strips them away later for smaller devices. The problem with graceful degradation is that when you build the all-inclusive design right from the start, the core and supplementary elements merge and become harder to distinguish and separate. The entire philosophy runs the risk of treating mobile design as more of an afterthought since you’re “cutting down” the experience.
+            <br>
+            We, along with others, strongly recommend progressive enhancement with a mobile-first approach. In this post, we’ll explain tips & techniques, then finish off with a hands-on lesson in which we build a hypothetical website with the mobile-first workflow.
+        </p>
+    </div>
+</body>
+</html>
