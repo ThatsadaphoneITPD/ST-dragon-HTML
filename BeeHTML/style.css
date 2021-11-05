@@ -304,6 +304,200 @@ body {
   grid-row: 1 / span 2;
 }
 /* Animation */
+.animation{
+width: 400px;
+height: 400px;
+background-image: url('puffin.jpg');
+background-size: 300px 300px;
+background-position: center;
+background-repeat: no-repeat;
+animation-name: example;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes example {
+from {background-image: url('Hero.jpg'); background-size: 300px 300px;}
+to {background-image: url('Shionne.png'); background-size: 300px 300px;}
+}
+
+.head {
+  width: 400px;
+  height: 400px;
+  background-image: url('Head.png');
+  background-size: 280px 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: head;
+  position: relative;
+  animation-duration: 3s;
+  /* animation-delay: 2s;
+  animation-direction: reverse ;
+  animation-direction: alternate;  */
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@keyframes head {
+  0%   {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:0px;}
+  25%  {background-image: url('Head.png'); background-size: 280px 300px; left:200px; top:0px;}
+  50%  {background-image: url('Head.png'); background-size: 280px 300px; left:200px; top:200px;}
+  75%  {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:200px;}
+  100% {background-image: url('Head.png'); background-size: 280px 300px; left:0px; top:0px;}
+}
+
+.cl div{
+  width: 100px;
+  height: 50px;
+  background-color: blueviolet;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+.shorthand{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: short 5s linear 2s infinite alternate;
+}
+@keyframes short {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.Roll2 {
+  position: absolute;
+  width: 22%;
+  height: 22%;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid gray;
+  left: 37%;
+  animation: roll 3s ease-in-out infinite;
+}
+.Roll {
+  width: 400px;
+  height: 400px;
+  background-image: url('Head.png');
+  background-size: 280px 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: head;
+  position: relative;
+  animation: roll 3s ease-in-out infinite;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    /* left: 25%; */
+  }
+  50% {
+    /* left: 60%; */
+    transform: rotate(168deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    /* left: 25%; */
+  }
+}
+
+/* transition */
+.divtransi div{
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+.divtransi div:hover{
+  width: 300px;
+}
+
+.changeproper {
+  width: 100px;
+  height: 100px;
+  background: rgb(18, 77, 52);
+  transition: width 2s, height 3s, transform 2s;
+}
+.changeproper:hover{
+  width: 400px;
+  height: 400px;
+  font-size: 20px;
+  transform: rotate(180deg);
+}
+
+.Transishort{
+  width: 100px;
+  height: 100px;
+  background: rgb(104, 21, 83);
+  transition: width 2s linear 1s;
+}
+.Transishort:hover {
+  width: 300px
+}
+/* transfrom */
+
+div.transfrom div{
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.Translate{
+
+  background-color: rgb(3, 31, 21);
+  color: white;
+  transform: translate(20px,100px);
+}
+
+#rotate{
+  background-color: rgb(219, 98, 213);
+  transform: rotate(30deg);
+}
+.scale{
+  background-color: rgb(10, 119, 95);
+  transform: scale(2,1);
+  /* transform: scaleY(0.5);
+  transform: scaleX(3); */
+
+}
+
+.skew{
+  background-color: rgb(5, 88, 63);
+  transform: skew(20deg, 10deg);
+  /* transform: skewX(20deg);
+  transform: skewY(20deg); */
+}
+
+.Matrix{
+  background-color: brown;
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+.rotate {
+  background-color: coral;
+  transform: rotateY(150deg);
+  /* transform: rotateY(150deg);
+  transform: rotateZ(90deg); */
+}
+
 
 /* Box shadow */
 div.shadow {
@@ -348,6 +542,8 @@ div.form{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  width: 600px;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;;
 }
 
 input[type=text], select{
