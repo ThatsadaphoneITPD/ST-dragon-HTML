@@ -303,6 +303,8 @@ body {
 .item45 {
   grid-row: 1 / span 2;
 }
+/* Animation */
+
 /* Box shadow */
 div.shadow {
   width: 300px;
