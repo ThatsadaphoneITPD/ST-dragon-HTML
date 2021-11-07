@@ -172,12 +172,38 @@ input[type=submit] {
     width: 55px;
     font-size: 30px;
     text-align: center;
-
 }
 
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
     }
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: greenyellow;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    background-color: black;
+    border: 2px white;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
