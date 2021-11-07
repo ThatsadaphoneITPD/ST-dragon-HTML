@@ -120,15 +120,21 @@ input {
     grid-template-columns: repeat(3, 1fr);
 }
 
+input[type=text] {
+    background-color: red;
+    background-image: url("600x400.jpg");
+    background-size: 10px 10px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
 input:focus {
     background-color: cyan;
 }
 
-input[type=text] {
-    background-image: url('human.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
+input:hover {
+    background-color: black;
 }
 
 input[type=submit] {
@@ -136,3 +142,42 @@ input[type=submit] {
     border: 1px solid black;
     border-radius: 0;
 }
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background: paleturquoise;
+    align-content: stretch;
+    height: 300px;
+}
+
+.flex-container > div {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    background: paleturquoise;
+    
+}
+
+.flex-container-column > div {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 20px;
+    width: 55px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
