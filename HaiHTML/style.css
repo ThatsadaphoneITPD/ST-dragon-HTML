@@ -1,0 +1,316 @@
+#div2 {
+    text-align: center;
+    font-size:2vw;
+}
+
+#para1 {
+    text-align: center;
+    color: blueviolet;
+    background-color: #ffa500;
+    font-size:5vw;
+}
+
+p.class1 {
+    text-align: center;
+    color: brown;
+    border: 2px solid yellow;
+    background-color: rgb(238, 130, 257);
+}
+p.large1 {
+    font-size: 200%;
+    background-color: blue;
+}
+
+p.font1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+p.font2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+p.font3 {
+    font-family: "Lucida console", "Courier New", monospace;
+    font-style: oblique;
+    font-weight: bold;
+}
+p.font4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+body {
+    background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+
+div.box1 {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.relative {
+    position: relative;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid palevioletred;
+}
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+div.shadowtest1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+div.shadowtest2 {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div.shadowbox {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 30px 50px 5px grey;
+}
+/* form */
+div.container {
+    box-sizing: border-box;
+    width: 100%;
+}
+  
+input[type=text], select, textarea {
+    width: 99%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+.col-25 {
+    float: left;
+    width: 5%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 95%;
+    margin-top: 6px;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  p.testpseudo1 {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+  
+  div.testpseudo:hover p.testpseudo1 {
+    display: block;
+  }
+
+  /*test flexbox */
+  .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  /*test grid layout */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* test grid parent element */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /*test grid gap */
+  .grid-container3 {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* test transform */
+  div.divtransform {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+  div#myDiv1 {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+  
+  div#myDiv2 {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+  }
+
+  /* test transitions */
+  div.transitions1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+  
+  div.transitions1:hover {
+    width: 300px;
+  }
+
+
+  div.testanimation {
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
