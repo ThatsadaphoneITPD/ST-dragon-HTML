@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -89,7 +89,7 @@
 
     <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
     <div class="sticky">I am sticky!</div>
-    <div style="padding-bottom:600px">
+    <div style="padding-bottom:100px">
     <p>In this example, the sticky croll position.</p>
     <p>Scroll back up to remove the stickyness.</p>
     </div>
@@ -226,6 +226,62 @@
     </div>
     <!-- Animation -->
     <h1>3.10 Animation </h1>
+    <div class="animation"></div>
+
+    <div class="head"></div>
+
+    <div style="padding-bottom:150px"></div>
+
+    <div class="cl">
+        <div id="div1">linear</div>
+        <div id="div2">ease</div>
+        <div id="div3">ease-in</div>
+        <div id="div4">ease-out</div>
+        <div id="div5">ease-in-out</div>
+    </div>
+
+    <div class="shorthand"></div>
+
+    <div style="padding-bottom: 120px;"></div>
+
+    <div class="Roll"></div>
+    <!-- 3.11 - Transitions -->
+    <h1>3.11 - Transitions</h1>
+    
+    <div class="divtransi">
+        <div style="transition-timing-function: linear;">linear</div>
+        <div style="transition-timing-function: ease;">ease</div>
+        <div style="transition-timing-function: ease-in;">ease-in</div>
+        <div style="transition-timing-function: ease-out;">ease-out</div>
+        <div style="transition-timing-function: ease-in-out;">ease-in-out</div>
+    </div>
+
+    <br>
+    <div class="changeproper"> The transition Property</div>
+    <br>
+    <div class="Transishort">Transition shorthand</div>
+
+    <!-- transform -->
+    <h1>transform</h1>
+
+    <div class="transfrom">
+        <div class="Translate">This div element is moved 50 pixels to the right, and 100 pixels down from its current position </div>
+        <br>
+        <p style="padding-bottom: 150px;"></p>
+        <div id="rotate"> This div element is rotated clockwise 20 degrees.</div>
+        <p style="padding-bottom: 80px;"></p>
+        <div class="scale">
+            This div element is two times of its original width, and three times of its original height.
+        </div>
+        <p style="padding-bottom: 50px;"></p>
+        <div class="skew">'
+            This div element is skewed 20 degrees along the X-axis.
+        </div>
+        <p style="padding-bottom: 50px;"></p>
+        <div class="Matrix">Matrix</div>
+        <br>
+        <div class="rotate" >rotate</div>
+    </div>
 
     <!-- Box shadow -->
     <h1>3.13 Box Shadow</h1>
@@ -238,19 +294,19 @@
 
     <div class="Boxgrid">
         <div class="polaroid">
-            <img src="puffin.jpg" alt="puffin" style="width: 100%; height: 70%;">
+            <img src="image/puffin.jpg" alt="puffin" style="width: 100%; height: 70%;">
             <div class="container">
                 <p>Puffin</p>
             </div>
         </div>
         <div class="polaroid">
-            <img src="Hero.jpg" alt="Hero" style="width: 100%; height: 80%;">
+            <img src="image/Hero.jpg" alt="Hero" style="width: 100%; height: 80%;">
             <div class="container">
                 <p>Hero</p>
             </div>
         </div>
         <div class="polaroid">
-            <img src="Shionne.png" alt="Shionne" style="width: 100%; height: 80%;">
+            <img src="image/Shionne.png" alt="Shionne" style="width: 100%; height: 80%;">
             <div class="container">
                 <p>Shionne</p>
             </div>
@@ -259,7 +315,7 @@
     <!-- Form -->
     <h1>3.14 Form</h1>
     <div class="form">
-        <form>
+        <form class="">
             <label for="fname">First Name</label>
             <input type="text" id="fname">
             <label for="fname">Last Name</label>

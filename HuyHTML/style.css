@@ -16,11 +16,33 @@ h1 {
 }
 
 div {
-    background-color: #FEFCFB;
+    background-color: thistle;
     opacity: 0.9;
     border: 2px salmon;
     padding: 20px;
     margin: 5px;
+}
+
+.animation {
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    height: 100px;
+    width: 100px;
+}
+
+.transition {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    transition: width 2s;
+}
+
+.transition:hover {
+    width: 300px;
+    transform: rotate(30deg);
 }
 
 .static {
@@ -120,19 +142,107 @@ input {
     grid-template-columns: repeat(3, 1fr);
 }
 
+input[type=text] {
+    background-color: red;
+    background-image: url("600x400.jpg");
+    background-size: 10px 10px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
 input:focus {
     background-color: cyan;
 }
 
-input[type=text] {
-    background-image: url('human.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
+input:hover {
+    background-color: black;
 }
 
 input[type=submit] {
     background-color: beige;
     border: 1px solid black;
     border-radius: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background: paleturquoise;
+    align-content: stretch;
+    height: 300px;
+}
+
+.flex-container > div {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    background: paleturquoise;
+    
+}
+
+.flex-container-column > div {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 20px;
+    width: 55px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 300px;
+    background-color: greenyellow;
+    align-items: center;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    background-color: black;
+    border: 2px white;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.grid-item6 {
+    grid-column: 1 / span 3;
+}
+
+.grid-item9 {
+    grid-row: 1 / span 2;
+}
+
+@keyframes color {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
 }
