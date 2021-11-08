@@ -10,10 +10,11 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Bootstrap</title>
 </head>
+
 <body style="background-color: grey;">
     <section style="background-color: honeydew;">
         <div>
-            <h1>Bootstrap source code</h1>
+            <h1>4.1 Bootstrap source code</h1>
             <p>
                 The Bootstrap source code download includes the precompiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:
                 <br>
@@ -35,51 +36,621 @@
     </section>
 
     <section>
-        <h1>Bootstrap Layout</h1>
+        <h1>4.1 Bootstrap Layout</h1>
     <div class="container" style="background-color: aqua;">
         <h1> bootstrap Layput</h1>
         <h2>Contrainer </h2>
     </div>
-    <div class="container-sm" style="background-color: blueviolet;">100% wide until small breakpoint</div>
+    <div class="container-sm" style="background-color: blueviolet;"> 
+        Contrainer-sm 100% wide until small breakpoint
+    </div>
     <br>
-    <div class="container-md" style="background-color: blueviolet;">100% wide until medium breakpoint</div>
+    <div class="container-md" style="background-color: blueviolet;"> 
+        Contrainer-md 100% wide until medium breakpoint
+    </div>
     <br>
-    <div class="container-lg" style="background-color: blueviolet;">100% wide until large breakpoint</div>
+    <div class="container-lg" style="background-color: blueviolet;">
+        Contrainer-lg 100% wide until large breakpoint
+    </div>
     <br>
-    <div class="container-xl" style="background-color: blueviolet;">100% wide until extra large breakpoint</div>
+    <div class="container-xl" style="background-color: blueviolet;"> 
+        <h2>Contrainer-Fluid </h2>
+        Contrainer-xl 100% wide until extra large breakpoint
+    </div>
 
 
     <div class="container-fluid" style="background-color: aqua;" >
         <h1> bootstrap Layput</h1>
         <h2>Contrainer-Fluid </h2>
     </div>
-    <div class="container-fluid-sm" style="background-color: aqua;" >
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer-sm </h2>
-    </div>
-    <div class="container-fluid-md" style="background-color: aqua;" >
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer-md </h2>
-    </div>
-    <div class="container-fluid-lg" style="background-color: aqua;" >
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer-lg </h2>
-    </div>
-    <div class="container-fluid-xl" style="background-color: aqua;" >
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer-xl </h2>
-    </div>
+    
     </section>
 
     <section>
-        <h1>Bootstrap Grid</h1>
-        <div class="container" style="background-color: pink;">
-            <div class="row" style="background-color: palevioletred;">
-                <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
-                <div class="col-sm-2" style="background-color: royalblue;"> two of three cloums</div>
-                <div class="col-sm-3" style="background-color: seagreen;"> Three of three cloums</div>
+        <h1>4.3 Grid</h1>
+        <h1>Bootstrap Grid use rom and horizontal col-sm-12 automatically width ( xs sm md lg xl - with # of columns(1-12 max option))</h1>
+        <div class="container" style="background-color: rgba(48, 250, 206, 0.25); padding-top: 20px;">
+            <div class="container" style="background-color: azure; padding: 20px;">
+                <div class="row" style="border: 0px solid black;">
+                  <div class="col" style="border: 2px solid black;">
+                    1 of 2
+                  </div>
+                  <div class="col" style="border: 2px solid black;">
+                    2 of 2
+                  </div>
+                </div>
+                <div class="row" style="border: 0px solid black;">
+                  <div class="col" style="border: 2px solid black;">
+                    1 of 3
+                  </div>
+                  <div class="col" style="border: 2px solid black;">
+                    2 of 3
+                  </div>
+                  <div class="col" style="border: 2px solid black;">
+                    3 of 3
+                  </div>
+                </div>
+            </div>
+            <div class="container" style="margin-bottom: 20px;">
+                <div class="row" style="background-color: palevioletred;">
+                    <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
+                    <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
+                    <div class="col-sm-2" style="background-color: royalblue;"> two of three cloums</div>
+                    <div class="col-sm-12" style="background-color: seagreen;"> Three of three cloums</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-sm </div>
+                        <div class="col" style="background-color: #5e1921">.col</div>
+                        <div class="col" style="background-color: #104e4a">.col</div>
+                    </div>
+                </div>
+
+                <br>
+                
+                <div class="container-md" style="margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                        <div class="col" style="background-color: #852a35">.col</div>
+                        <div class="col" style="background-color: #3d5b59">.col</div>
+                    </div>
+                </div>
+                <h1>Responsive classes</h1>
+                <div class="container-md" style="margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                        <div class="col" style="background-color: #a32b39">.col</div>
+                        <div class="col" style="background-color: #17302e">.col</div>
+                    </div>
+                </div>
+                <div class="container-lg" style="margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                        <div class="col" style="background-color: #B99095">.col</div>
+                        <div class="col" style="background-color: #3d5b59">.col</div>
+                    </div>
+                </div>
+                <div class="container-xl" style="margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-xl</div>
+                        <div class="col" style="background-color: #a32b39">.col</div>
+                        <div class="col" style="background-color: #17302e">.col</div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col" style="background-color: #B5E5CF">.col of containe-fluid</div>
+                        <div class="col" style="background-color: #a32b39">.col</div>
+                        <div class="col" style="background-color: #17302e">.col</div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-color: cadetblue; margin-top: 20px;">
+                <h1>Setting one column width</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" style="background-color: #B5E5CF">.col-2 width</div>
+                        <div class="col-4" style="background-color: #a32b39">.col-4 width</div>
+                        <div class="col-5" style="background-color: #3a8a83">.col-8 width</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1>Variable width content</h1>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                  <div class="col col-lg-2" style="border: 2px solid black;">
+                    1 of 3
+                  </div>
+                  <div class="col-md-auto" style="border: 2px solid black;">
+                    Variable width content
+                  </div>
+                  <div class="col col-lg-2" style="border: 2px solid black;">
+                    3 of 3
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" style="border: 2px solid black;">
+                    1 of 3
+                  </div>
+                  <div class="col-md-auto" style="border: 2px solid black;">
+                    Variable width content
+                  </div>
+                  <div class="col col-lg-2" style="border: 2px solid black;">
+                    3 of 3
+                  </div>
+                </div>
+            </div>
+            <h1> Mix and match</h1>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-8" style="border: 2px solid black;">.col-md-8</div>
+                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                  </div>
+                
+                  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                  <div class="row">
+                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                  </div>
+                
+                  <!-- Columns are always 50% wide, on mobile and desktop -->
+                  <div class="row">
+                    <div class="col-6" style="border: 2px solid black;">.col-6</div>
+                    <div class="col-6" style="border: 2px solid black;">.col-6</div>
+                </div>
+                <h1>Gutter</h1>
+                <div class="container px-lg-5">
+                    <div class="row mx-lg-n5" style="border: 2px solid black;">
+                      <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
+                      <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
+                    </div>
+                </div>
+                <h1>Row Column</h1>
+                <div class="container">
+                    <div class="row row-cols-3" style="border: 2px solid black;">
+                      <div class="col" style="border: 2px solid black;" >Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="border: 2px solid black;">
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                      <div class="col" style="border: 2px solid black;">Column</div>
+                    </div>
+                </div>
+                <h1>Alignment</h1>
+            
+                <div class="container">
+                    <div class="row">
+                      <div class="col align-self-start" style="border: 2px solid black;">
+                        One of three columns
+                      </div>
+                      <br>
+                      <div class="col align-self-center" style="border: 2px solid black;">
+                        One of three columns
+                      </div>
+                      <br>
+                      <div class="col align-self-end" style="border: 2px solid black;">
+                        One of three columns
+                      </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>4.4 Alerts</h2>
+            <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+            <div class="alert alert-success">
+              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info">
+              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+            <div class="alert alert-primary">
+              <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary">
+              <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div>
+            <div class="alert alert-dark">
+              <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light">
+              <strong>Light!</strong> Light grey alert.
+            </div>
+            <h1>Closing Alerts</h1>
+            <p>The button with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+            <p>The alert-dismissible class adds some extra padding to the close button.</p>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+            <div class="alert alert-primary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div>
+            <div class="alert alert-dark alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Light!</strong> Light grey alert.
+            </div>
+            <h2>Animated Alerts</h2>
+            <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
+            <div class="alert alert-success alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
             </div>
         </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>4.5 Breadcrumb</h1>
+        <h2>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+              </nav>
+              
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav>
+              
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>4.6 Button Styles</h1>
+            <h2>Bootstrap 4 provides different styles of buttons:</h2>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Button Elements</h2>
+            <a href="#" class="btn btn-info" role="button">Link Button</a>
+            <button type="button" class="btn btn-info">Button</button>
+            <input type="button" class="btn btn-info" value="Input Button">
+            <input type="submit" class="btn btn-info" value="Submit Button">
+        </div>
+         
+        <div class="container">
+            <h2>Button Outline</h2>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-outline-light text-dark">Light</button>
+
+            <h2>Button Sizes</h2>
+            <button type="button" class="btn btn-primary btn-lg">Large</button>
+            <button type="button" class="btn btn-primary btn-md">Default</button>
+            <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+            <br>
+            <button type="button" class="btn btn-primary btn-block">Button 1</button>
+            <button type="button" class="btn btn-success btn-block">Button 2</button>
+            <br>
+            <button type="button" class="btn btn-primary">Primary BTN</button>
+            <button type="button" class="btn btn-primary active">Active Primary</button>
+            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+        </div>
+        <div class="container">
+            <h2>Spinner Buttons</h2>
+            <p>Add spinners to buttons:</p>
+                                                  
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+            </button>
+          
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+            </button>
+            
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+            </button>
+            
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-grow spinner-grow-sm"></span>
+              Loading..
+            </button>
+        </div>
+        <div class="container">
+            <h1>Group Button</h1>
+            <div class="btn-group btn-group-md">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                     Sony
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Tablet</a>
+                    <a class="dropdown-item" href="#">Smartphone</a>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">Sonami</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Heello</a>
+                    <a class="dropdown-item" href="#">DropDOwn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>4.7 Card</h1>
+        <div class="container">
+            <h2>Card Image</h2>
+            <div class="row">
+                <div class="col-lg-4 mx-auto" style="background-color: #B5E5CF;">
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:300px">
+                      <img class="card-img-top" src="image/Head.png" alt="Card image" style="width:300px; height: 400px;">
+                      <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto" style="background-color: #852a35">
+                    <p>Image at the bottom (card-img-bottom):</p>
+                    <div class="card" style="width:300px">
+                    <div class="card-body">
+                        <h4 class="card-title">Jane Doe</h4>
+                        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                    <img class="card-img-bottom" src="image/puffin.jpg" alt="Card image" style="width:300px; height: 400px;">
+                    </div>                
+                </div>
+            </div>
+          </div>
+        <div class="container">
+            <h2>Basic Card</h2>
+            <div class="card">
+              <div class="card-body">Basic card</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Cards with Contextual Classes</h2>
+            <div class="card">
+              <div class="card-body">Basic card</div>
+            </div>
+            <br>
+            <div class="card bg-primary text-white">
+              <div class="card-body">Primary card</div>
+            </div>
+            <br>
+            <div class="card bg-success text-white">
+              <div class="card-body">Success card</div>
+            </div>
+            <br>
+            <div class="card bg-info text-white">
+              <div class="card-body">Info card</div>
+            </div>
+            <br>
+            <div class="card bg-warning text-white">
+              <div class="card-body">Warning card</div>
+            </div>
+            <br>
+            <div class="card bg-danger text-white">
+              <div class="card-body">Danger card</div>
+            </div>
+            <br>
+            <div class="card bg-secondary text-white">
+              <div class="card-body">Secondary card</div>
+            </div>
+            <br>
+            <div class="card bg-dark text-white">
+              <div class="card-body">Dark card</div>
+            </div>
+            <br>
+            <div class="card bg-light text-dark">
+              <div class="card-body">Light card</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Cards Columns</h2>
+            <p>The .card-columns class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
+            <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+            <div class="card-columns">
+              <div class="card bg-primary">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the first card</p>
+                </div>
+              </div>
+              <div class="card bg-warning">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the second card</p>
+                </div>
+              </div>
+              <div class="card bg-success">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the third card</p>
+                </div>
+              </div>
+              <div class="card bg-danger">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the fourth card</p>
+                </div>
+              </div>  
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the fifth card</p>
+                </div>
+              </div>
+              <div class="card bg-info">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the sixth card</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h2>Card Deck</h2>
+            <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
+
+            <div class="card-deck">
+              <div class="card bg-primary">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the first card</p>
+                </div>
+              </div>
+              
+              <div class="card bg-warning">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the second card</p>
+                </div>
+              </div>
+
+              <div class="card bg-success">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the third card</p>
+                </div>
+              </div>
+
+              <div class="card bg-danger">
+                <div class="card-body text-center">
+                  <p class="card-text">Some text inside the fourth card</p>
+                </div>
+              </div>  
+
+            </div>
+          </div>
+    </section>
+    <!-- Carousel -->
+    <section>
+        <h1>4.8 Carousel</h1>
+        
+        <div id="demo" class="container carousel slide" data-ride="carousel" style="width: 600px; height:300px;">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/Earth.jpg" alt="Los Angeles" style="width: 600px; height:300px;">
+                <div class="carousel-caption" style="color: black;">
+                  <h3>Earth</h3>
+                  <p>We love the Big Apple!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="image/Hero.jpg" alt="Chicago" style="width: 600px; height:300px;" >
+                <div class="carousel-caption" style="color: black;">
+                  <h3>Nice</h3>
+                  <p>it is Nice! the Big Apple!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="image/puffin.jpg" alt="New York" style="width: 600px; height:300px;">
+                <div class="carousel-caption" style="color: black;">
+                  <h3>Puffin</h3>
+                  <p>Last Puffin Ever!</p>
+                </div> 
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+          
+
     </section>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
