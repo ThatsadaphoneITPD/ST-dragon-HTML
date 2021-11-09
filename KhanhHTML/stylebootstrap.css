@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+}
+
+.container {
+    padding-top: 10px;
+    background-color: green;
+}
+
+.container-fluid {
+    padding-top: 50px;
+    background-color: red;
+}
+
+.row {
+    
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+}
+.col {
+    border: 1px solid black;
+}
+
+.col-5 {
+    border: 1px solid black;
+}
+
+.col-6 {
+    border: 1px solid black;
+}
+
+.card-container {
+
+    padding: 20px;
+    background-color: white;
+}
+
+.card-row {
+    background-color: turquoise;
+    border: 1px solid black;
+}
