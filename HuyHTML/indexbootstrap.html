@@ -114,32 +114,43 @@
     
         </div>
 
-        <nav class="navbar navbar-expand-sm bg-light mb-3 justify-content-center bg-dark navbar-dark">
-            <a class="navbar-brand" href="#"><img src="Shionne.png" style="width: 40px" class="rounded-pill">Shionne</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <span class="navbar-text">Hello</span>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 3</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Link</a></li>
-                            <li><a class="dropdown-item" href="#">Zelda</a></li>
-                            <li><a class="dropdown-item" href="#">Another Zelda</li>
-                        </ul>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-sm bg-light mb-3 justify-content-center bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Shionne.png" style="width: 40px" class="rounded-pill">Shionne</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <span class="navbar-text">Hello</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Link
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Zelda</a></li>
+                                <li><a class="dropdown-item" href="#">Another Zelda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-sm-flex mx-4 ms-auto">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary me-sm-2" type="button">Search</button>
+                    </form>
+                </div>
+
             </div>
         </nav>
 
