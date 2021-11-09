@@ -627,7 +627,7 @@
 
     <!-- navigation bar -->
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top ">
 
         <!-- logo -->
         <a href="#" class="navbar-brand">
@@ -669,14 +669,12 @@
                     </div>
                 </li>
 
-                <!-- From and button -->
-                <li class="nav-item ">
-                    <form class="form-inline" action="/action_page.php">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
-                </li>
+                <!-- Form and button -->
             </ul>
+            <form class="flex-1 form-inline ms-auto" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
         </div>
     </nav>
   </body>
