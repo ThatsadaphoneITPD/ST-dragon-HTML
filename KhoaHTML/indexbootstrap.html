@@ -1,485 +1,679 @@
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap-4.6.1-dist/css/bootstrap-grid.css">  -->
-    <link rel="stylesheet" type="text/css" href="stylebootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylebootstrap.css" />
     <title>Testing bootstrap</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container pt-3">
-        <!-- pt-3 = padding-top: 16px; -->
-        <h1> This is the class containter</h1>
+      <!-- pt-3 = padding-top: 16px; -->
+      <h1>This is the class containter</h1>
     </div>
     <div class="container-fluid pt-3">
-        <h1>This is the class container act like fluid, resize to see more</h1>
+      <h1>This is the class container act like fluid, resize to see more</h1>
     </div>
-    <div class="container p-3 my-3 bg-primary text-white"> 
-        <!-- Container này đc sửa đổi bằng nhiều class -->
-        <h1>This is modified container</h1>
+    <div class="container p-3 my-3 bg-primary text-white">
+      <!-- Container này đc sửa đổi bằng nhiều class -->
+      <h1>This is modified container</h1>
     </div>
     <div class="container">
-        <div class="container mt-3 ">under are the responsive container</div>
-        <div class="container-sm mt-3">.container-sm</div> 
-        <div class="container-md mt-3">.container-md</div>
-        <div class="container-lg mt-3">.container-lg</div>
-        <div class="container-xl mt-3 mb-3">.container-xl</div>
+      <div class="container mt-3">under are the responsive container</div>
+      <div class="container-sm mt-3">.container-sm</div>
+      <div class="container-md mt-3">.container-md</div>
+      <div class="container-lg mt-3">.container-lg</div>
+      <div class="container-xl mt-3 mb-3">.container-xl</div>
     </div>
-    
 
     <!-- container grid  -->
     <!-- container gồm có 12 column -->
 
     <div class="container mt-3">
-        <div class="container">
-            <h3> This is 3 equal row</h3>
-            <p> Resize the browser to see more</p>
-            <div class="row">
-                <div class="col ">1</div>
-                <div class="col ">2</div>
-                <div class="col ">3</div>
-            </div>
+      <div class="container">
+        <h3>This is 3 equal row</h3>
+        <p>Resize the browser to see more</p>
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
         </div>
-        <div class="container">
-            <h3>This is stacking column on smaller viewport</h3>
-            <p>Resize to see more</p>
-            <div class="row">
-                <div class="col col-sm-3">1</div>
-                <div class="col col-sm-3">2</div>
-                <div class="col col-sm-3">3</div>
-                <div class="col col-sm-3">4</div>
-            </div>
+      </div>
+      <div class="container">
+        <h3>This is stacking column on smaller viewport</h3>
+        <p>Resize to see more</p>
+        <div class="row">
+          <div class="col col-sm-3">1</div>
+          <div class="col col-sm-3">2</div>
+          <div class="col col-sm-3">3</div>
+          <div class="col col-sm-3">4</div>
         </div>
-        <div class="container">
-            <h3>This is unequal column</h3>
-            <p>The column will stack after 578px. Resize to see more</p>
-            <div class="row">
-                <div class="col col-sm-4">1</div>
-                <div class="col col-sm-8">2</div>
-            </div>
+      </div>
+      <div class="container">
+        <h3>This is unequal column</h3>
+        <p>The column will stack after 578px. Resize to see more</p>
+        <div class="row">
+          <div class="col col-sm-4">1</div>
+          <div class="col col-sm-8">2</div>
         </div>
-
+      </div>
     </div>
 
     <!-- Alert -->
 
     <div class="container-fluid mt-3 mb-3">
-        <h3>This is for alert label</h3>
-        <div class="alert alert-success">
-            <strong>Success!</strong> This alert box could indicate a successful or positive action.
-          </div>
-          <div class="alert alert-info">
-            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-          </div>
-          <div class="alert alert-warning">
-            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-          </div>
-          <div class="alert alert-danger alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-          </div>
-          <div class="alert alert-primary">
-            <strong>Primary!</strong> Indicates an important action.
-          </div>
-          <div class="alert alert-secondary">
-            <strong>Secondary!</strong> Indicates a slightly less important action.
-          </div>
-          <div class="alert alert-dark">
-            <strong>Dark!</strong> Dark grey alert.
-          </div>
-          <div class="alert alert-light">
-            <strong>Light!</strong> Light grey <a href="#" class="alert-link" >alert.</a>
-          </div>
+      <h3>This is for alert label</h3>
+      <div class="alert alert-success">
+        <strong>Success!</strong> This alert box could indicate a successful or
+        positive action.
+      </div>
+      <div class="alert alert-info">
+        <strong>Info!</strong> This alert box could indicate a neutral
+        informative change or action.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> This alert box could indicate a warning that
+        might need attention.
+      </div>
+      <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+        <strong>Danger!</strong> This alert box could indicate a dangerous or
+        potentially negative action.
+      </div>
+      <div class="alert alert-primary">
+        <strong>Primary!</strong> Indicates an important action.
+      </div>
+      <div class="alert alert-secondary">
+        <strong>Secondary!</strong> Indicates a slightly less important action.
+      </div>
+      <div class="alert alert-dark">
+        <strong>Dark!</strong> Dark grey alert.
+      </div>
+      <div class="alert alert-light">
+        <strong>Light!</strong> Light grey
+        <a href="#" class="alert-link">alert.</a>
+      </div>
     </div>
 
     <!-- Breadcrum -->
 
     <div class="container-fluid mt-3 mb-3 pt-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Index</a></li>
-              <li class="breadcrumb-item"><a href="#">Store</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
-        </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Index</a></li>
+          <li class="breadcrumb-item"><a href="#">Store</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
     </div>
 
     <!-- Button -->
 
     <div class="container-fluid mt-3 mb-3">
-        <h3>Button to press</h3>
-        <div class="container">
-            <button type="button" class="btn">Basic</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-link">Link</button>
-        </div>
-        
-        <div class="container">
-            <button type="button" class="btn btn-primary btn-block">This is full width button </button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">This is full width but big</button>
-            <button type="button" class="btn btn-primary btn-sm btn-block">This is full width but small</button>
-        </div>
-        
-        <div class="container">
-            <button type="button" class="btn btn-primary active">Active Primary</button>
-            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
-            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
-        </div>
-        
-        <div class="container">
-            <button type="button" class="btn btn-primary">
-                <span class="spinner-border spinner-border-sm"> </span>
-            buffering....
-            </button>
-            <button type="button" class="btn btn-primary" disabled>
-                <span class="spinner-border spinner-border-sm"></span>
-                u can't do shit
-            </button>
-            <button type="button" class="btn btn-primary" disabled>
-                <span class="spinner-grow spinner-grow-sm text-warning"></span>
-                 u can't do shit
-            </button>
-        </div>
-        
+      <h3>Button to press</h3>
+      <div class="container">
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
 
-        <div class="container">
-            <!-- 3 button are in the same group -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger">Don't</button>
-                <button type="button" class="btn btn-dark">Press</button>
-                <button type="button" class="btn btn-light">Me</button>
-            </div>
-    
-            <div class="btn-group-vertical">
-                <button type="button" class="btn btn-danger">Don't</button>
-                <button type="button" class="btn btn-dark">Press</button>
-                <button type="button" class="btn btn-light">Me</button>
-            </div>
+      <div class="container">
+        <button type="button" class="btn btn-primary btn-block">
+          This is full width button
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          This is full width but big
+        </button>
+        <button type="button" class="btn btn-primary btn-sm btn-block">
+          This is full width but small
+        </button>
+      </div>
+
+      <div class="container">
+        <button type="button" class="btn btn-primary active">
+          Active Primary
+        </button>
+        <button type="button" class="btn btn-primary" disabled>
+          Disabled Primary
+        </button>
+        <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+      </div>
+
+      <div class="container">
+        <button type="button" class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm"> </span>
+          buffering....
+        </button>
+        <button type="button" class="btn btn-primary" disabled>
+          <span class="spinner-border spinner-border-sm"></span>
+          u can't do shit
+        </button>
+        <button type="button" class="btn btn-primary" disabled>
+          <span class="spinner-grow spinner-grow-sm text-warning"></span>
+          u can't do shit
+        </button>
+      </div>
+
+      <div class="container">
+        <!-- 3 button are in the same group -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Don't</button>
+          <button type="button" class="btn btn-dark">Press</button>
+          <button type="button" class="btn btn-light">Me</button>
         </div>
+
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-danger">Don't</button>
+          <button type="button" class="btn btn-dark">Press</button>
+          <button type="button" class="btn btn-light">Me</button>
+        </div>
+      </div>
     </div>
 
     <!-- card -->
     <!-- normal card -->
     <div class="container-fluid mt-3 mb-3">
-        <div class="card">
-            <div class="card-header bg-primary">This is the deepweb link</div>
-            <div class="card-body bg-dark text-white">
-                <h4> Press this and u gonna die</h4>
-                <p class="cardtext">u have been warn</p>
-                <a href="#" class="card-link"> Link 1</a>
-                <a href="#" class="card-link"> Link 2</a>
-            </div>
-            <div class="card-footer bg-warning">Footer</div>
+      <div class="card">
+        <div class="card-header bg-primary">This is the deepweb link</div>
+        <div class="card-body bg-dark text-white">
+          <h4>Press this and u gonna die</h4>
+          <p class="cardtext">u have been warn</p>
+          <a href="#" class="card-link"> Link 1</a>
+          <a href="#" class="card-link"> Link 2</a>
         </div>
+        <div class="card-footer bg-warning">Footer</div>
+      </div>
     </div>
-    
+
     <!-- image card -->
     <div class="container-fluid mt-3 mb-3">
-        <h1 class="ml-3 mt-3">Honkai impact 3rd characters</h1>
-        <div class="card-deck mt-3 mb-3">
-            <div class="card">
-                <img src="HoF.png" alt="Card image" class="card-img-top" id="hof">
-                <div class="card-body m-0" id="card-description">
-                    <div class="card-title">The herrcher of Flame Scion</div>   
-                    <p class="card-text">Kiana Kaslana (Chinese: 琪亚娜·卡斯兰娜; Japanese: キアナ・カスラナ) is a playable character in Honkai Impact 3rd. She is the daughter of Cecilia Schariac and Siegfried Kaslana. She is currently enrolled at St. Freya High School to train as a Valkyrie alongside Raiden Mei and Bronya Zaychik. Though no matter where she goes, Kiana always manages to find trouble...</p>
-                </div>
-                <div class="card-footer bg-info"> 
-                    <a href="#" class="btn btn-dark"> Press to see more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="HoT.png" alt="Card image" class="card-img-bottom" id="hot">
-                <div class="card-body m-0" id="card-description">
-                    <div class="card-title">The herrcher of Thunder</div>
-                    <p class="card-text">Raiden Mei (Chinese: 雷电芽衣; Japanese: 雷電芽衣) is a playable character in Honkai Impact 3rd. The daughter of the prominant Raiden Ryoma, she has beautiful and demure looks. This, combined with her mastery of Bushido and Itto-ryo, make her a true incarnation of silk hiding steel. She attends St. Freya Academy alongside Kiana and Bronya. She normally does not use the tremendous power within her... except when dire circumstances bring it forth.</p>
-                </div>
-                <div class="card-footer bg-info">
-                    <a href="#" class="btn btn-dark"> Press to see more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="HoR.png" alt="Card image" class="card-img-bottom" id="hor">
-                <div class="card-body m-0" id="card-description">
-                    <div class="card-title">The herrcher of Reason</div>
-                    <p class="card-text">Bronya Zaychik (Chinese: 布洛妮娅·扎伊切克; Japanese: ブローニャ・ザイチク) is a playable character in Honkai Impact 3rd. Born in the frozen North of Siberia, later joins Kiana and Mei for Valkyria training at St. Freya Academy. She is one of the strongest humanoids that attends St. Freya, but her cold exterior betrays little of her inner thoughts.</p>
-                </div>
-                <div class="card-footer bg-info">
-                    <a href="#" class="btn btn-dark"> Press to see more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="HoS.png" alt="Card image" class="card-img-bottom" id="hos">
-                <div class="card-body m-0" id="card-description">
-                    <div class="card-title">The herrcher of Sentience</div>
-                    <p class="card-text">Fu Hua (Chinese: 符华; Japanese: フカ) is a playable character in Honkai Impact 3rd. The strict and studious class monitor of St. Freya High. Her techniques span thousands of years, her memories hundreds...</p>
-                </div>
-                <div class="card-footer bg-info">
-                    <a href="#" class="btn btn-dark"> Press to see more</a>
-                </div>
-            </div>
+      <h1 class="ml-3 mt-3">Honkai impact 3rd characters</h1>
+      <div class="card-deck mt-3 mb-3">
+        <div class="card">
+          <img src="HoF.png" alt="Card image" class="card-img-top" id="hof" />
+          <div class="card-body m-0" id="card-description">
+            <div class="card-title">The herrcher of Flame Scion</div>
+            <p class="card-text">
+              Kiana Kaslana (Chinese: 琪亚娜·卡斯兰娜; Japanese:
+              キアナ・カスラナ) is a playable character in Honkai Impact 3rd.
+              She is the daughter of Cecilia Schariac and Siegfried Kaslana. She
+              is currently enrolled at St. Freya High School to train as a
+              Valkyrie alongside Raiden Mei and Bronya Zaychik. Though no matter
+              where she goes, Kiana always manages to find trouble...
+            </p>
+          </div>
+          <div class="card-footer bg-info">
+            <a href="#" class="btn btn-dark"> Press to see more</a>
+          </div>
         </div>
+
+        <div class="card">
+          <img
+            src="HoT.png"
+            alt="Card image"
+            class="card-img-bottom"
+            id="hot"
+          />
+          <div class="card-body m-0" id="card-description">
+            <div class="card-title">The herrcher of Thunder</div>
+            <p class="card-text">
+              Raiden Mei (Chinese: 雷电芽衣; Japanese: 雷電芽衣) is a playable
+              character in Honkai Impact 3rd. The daughter of the prominant
+              Raiden Ryoma, she has beautiful and demure looks. This, combined
+              with her mastery of Bushido and Itto-ryo, make her a true
+              incarnation of silk hiding steel. She attends St. Freya Academy
+              alongside Kiana and Bronya. She normally does not use the
+              tremendous power within her... except when dire circumstances
+              bring it forth.
+            </p>
+          </div>
+          <div class="card-footer bg-info">
+            <a href="#" class="btn btn-dark"> Press to see more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="HoR.png"
+            alt="Card image"
+            class="card-img-bottom"
+            id="hor"
+          />
+          <div class="card-body m-0" id="card-description">
+            <div class="card-title">The herrcher of Reason</div>
+            <p class="card-text">
+              Bronya Zaychik (Chinese: 布洛妮娅·扎伊切克; Japanese:
+              ブローニャ・ザイチク) is a playable character in Honkai Impact
+              3rd. Born in the frozen North of Siberia, later joins Kiana and
+              Mei for Valkyria training at St. Freya Academy. She is one of the
+              strongest humanoids that attends St. Freya, but her cold exterior
+              betrays little of her inner thoughts.
+            </p>
+          </div>
+          <div class="card-footer bg-info">
+            <a href="#" class="btn btn-dark"> Press to see more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="HoS.png"
+            alt="Card image"
+            class="card-img-bottom"
+            id="hos"
+          />
+          <div class="card-body m-0" id="card-description">
+            <div class="card-title">The herrcher of Sentience</div>
+            <p class="card-text">
+              Fu Hua (Chinese: 符华; Japanese: フカ) is a playable character in
+              Honkai Impact 3rd. The strict and studious class monitor of St.
+              Freya High. Her techniques span thousands of years, her memories
+              hundreds...
+            </p>
+          </div>
+          <div class="card-footer bg-info">
+            <a href="#" class="btn btn-dark"> Press to see more</a>
+          </div>
+        </div>
+      </div>
     </div>
-        
+
     <!-- Carousel -->
-    <div class="container my-3"  >
-        <h1>Honkai impact 3rd wallpaper</h1>
-        <div id="wallpaper" class="carousel slide" data-ride="carousel" style="width: 1280px; height: 720px;">
+    <div class="container my-3">
+      <h1>Honkai impact 3rd wallpaper</h1>
+      <div
+        id="wallpaper"
+        class="carousel slide"
+        data-ride="carousel"
+        style="width: 100%; height: 720px"
+      >
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#wallpaper" data-slide-to="0" class="active"></li>
+          <li data-target="#wallpaper" data-slide-to="1"></li>
+          <li data-target="#wallpaper" data-slide-to="2"></li>
+        </ul>
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#wallpaper" data-slide-to="0" class="active"></li>
-                <li data-target="#wallpaper" data-slide-to="1"></li>
-                <li data-target="#wallpaper" data-slide-to="2"></li>
-            </ul>
-            
-            <!-- The slideshow -->
-            <div class="carousel-inner my-3">
-                <div class="carousel-item active">
-                    <img src="wp1.png" alt="Wallpaper 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="wp2.png" alt="Wallpaper 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="wp3.png" alt="Wallpaper 3">
-                </div>
-            </div>
-
-            <!-- Control -->
-            <a class="carousel-control-prev" href="#wallpaper" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#wallpaper" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+        <!-- The slideshow -->
+        <div class="carousel-inner my-3">
+          <div class="carousel-item active">
+            <img src="wp1.png" alt="Wallpaper 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="wp2.png" alt="Wallpaper 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="wp3.png" alt="Wallpaper 3" />
+          </div>
         </div>
+
+        <!-- Control -->
+        <a class="carousel-control-prev" href="#wallpaper" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#wallpaper" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
-    
+
     <!-- Dropdown -->
     <div class="container my-3">
-        <h1>Dropdown button</h1>
-        <div class="dropdown dropleft float-right">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button</button>
-            <div class="dropdown-menu">
-                <h5 class="dropdown-header">Header 1</h5>
-                <a href="#" class="dropdown-item">Plz</a>
-                <a href="#" class="dropdown-item">Don't</a>
-                <a href="#" class="dropdown-item">Chose me</a>
-                <div class="dropdown-divider"></div>
-                <h5 class="dropdown-header">Header 2</h5>
-                <a href="#" class="dropdown-item"> Chose me!</a>
-            </div>
+      <h1>Dropdown button</h1>
+      <div class="dropdown dropleft float-right">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Button
+        </button>
+        <div class="dropdown-menu">
+          <h5 class="dropdown-header">Header 1</h5>
+          <a href="#" class="dropdown-item">Plz</a>
+          <a href="#" class="dropdown-item">Don't</a>
+          <a href="#" class="dropdown-item">Chose me</a>
+          <div class="dropdown-divider"></div>
+          <h5 class="dropdown-header">Header 2</h5>
+          <a href="#" class="dropdown-item"> Chose me!</a>
         </div>
+      </div>
 
-        <div class="dropdown dropright">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button</button>
-            <div class="dropdown-menu">
-                <h5 class="dropdown-header">Header 1</h5>
-                <a href="#" class="dropdown-item">Plz</a>
-                <a href="#" class="dropdown-item">Don't</a>
-                <a href="#" class="dropdown-item">Chose me</a>
-                <div class="dropdown-divider"></div>
-                <h5 class="dropdown-header">Header 2</h5>
-                <a href="#" class="dropdown-item"> Chose me!</a>
-            </div>
+      <div class="dropdown dropright">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Button
+        </button>
+        <div class="dropdown-menu">
+          <h5 class="dropdown-header">Header 1</h5>
+          <a href="#" class="dropdown-item">Plz</a>
+          <a href="#" class="dropdown-item">Don't</a>
+          <a href="#" class="dropdown-item">Chose me</a>
+          <div class="dropdown-divider"></div>
+          <h5 class="dropdown-header">Header 2</h5>
+          <a href="#" class="dropdown-item"> Chose me!</a>
         </div>
+      </div>
     </div>
 
     <!-- Modal -->
     <div class="container my-3">
-        <h1>Modal</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rickroll"> Press this for free Robux</button>  
-        <div class="modal fade" id="rickroll">    
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Ay congrazt</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-          
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        Neva gonna give u up <br>
-                        Neva gonna let u down <br>
-                        Neva gonna let u around and desert u <br>
-                        ............  <br>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque tempore praesentium pariatur quod voluptatibus ipsam dicta mollitia. Ullam voluptas illum laudantium atque, nam, mollitia iusto nesciunt enim id molestias omnis vel cum! Eos fuga dicta ratione tempore, quae labore atque aliquid. Dolore atque molestiae earum quisquam error a quis esse eligendi, sint praesentium, excepturi ab ut assumenda repellendus, voluptatem rerum alias quibusdam! Et amet vero minima culpa expedita ab quae repellendus voluptas! Quibusdam vel, adipisci laborum ab architecto officia! Quaerat suscipit obcaecati eius ut minus veritatis id, molestiae aut corporis nesciunt odit saepe officiis nemo veniam natus dolorum optio quis! <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur dicta tempora similique! Maxime beatae vitae tempore nostrum consequuntur praesentium amet eos ullam voluptates ut cupiditate, repellat veniam, veritatis voluptatem eaque quia dolor corporis, excepturi debitis in expedita. Suscipit libero modi optio iusto placeat sit adipisci quas doloremque, voluptatum aut eligendi alias sapiente cumque architecto unde eum nobis quibusdam sequi quaerat nam officiis necessitatibus accusantium! Inventore quo commodi nihil explicabo recusandae quibusdam itaque, enim beatae, a veniam nesciunt voluptatem cum in vel corrupti neque sequi! Placeat harum, aut officia magnam fugit assumenda vero odio aliquid, nisi perferendis tempora sed beatae <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum dolores officia itaque nobis perferendis eligendi beatae blanditiis ab quod, quisquam assumenda, reprehenderit asperiores laudantium, iste minus! Vitae aliquid aspernatur illo vel distinctio non quasi quos. Natus cupiditate in quasi atque est modi, necessitatibus odio! Eligendi praesentium tempora ad autem, pariatur delectus ipsam provident dicta nulla amet consequuntur. Tenetur voluptates et maxime repellendus, fugiat minima ducimus saepe cupiditate, neque, ea recusandae. Praesentium in saepe sint dignissimos commodi a quo iusto fuga at sunt officiis sed nesciunt, sapiente, ipsam perferendis tenetur tempore iste repellat vitae dolores distinctio impedit doloremque animi amet? <br>
-                    </div>
-          
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+      <h1>Modal</h1>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#rickroll"
+      >
+        Press this for free Robux
+      </button>
+      <div class="modal fade" id="rickroll">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Ay congrazt</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
             </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Neva gonna give u up <br />
+              Neva gonna let u down <br />
+              Neva gonna let u around and desert u <br />
+              ............ <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque tempore praesentium pariatur quod voluptatibus ipsam
+              dicta mollitia. Ullam voluptas illum laudantium atque, nam,
+              mollitia iusto nesciunt enim id molestias omnis vel cum! Eos fuga
+              dicta ratione tempore, quae labore atque aliquid. Dolore atque
+              molestiae earum quisquam error a quis esse eligendi, sint
+              praesentium, excepturi ab ut assumenda repellendus, voluptatem
+              rerum alias quibusdam! Et amet vero minima culpa expedita ab quae
+              repellendus voluptas! Quibusdam vel, adipisci laborum ab
+              architecto officia! Quaerat suscipit obcaecati eius ut minus
+              veritatis id, molestiae aut corporis nesciunt odit saepe officiis
+              nemo veniam natus dolorum optio quis! <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis consequuntur dicta tempora similique! Maxime beatae
+              vitae tempore nostrum consequuntur praesentium amet eos ullam
+              voluptates ut cupiditate, repellat veniam, veritatis voluptatem
+              eaque quia dolor corporis, excepturi debitis in expedita. Suscipit
+              libero modi optio iusto placeat sit adipisci quas doloremque,
+              voluptatum aut eligendi alias sapiente cumque architecto unde eum
+              nobis quibusdam sequi quaerat nam officiis necessitatibus
+              accusantium! Inventore quo commodi nihil explicabo recusandae
+              quibusdam itaque, enim beatae, a veniam nesciunt voluptatem cum in
+              vel corrupti neque sequi! Placeat harum, aut officia magnam fugit
+              assumenda vero odio aliquid, nisi perferendis tempora sed beatae
+              <br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum
+              dolores officia itaque nobis perferendis eligendi beatae
+              blanditiis ab quod, quisquam assumenda, reprehenderit asperiores
+              laudantium, iste minus! Vitae aliquid aspernatur illo vel
+              distinctio non quasi quos. Natus cupiditate in quasi atque est
+              modi, necessitatibus odio! Eligendi praesentium tempora ad autem,
+              pariatur delectus ipsam provident dicta nulla amet consequuntur.
+              Tenetur voluptates et maxime repellendus, fugiat minima ducimus
+              saepe cupiditate, neque, ea recusandae. Praesentium in saepe sint
+              dignissimos commodi a quo iusto fuga at sunt officiis sed
+              nesciunt, sapiente, ipsam perferendis tenetur tempore iste
+              repellat vitae dolores distinctio impedit doloremque animi amet?
+              <br />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Form -->
     <div class="container-fluid my-3">
-        <h1 class="mt-3 ml-2">Form Stack</h1>
-        <div class="container">
-            <form action="#">
-                <div class="form-group">
-                    <label for="creid">Input your credit card number</label>
-                    <input type="number" class="form-control" placeholder="Credit card number" id="creid">
-                </div>
-                
-                <div class="form-group">
-                    <label for="ccv">Enter your CVV</label>
-                    <input type="password" class="form-control" placeholder="CVV" id="cvv">
-                </div>
-    
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="foreign"> Can be use in foreign ?
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-        
+      <h1 class="mt-3 ml-2">Form Stack</h1>
+      <div class="container">
+        <form action="#">
+          <div class="form-group">
+            <label for="creid">Input your credit card number</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Credit card number"
+              id="creid"
+            />
+          </div>
 
-        <h1 class="mt-3 ml-2">Form inline</h1>
-        <div class="container">
-            <form action="#" class="form-inline mt-3">
-                    <label for="email">Email</label>
-                    <input type="emal" class="form-control mb-2 mr-sm-2" placeholder="Email" id="email" >
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Password" id="password">
-                    <div class="form-check mb-2 mr-sm-2">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"> Remember me 
-                        </label>
-                    </div>
-                    <button class="btn btn-primary mb-2" type="submit">Submit</button>
-            </form>
-        </div>
+          <div class="form-group">
+            <label for="ccv">Enter your CVV</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="CVV"
+              id="cvv"
+            />
+          </div>
 
-        <h1 class="mt-3 ml-2">Form Grid</h1>
-        <div class="container">
-            <form>
-                <div class="form-row my-3">
-                    <div class="col">
-                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="col">
-                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
-                    </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </form>
-        </div>
-        
-        <h1 class="mt-3 ml-2">Validation form</h1>
-        <div class="container">
-            <form action="#" class="needs-validation">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Input user name" name="username" required>
-                    <div class="valid-feedback">So u aren't a bot, is it ?</div>
-                    <div class="invalid-feedback">Ay Ay, u forgot to input your name, sir</div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Input use password" name="password" required>
-                    <div class="valid-feedback">Hmm, interesting u want your password is ***** ?</div>
-                    <div class="invalid-feedback">Psss, u forgot to fillin password</div>
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="contrack" required>Tick this if u wanna sign the contract....
-                        <div class="valid-feedback">So, there's no way back now</div>
-                        <div class="invalid-feedback">This contract is mandatory so u can't ignore this</div>
-                    </label>
-                </div>
-                <button class="btn btn-primary" type="submit">Sign contract</button>
-            </form>
-        </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" name="foreign" />
+              Can be use in foreign ?
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
-        <script>
-            // Disable form submissions if there are invalid fields
-            (function() {
-              'use strict';
-              window.addEventListener('load', function() {
-                // Get the forms we want to add validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                  form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                  }, false);
-                });
-              }, false);
-            })();
-        </script>
+      <h1 class="mt-3 ml-2">Form inline</h1>
+      <div class="container">
+        <form action="#" class="form-inline mt-3">
+          <label for="email">Email</label>
+          <input
+            type="emal"
+            class="form-control mb-2 mr-sm-2"
+            placeholder="Email"
+            id="email"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control mb-2 mr-sm-2"
+            placeholder="Password"
+            id="password"
+          />
+          <div class="form-check mb-2 mr-sm-2">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" /> Remember me
+            </label>
+          </div>
+          <button class="btn btn-primary mb-2" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <h1 class="mt-3 ml-2">Form Grid</h1>
+      <div class="container">
+        <form>
+          <div class="form-row my-3">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                name="email"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+                name="password"
+              />
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <h1 class="mt-3 ml-2">Validation form</h1>
+      <div class="container">
+        <form action="#" class="needs-validation">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Input user name"
+              name="username"
+              required
+            />
+            <div class="valid-feedback">So u aren't a bot, is it ?</div>
+            <div class="invalid-feedback">
+              Ay Ay, u forgot to input your name, sir
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Input use password"
+              name="password"
+              required
+            />
+            <div class="valid-feedback">
+              Hmm, interesting u want your password is ***** ?
+            </div>
+            <div class="invalid-feedback">
+              Psss, u forgot to fillin password
+            </div>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="contrack"
+                required
+              />Tick this if u wanna sign the contract....
+              <div class="valid-feedback">So, there's no way back now</div>
+              <div class="invalid-feedback">
+                This contract is mandatory so u can't ignore this
+              </div>
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Sign contract</button>
+        </form>
+      </div>
+
+      <script>
+        // Disable form submissions if there are invalid fields
+        (function () {
+          "use strict";
+          window.addEventListener(
+            "load",
+            function () {
+              // Get the forms we want to add validation styles to
+              var forms = document.getElementsByClassName("needs-validation");
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                  form.addEventListener(
+                    "submit",
+                    function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add("was-validated");
+                    },
+                    false
+                  );
+                }
+              );
+            },
+            false
+          );
+        })();
+      </script>
     </div>
 
-    <!-- navigation bar --> 
+    <!-- navigation bar -->
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- logo -->
+      <a href="#" class="navbar-brand">
+        <img src="img.png" alt="logo" style="width: 150px" />
+      </a>
 
-        <!-- logo -->
-        <a href="#" class="navbar-brand">
-            <img src="img.png" alt="logo" style="width:150px">
-        </a>
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#elevator"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elevator">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- links -->
-        <div class="collapse navbar-collapse" id="elevator">
-            <ul class="navbar-nav" id="elevator">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">To Asgar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">To middle Earth</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">To Hell</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
-                Click to see more
-            </a>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">4 th</a>
-                <a href="#" class="dropdown-item">5 th</a>
-                <a href="#" class="dropdown-item">6 th</a>
-            </div>
+      <!-- links -->
+      <div class="collapse navbar-collapse" id="elevator">
+        <ul class="navbar-nav" id="elevator">
+          <li class="nav-item">
+            <a href="#" class="nav-link">To Asgar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">To middle Earth</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">To Hell</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <li class="nav-item dropdown">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            Click to see more
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">4 th</a>
+            <a href="#" class="dropdown-item">5 th</a>
+            <a href="#" class="dropdown-item">6 th</a>
+          </div>
         </li>
-        </div>
-        
+      </div>
     </nav>
-</body>
+  </body>
 </html>
