@@ -1,0 +1,387 @@
+
+/*Font*/
+pmain {
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p1 {
+    background-color: black;
+    color: white;
+    border: 5px solid dodgerblue;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+pgoogle{
+    font-size: 20px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+/*Background*/
+body {
+    background-image: url("blackscreen.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+/*Box model*/
+div.box {
+    width: 500px;
+    border: 9px solid whitesmoke;
+    padding: 20px;
+    margin: 50px;
+}
+/*Position*/
+div.static {
+    color: white;
+    position: static;
+    text-align: center;
+    border: 3px solid #ecf0bc50;
+}
+div.relative{
+    position: relative;
+    color: white;
+    width: 400px;
+    height: 200px;
+    border: 3px solid white;
+}
+div.fixed {
+    position: fixed;
+    color: white;
+    top: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid red;
+}
+div.absolute{
+    position: absolute;
+    color: white;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+}
+div.sticky {
+    position: sticky;
+    color: white;
+    text-align: center;
+    top: 0;
+    background-color: green;
+    border: 3px solid #0af10a50;
+}
+/*Box Shadow*/
+div.BoxShadow1{
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px red;
+}
+div.BoxShadow2{
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px red, 5px 5px blue;
+}
+div.BoxShadow3{
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px red, 10px 10px blue;
+}
+div.BoxShadow4{
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px red, 10px 10px blue, 15px 15px green, 20px 20px white;
+}
+div.polaroid {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #e0e0e0;
+}
+div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    transform: rotate(-8deg);
+}
+/* Form */
+* {
+    box-sizing: border-box;
+}
+div.container {
+    height: auto;
+    width: auto;
+    border: 5px solid green;
+    background-color: #f2f2f249;
+    padding: 20px;
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    color: white;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: rgb(48, 194, 19);
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    color: white;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password]:focus {
+    background-color: rgb(194, 45, 19);
+}
+
+input[type=number]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #218169;
+    color: black;
+    box-sizing: border-box;
+}
+
+input[type=number]:focus {
+    background-color: rgba(170, 199, 164, 0.459);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=submit] {
+    background-color: #d40909;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit] :hover {
+    background-color: white;
+    color: black;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Grid Layout */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-inline-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-inline-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-colgap-container {
+    display: grid;
+    /* grit-gap: 50px; OR grit-row-gap: 50px; */
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #26e236;
+    padding: 10px;
+}
+  
+.grid-colgap-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Animation */
+div.animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(0, 0, 255);}
+}
+
+div.animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+div.animation3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+div.animation4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+  
+@keyframes example4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Transitions */
+div.transition {
+    width: 100px;
+    height: 100px;
+    background: rgb(245, 244, 244);
+    transition: width 2s;
+}
+  
+div.transition:hover {
+    width: 696px;
+    height: 696px;
+}
+
+
