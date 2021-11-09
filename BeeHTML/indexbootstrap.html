@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Bootstrap</title>
      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 
 <body style="background-color: grey;">
@@ -1496,7 +1497,7 @@
       <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
 
       <br style="padding-top: 70px ;">
-      
+
       <div class="toast" data-autohide="false">
         <div class="toast-header">
           <strong class="mr-auto text-primary">Toast Header</strong>
@@ -1565,6 +1566,286 @@
       toastList.forEach(toast => toast.show())
     }
   </script>
+  </section>
+
+  <section>
+    <!-- color -->
+    <div class="container" style="background-color: white;">
+      <h1>Color</h1>
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+      <p class="text-secondary">Secondary text.</p>
+      <p class="text-dark">This text is dark grey.</p>
+      <p class="text-body">Default body color (often black).</p>
+      <p class="text-light">This text is light grey (on white background).</p>
+      <p class="text-white">This text is white (on white background).</p>
+
+      <br>
+
+      <h2>Opacity Text Colors</h2>
+      <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+      <p class="text-black-50">Black text with 50% opacity on white background</p>
+      <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+
+      <h2>Contextual Backgrounds</h2>
+      <p>Use the contextual background classes to provide "meaning through colors".</p>
+      <p>Note that you can also add a .text-* class if you want a different text color:</p>
+      <p class="bg-primary text-white">This text is important.</p>
+      <p class="bg-success text-white">This text indicates success.</p>
+      <p class="bg-info text-white">This text represents some information.</p>
+      <p class="bg-warning text-white">This text represents a warning.</p>
+      <p class="bg-danger text-white">This text represents danger.</p>
+      <p class="bg-secondary text-white">Secondary background color.</p>
+      <p class="bg-dark text-white">Dark grey background color.</p>
+      <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+  </section>
+
+  <section class="container bg-light" >
+    <!-- Flex -->
+    <h1>Bootstrap Flex</h1>
+    <div class="d-flex p-3 bg-secondary text-white">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <!-- inline flexbox container, -->
+    <h5>inline flexbox container,</h5>
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <!-- Horizontal Direction -->
+    <br>
+    <h5>Horizontal Direction</h5>
+    <div class="d-flex flex-row bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    
+    <div class="d-flex flex-row-reverse bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <!-- Vertical Direction  -->
+    <br>
+    <h5> Vertical Direction</h5>
+    <div class="d-flex flex-column">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <div class="d-flex flex-column-reverse">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <br>
+    <!-- Justify Content  -->
+    <h5> Justify Content </h5>
+    <p>Use the .justify-content-* classes to change the alignment of flex items. Choose from start (default), end, center, between or around:</p>
+    <div class="d-flex justify-content-start bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-end bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-center bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-between bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-around bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <!-- Fill / Equal Widths -->
+    <h2>Fill / Equal Widths</h2>
+    <p>Use .flex-fill on flex items to force them into equal widths:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 flex-fill bg-info">Flex item 1</div>
+      <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+      <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+    </div>
+    <p>Example without .flex-fill:</p>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Grow</h2>
+    <p>Use .flex-grow-1 on a flex item to take up the rest of the space:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Order</h2>
+    <p>Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 5:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 order-3 bg-info">Flex item 1</div>
+      <div class="p-2 order-2 bg-warning">Flex item 2</div>
+      <div class="p-2 order-1 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Auto Margins</h2>
+    <p>Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items to the left):</p>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2 ms-auto bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2  bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 me-auto bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h5>wrap</h5>
+    <div class="d-flex flex-wrap">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+
+    <div class="d-flex flex-wrap-reverse">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+
+    <div class="d-flex flex-nowrap">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+    <h2>Align Content</h2>
+    <p>Control the vertical alignment of gathered flex items with the .align-content-* classes.</p>
+    <p><strong>Note:</strong> This example does not look good on a small devices. Also note that these classes have no effect on single rows of flex items.</p>
+    <p>.align-content-start (default):</p>
+    <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+    
+    </div>
+    <br>
+    <p>.align-content-end:</p>
+    <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
+      <div class="p-2 border">Flex item 9</div>
+      
+    </div>
+    <br>
+    <p>.align-content-center:</p>
+    <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
+      
+    </div>
+    <br>
+    <p>.align-content-around:</p>
+    <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
+    
+    </div>
+    <br>
+    <p>.align-content-stretch:</p>
+    <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      
+    </div>
+    <br>
+  </div>
+  <h2>Align Self</h2>
+  <p>Control the vertical alignment of a specific flex item with the .align-self-* classes.</p>
+  <p>.align-self-start:</p>
+  <div class="d-flex bg-light" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border align-self-start">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+  </div>
+  <br>
+  <p>.align-self-end:</p>
+  <div class="d-flex bg-light" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border align-self-end">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+  </div>
+  <br>
+
+  </section>
+  <section>
+    <h1>Display Headings</h1>
+    <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+    <div class="container">
+      <h1>Icon</h1>
+      <p>Others:</p>
+      <i class="fas fa-cloud"></i>
+      <i class="fas fa-coffee"></i>
+      <i class="fas fa-car"></i>
+      <i class="fas fa-file"></i>
+      <i class="fas fa-bars"></i>
+    </div>
   </section>
   
 
