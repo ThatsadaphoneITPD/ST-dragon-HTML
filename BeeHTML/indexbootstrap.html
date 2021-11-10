@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Bootstrap</title>
      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -15,969 +16,1837 @@
 </head>
 
 <body style="background-color: grey;">
-    <section style="background-color: honeydew;">
-        <div>
-            <h1>4.1 Bootstrap source code</h1>
-            <p>
-                The Bootstrap source code download includes the precompiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:
-                <br>
-                Copy
-                bootstrap/
-                ├── dist/
-                │   ├── css/
-                │   └── js/
-                ├── site/
-                │   └──docs/
-                │      └── 4.5/
-                │          └── examples/
-                ├── js/
-                └── scss/
-                <br>
-                The scss/ and js/ are the source code for our CSS and JavaScript. The dist/ folder includes everything listed in the precompiled download section above. The site/docs/ folder includes the source code for our documentation, and examples/ of Bootstrap usage. Beyond that, any other included file provides support for packages, license information, and development.
-            </p>
-        </div>
-    </section>
+  <section style="background-color: honeydew;">
+      <div>
+          <h1>4.1 Bootstrap source code</h1>
+          <p>
+              The Bootstrap source code download includes the precompiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:
+              <br>
+              Copy
+              bootstrap/
+              ├── dist/
+              │   ├── css/
+              │   └── js/
+              ├── site/
+              │   └──docs/
+              │      └── 4.5/
+              │          └── examples/
+              ├── js/
+              └── scss/
+              <br>
+              The scss/ and js/ are the source code for our CSS and JavaScript. The dist/ folder includes everything listed in the precompiled download section above. The site/docs/ folder includes the source code for our documentation, and examples/ of Bootstrap usage. Beyond that, any other included file provides support for packages, license information, and development.
+          </p>
+      </div>
+  </section>
 
-    <section>
-        <h1>4.1 Bootstrap Layout</h1>
-    <div class="container" style="background-color: aqua;">
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer </h2>
-    </div>
-    <div class="container-sm" style="background-color: blueviolet;"> 
-        Contrainer-sm 100% wide until small breakpoint
-    </div>
-    <br>
-    <div class="container-md" style="background-color: blueviolet;"> 
-        Contrainer-md 100% wide until medium breakpoint
-    </div>
-    <br>
-    <div class="container-lg" style="background-color: blueviolet;">
-        Contrainer-lg 100% wide until large breakpoint
-    </div>
-    <br>
-    <div class="container-xl" style="background-color: blueviolet;"> 
-        <h2>Contrainer-Fluid </h2>
-        Contrainer-xl 100% wide until extra large breakpoint
-    </div>
+  <section>
+      <h1>4.1 Bootstrap Layout</h1>
+  <div class="container" style="background-color: aqua;">
+      <h1> bootstrap Layput</h1>
+      <h2>Contrainer </h2>
+  </div>
+  <div class="container-sm" style="background-color: blueviolet;"> 
+      Contrainer-sm 100% wide until small breakpoint
+  </div>
+  <br>
+  <div class="container-md" style="background-color: blueviolet;"> 
+      Contrainer-md 100% wide until medium breakpoint
+  </div>
+  <br>
+  <div class="container-lg" style="background-color: blueviolet;">
+      Contrainer-lg 100% wide until large breakpoint
+  </div>
+  <br>
+  <div class="container-xl" style="background-color: blueviolet;"> 
+      <h2>Contrainer-Fluid </h2>
+      Contrainer-xl 100% wide until extra large breakpoint
+  </div>
 
 
-    <div class="container-fluid" style="background-color: aqua;" >
-        <h1> bootstrap Layput</h1>
-        <h2>Contrainer-Fluid </h2>
-    </div>
-    
-    </section>
+  <div class="container-fluid" style="background-color: aqua;" >
+      <h1> bootstrap Layput</h1>
+      <h2>Contrainer-Fluid </h2>
+  </div>
+  
+  </section>
 
-    <section>
-        <h1>4.3 Grid</h1>
-        <h1>Bootstrap Grid use rom and horizontal col-sm-12 automatically width ( xs sm md lg xl - with # of columns(1-12 max option))</h1>
-        <div class="container" style="background-color: rgba(48, 250, 206, 0.25); padding-top: 20px;">
-            <div class="container" style="background-color: azure; padding: 20px;">
-                <div class="row" style="border: 0px solid black;">
-                  <div class="col" style="border: 2px solid black;">
-                    1 of 2
-                  </div>
-                  <div class="col" style="border: 2px solid black;">
-                    2 of 2
-                  </div>
+  <section>
+      <h1>4.3 Grid</h1>
+      <h1>Bootstrap Grid use rom and horizontal col-sm-12 automatically width ( xs sm md lg xl - with # of columns(1-12 max option))</h1>
+      <div class="container" style="background-color: rgba(48, 250, 206, 0.25); padding-top: 20px;">
+          <div class="container" style="background-color: azure; padding: 20px;">
+              <div class="row" style="border: 0px solid black;">
+                <div class="col" style="border: 2px solid black;">
+                  1 of 2
                 </div>
-                <div class="row" style="border: 0px solid black;">
-                  <div class="col" style="border: 2px solid black;">
-                    1 of 3
-                  </div>
-                  <div class="col" style="border: 2px solid black;">
-                    2 of 3
-                  </div>
-                  <div class="col" style="border: 2px solid black;">
-                    3 of 3
-                  </div>
-                </div>
-            </div>
-            <div class="container" style="margin-bottom: 20px;">
-                <div class="row" style="background-color: palevioletred;">
-                    <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
-                    <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
-                    <div class="col-sm-2" style="background-color: royalblue;"> two of three cloums</div>
-                    <div class="col-sm-12" style="background-color: seagreen;"> Three of three cloums</div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="container-sm">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-sm </div>
-                        <div class="col" style="background-color: #5e1921">.col</div>
-                        <div class="col" style="background-color: #104e4a">.col</div>
-                    </div>
-                </div>
-
-                <br>
-                
-                <div class="container-md" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
-                        <div class="col" style="background-color: #852a35">.col</div>
-                        <div class="col" style="background-color: #3d5b59">.col</div>
-                    </div>
-                </div>
-                <h1>Responsive classes</h1>
-                <div class="container-md" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
-                        <div class="col" style="background-color: #a32b39">.col</div>
-                        <div class="col" style="background-color: #17302e">.col</div>
-                    </div>
-                </div>
-                <div class="container-lg" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
-                        <div class="col" style="background-color: #B99095">.col</div>
-                        <div class="col" style="background-color: #3d5b59">.col</div>
-                    </div>
-                </div>
-                <div class="container-xl" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-xl</div>
-                        <div class="col" style="background-color: #a32b39">.col</div>
-                        <div class="col" style="background-color: #17302e">.col</div>
-                    </div>
-                </div>
-                <div class="container-fluid" style="margin-bottom: 20px;">
-                    <div class="row">
-                        <div class="col" style="background-color: #B5E5CF">.col of containe-fluid</div>
-                        <div class="col" style="background-color: #a32b39">.col</div>
-                        <div class="col" style="background-color: #17302e">.col</div>
-                    </div>
-                </div>
-            </div>
-            <div style="border-color: cadetblue; margin-top: 20px;">
-                <h1>Setting one column width</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2" style="background-color: #B5E5CF">.col-2 width</div>
-                        <div class="col-4" style="background-color: #a32b39">.col-4 width</div>
-                        <div class="col-5" style="background-color: #3a8a83">.col-8 width</div>
-                    </div>
-                </div>
-            </div>
-            
-            <h1>Variable width content</h1>
-            <div class="container">
-                <div class="row justify-content-md-center">
-                  <div class="col col-lg-2" style="border: 2px solid black;">
-                    1 of 3
-                  </div>
-                  <div class="col-md-auto" style="border: 2px solid black;">
-                    Variable width content
-                  </div>
-                  <div class="col col-lg-2" style="border: 2px solid black;">
-                    3 of 3
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col" style="border: 2px solid black;">
-                    1 of 3
-                  </div>
-                  <div class="col-md-auto" style="border: 2px solid black;">
-                    Variable width content
-                  </div>
-                  <div class="col col-lg-2" style="border: 2px solid black;">
-                    3 of 3
-                  </div>
-                </div>
-            </div>
-            <h1> Mix and match</h1>
-            <div class="container">
-                <div class="row" >
-                    <div class="col-md-8" style="border: 2px solid black;">.col-md-8</div>
-                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
-                  </div>
-                
-                  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                  <div class="row">
-                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
-                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
-                    <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
-                  </div>
-                
-                  <!-- Columns are always 50% wide, on mobile and desktop -->
-                  <div class="row">
-                    <div class="col-6" style="border: 2px solid black;">.col-6</div>
-                    <div class="col-6" style="border: 2px solid black;">.col-6</div>
-                </div>
-                <h1>Gutter</h1>
-                <div class="container px-lg-5">
-                    <div class="row mx-lg-n5" style="border: 2px solid black;">
-                      <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
-                      <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
-                    </div>
-                </div>
-                <h1>Row Column</h1>
-                <div class="container">
-                    <div class="row row-cols-3" style="border: 2px solid black;">
-                      <div class="col" style="border: 2px solid black;" >Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="border: 2px solid black;">
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                      <div class="col" style="border: 2px solid black;">Column</div>
-                    </div>
-                </div>
-                <h1>Alignment</h1>
-            
-                <div class="container">
-                    <div class="row">
-                      <div class="col align-self-start" style="border: 2px solid black;">
-                        One of three columns
-                      </div>
-                      <br>
-                      <div class="col align-self-center" style="border: 2px solid black;">
-                        One of three columns
-                      </div>
-                      <br>
-                      <div class="col align-self-end" style="border: 2px solid black;">
-                        One of three columns
-                      </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>4.4 Alerts</h2>
-            <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
-            <div class="alert alert-success">
-              <strong>Success!</strong> This alert box could indicate a successful or positive action.
-            </div>
-            <div class="alert alert-info">
-              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-            </div>
-            <div class="alert alert-warning">
-              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-            </div>
-            <div class="alert alert-danger">
-              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-            </div>
-            <div class="alert alert-primary">
-              <strong>Primary!</strong> Indicates an important action.
-            </div>
-            <div class="alert alert-secondary">
-              <strong>Secondary!</strong> Indicates a slightly less important action.
-            </div>
-            <div class="alert alert-dark">
-              <strong>Dark!</strong> Dark grey alert.
-            </div>
-            <div class="alert alert-light">
-              <strong>Light!</strong> Light grey alert.
-            </div>
-            <h1>Closing Alerts</h1>
-            <p>The button with class="close" and data-dismiss="alert" is used to close the alert box.</p>
-            <p>The alert-dismissible class adds some extra padding to the close button.</p>
-            <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Success!</strong> This alert box could indicate a successful or positive action.
-            </div>
-            <div class="alert alert-info alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-            </div>
-            <div class="alert alert-warning alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-            </div>
-            <div class="alert alert-danger alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-            </div>
-            <div class="alert alert-primary alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Primary!</strong> Indicates an important action.
-            </div>
-            <div class="alert alert-secondary alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Secondary!</strong> Indicates a slightly less important action.
-            </div>
-            <div class="alert alert-dark alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Dark!</strong> Dark grey alert.
-            </div>
-            <div class="alert alert-light alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Light!</strong> Light grey alert.
-            </div>
-            <h2>Animated Alerts</h2>
-            <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
-            <div class="alert alert-success alert-dismissible fade show">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Success!</strong> This alert box could indicate a successful or positive action.
-            </div>
-            <div class="alert alert-info alert-dismissible fade show">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h1>4.5 Breadcrumb</h1>
-        <h2>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h2>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">Home</li>
-                </ol>
-              </nav>
-              
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Library</li>
-                </ol>
-              </nav>
-              
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Library</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-              </nav>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h1>4.6 Button Styles</h1>
-            <h2>Bootstrap 4 provides different styles of buttons:</h2>
-            <button type="button" class="btn">Basic</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-link">Link</button>
-        </div>
-        <br>
-        <div class="container">
-            <h2>Button Elements</h2>
-            <a href="#" class="btn btn-info" role="button">Link Button</a>
-            <button type="button" class="btn btn-info">Button</button>
-            <input type="button" class="btn btn-info" value="Input Button">
-            <input type="submit" class="btn btn-info" value="Submit Button">
-        </div>
-         
-        <div class="container">
-            <h2>Button Outline</h2>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            <button type="button" class="btn btn-outline-success">Success</button>
-            <button type="button" class="btn btn-outline-info">Info</button>
-            <button type="button" class="btn btn-outline-warning">Warning</button>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-            <button type="button" class="btn btn-outline-dark">Dark</button>
-            <button type="button" class="btn btn-outline-light text-dark">Light</button>
-
-            <h2>Button Sizes</h2>
-            <button type="button" class="btn btn-primary btn-lg">Large</button>
-            <button type="button" class="btn btn-primary btn-md">Default</button>
-            <button type="button" class="btn btn-primary btn-sm">Small</button>
-
-            <br>
-            <button type="button" class="btn btn-primary btn-block">Button 1</button>
-            <button type="button" class="btn btn-success btn-block">Button 2</button>
-            <br>
-            <button type="button" class="btn btn-primary">Primary BTN</button>
-            <button type="button" class="btn btn-primary active">Active Primary</button>
-            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
-            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
-        </div>
-        <div class="container">
-            <h2>Spinner Buttons</h2>
-            <p>Add spinners to buttons:</p>
-                                                  
-            <button class="btn btn-primary">
-              <span class="spinner-border spinner-border-sm"></span>
-            </button>
-          
-            <button class="btn btn-primary">
-              <span class="spinner-border spinner-border-sm"></span>
-              Loading..
-            </button>
-            
-            <button class="btn btn-primary" disabled>
-              <span class="spinner-border spinner-border-sm"></span>
-              Loading..
-            </button>
-            
-            <button class="btn btn-primary" disabled>
-              <span class="spinner-grow spinner-grow-sm"></span>
-              Loading..
-            </button>
-        </div>
-        <div class="container">
-            <h1>Group Button</h1>
-            <div class="btn-group btn-group-md">
-                <button type="button" class="btn btn-primary">Apple</button>
-                <button type="button" class="btn btn-primary">Samsung</button>
-                <button type="button" class="btn btn-primary">Sony</button>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="btn-group-vertical">
-                <button type="button" class="btn btn-primary">Apple</button>
-                <button type="button" class="btn btn-primary">Samsung</button>
-                <button type="button" class="btn btn-primary">Sony</button>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary">Apple</button>
-                <button type="button" class="btn btn-primary">Samsung</button>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                     Sony
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Tablet</a>
-                    <a class="dropdown-item" href="#">Smartphone</a>
-                  </div>
+                <div class="col" style="border: 2px solid black;">
+                  2 of 2
                 </div>
               </div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary">Sonami</button>
-                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Heello</a>
-                    <a class="dropdown-item" href="#">DropDOwn</a>
+              <div class="row" style="border: 0px solid black;">
+                <div class="col" style="border: 2px solid black;">
+                  1 of 3
                 </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>4.7 Card</h1>
-        <div class="container">
-            <h2>Card Image</h2>
-            <div class="row">
-                <div class="col-lg-4 mx-auto" style="background-color: #B5E5CF;">
-                    <p>Image at the top (card-img-top):</p>
-                    <div class="card" style="width:300px">
-                      <img class="card-img-top" src="image/Head.png" alt="Card image" style="width:300px; height: 400px;">
-                      <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                      </div>
-                    </div>
+                <div class="col" style="border: 2px solid black;">
+                  2 of 3
                 </div>
-                <div class="col-lg-4 mx-auto" style="background-color: #852a35">
-                    <p>Image at the bottom (card-img-bottom):</p>
-                    <div class="card" style="width:300px">
-                    <div class="card-body">
-                        <h4 class="card-title">Jane Doe</h4>
-                        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                    <img class="card-img-bottom" src="image/puffin.jpg" alt="Card image" style="width:300px; height: 400px;">
-                    </div>                
+                <div class="col" style="border: 2px solid black;">
+                  3 of 3
                 </div>
-            </div>
+              </div>
           </div>
-        <div class="container">
-            <h2>Basic Card</h2>
-            <div class="card">
-              <div class="card-body">Basic card</div>
-            </div>
-        </div>
-        <div class="container">
-            <h2>Cards with Contextual Classes</h2>
-            <div class="card">
-              <div class="card-body">Basic card</div>
-            </div>
-            <br>
-            <div class="card bg-primary text-white">
-              <div class="card-body">Primary card</div>
-            </div>
-            <br>
-            <div class="card bg-success text-white">
-              <div class="card-body">Success card</div>
-            </div>
-            <br>
-            <div class="card bg-info text-white">
-              <div class="card-body">Info card</div>
-            </div>
-            <br>
-            <div class="card bg-warning text-white">
-              <div class="card-body">Warning card</div>
-            </div>
-            <br>
-            <div class="card bg-danger text-white">
-              <div class="card-body">Danger card</div>
-            </div>
-            <br>
-            <div class="card bg-secondary text-white">
-              <div class="card-body">Secondary card</div>
-            </div>
-            <br>
-            <div class="card bg-dark text-white">
-              <div class="card-body">Dark card</div>
-            </div>
-            <br>
-            <div class="card bg-light text-dark">
-              <div class="card-body">Light card</div>
-            </div>
-        </div>
-        <div class="container">
-            <h2>Cards Columns</h2>
-            <p>The .card-columns class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
-            <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
-            <div class="card-columns">
-              <div class="card bg-primary">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the first card</p>
-                </div>
+          <div class="container" style="margin-bottom: 20px;">
+              <div class="row" style="background-color: palevioletred;">
+                  <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
+                  <div class="col-sm" style="background-color: rebeccapurple;"> one of three cloums</div>
+                  <div class="col-sm-2" style="background-color: royalblue;"> two of three cloums</div>
+                  <div class="col-sm-12" style="background-color: seagreen;"> Three of three cloums</div>
               </div>
-              <div class="card bg-warning">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the second card</p>
-                </div>
-              </div>
-              <div class="card bg-success">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the third card</p>
-                </div>
-              </div>
-              <div class="card bg-danger">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the fourth card</p>
-                </div>
-              </div>  
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the fifth card</p>
-                </div>
-              </div>
-              <div class="card bg-info">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the sixth card</p>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="container">
-            <h2>Card Deck</h2>
-            <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
-
-            <div class="card-deck">
-              <div class="card bg-primary">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the first card</p>
-                </div>
+              <div class="container-sm">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-sm </div>
+                      <div class="col" style="background-color: #5e1921">.col</div>
+                      <div class="col" style="background-color: #104e4a">.col</div>
+                  </div>
               </div>
+
+              <br>
               
-              <div class="card bg-warning">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the second card</p>
-                </div>
+              <div class="container-md" style="margin-bottom: 20px;">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                      <div class="col" style="background-color: #852a35">.col</div>
+                      <div class="col" style="background-color: #3d5b59">.col</div>
+                  </div>
               </div>
-
-              <div class="card bg-success">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the third card</p>
-                </div>
+              <h1>Responsive classes</h1>
+              <div class="container-md" style="margin-bottom: 20px;">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                      <div class="col" style="background-color: #a32b39">.col</div>
+                      <div class="col" style="background-color: #17302e">.col</div>
+                  </div>
               </div>
-
-              <div class="card bg-danger">
-                <div class="card-body text-center">
-                  <p class="card-text">Some text inside the fourth card</p>
-                </div>
-              </div>  
-
-            </div>
+              <div class="container-lg" style="margin-bottom: 20px;">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-md</div>
+                      <div class="col" style="background-color: #B99095">.col</div>
+                      <div class="col" style="background-color: #3d5b59">.col</div>
+                  </div>
+              </div>
+              <div class="container-xl" style="margin-bottom: 20px;">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-xl</div>
+                      <div class="col" style="background-color: #a32b39">.col</div>
+                      <div class="col" style="background-color: #17302e">.col</div>
+                  </div>
+              </div>
+              <div class="container-fluid" style="margin-bottom: 20px;">
+                  <div class="row">
+                      <div class="col" style="background-color: #B5E5CF">.col of containe-fluid</div>
+                      <div class="col" style="background-color: #a32b39">.col</div>
+                      <div class="col" style="background-color: #17302e">.col</div>
+                  </div>
+              </div>
           </div>
-    </section>
-    <!-- Carousel -->
-    <section>
-        <h1>4.8 Carousel</h1>
-        
-        <div id="demo" class="container carousel slide" data-ride="carousel" style="width: 600px; height:300px;">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="image/Earth.jpg" alt="Los Angeles" style="width: 600px; height:300px;">
-                <div class="carousel-caption" >
-                  <h3>Earth</h3>
-                  <p>We love the Big Apple!</p>
-                </div> 
+          <div style="border-color: cadetblue; margin-top: 20px;">
+              <h1>Setting one column width</h1>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-2" style="background-color: #B5E5CF">.col-2 width</div>
+                      <div class="col-4" style="background-color: #a32b39">.col-4 width</div>
+                      <div class="col-5" style="background-color: #3a8a83">.col-8 width</div>
+                  </div>
               </div>
-              <div class="carousel-item">
-                <img src="image/Hero.jpg" alt="Chicago" style="width: 600px; height:300px;" >
-                <div class="carousel-caption" style="color: black;">
-                  <h3>Nice</h3>
-                  <p>it is Nice! the Big Apple!</p>
-                </div> 
-              </div>
-              <div class="carousel-item">
-                <img src="image/puffin.jpg" alt="New York" style="width: 600px; height:300px;">
-                <div class="carousel-caption" style="color: black;">
-                  <h3>Puffin</h3>
-                  <p>Last Puffin Ever!</p>
-                </div> 
-              </div>
-            </div>
-            
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </section>
-    <!-- Dropdown -->
-    <section>
-      <h1>Dropdown</h1>
-      
-      <div class="container">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </div>
+          
+          <h1>Variable width content</h1>
+          <div class="container">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2" style="border: 2px solid black;">
+                  1 of 3
+                </div>
+                <div class="col-md-auto" style="border: 2px solid black;">
+                  Variable width content
+                </div>
+                <div class="col col-lg-2" style="border: 2px solid black;">
+                  3 of 3
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="border: 2px solid black;">
+                  1 of 3
+                </div>
+                <div class="col-md-auto" style="border: 2px solid black;">
+                  Variable width content
+                </div>
+                <div class="col col-lg-2" style="border: 2px solid black;">
+                  3 of 3
+                </div>
+              </div>
+          </div>
+          <h1> Mix and match</h1>
+          <div class="container">
+              <div class="row" >
+                  <div class="col-md-8" style="border: 2px solid black;">.col-md-8</div>
+                  <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                </div>
+              
+                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                <div class="row">
+                  <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                  <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                  <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>
+                </div>
+              
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                <div class="row">
+                  <div class="col-6" style="border: 2px solid black;">.col-6</div>
+                  <div class="col-6" style="border: 2px solid black;">.col-6</div>
+              </div>
+              <h1>Gutter</h1>
+              <div class="container px-lg-5">
+                  <div class="row mx-lg-n5" style="border: 2px solid black;">
+                    <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
+                    <div class="col py-3 px-lg-5 border bg-light" style="border: 2px solid black;">Custom column padding</div>
+                  </div>
+              </div>
+              <h1>Row Column</h1>
+              <div class="container">
+                  <div class="row row-cols-3" style="border: 2px solid black;">
+                    <div class="col" style="border: 2px solid black;" >Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="border: 2px solid black;">
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                    <div class="col" style="border: 2px solid black;">Column</div>
+                  </div>
+              </div>
+              <h1>Alignment</h1>
+          
+              <div class="container">
+                  <div class="row">
+                    <div class="col align-self-start" style="border: 2px solid black;">
+                      One of three columns
+                    </div>
+                    <br>
+                    <div class="col align-self-center" style="border: 2px solid black;">
+                      One of three columns
+                    </div>
+                    <br>
+                    <div class="col align-self-end" style="border: 2px solid black;">
+                      One of three columns
+                    </div>
+                  </div>
+              </div>
+          </div>  
       </div>
-
-      <br>
-
+  </section>
+  <section>
       <div class="container">
-        <h1>Single button</h1>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+          <h2>4.4 Alerts</h2>
+          <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+          <div class="alert alert-success">
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+          </div>
+          <div class="alert alert-info">
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+          </div>
+          <div class="alert alert-warning">
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+          </div>
+          <div class="alert alert-danger">
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          </div>
+          <div class="alert alert-primary">
+            <strong>Primary!</strong> Indicates an important action.
+          </div>
+          <div class="alert alert-secondary">
+            <strong>Secondary!</strong> Indicates a slightly less important action.
+          </div>
+          <div class="alert alert-dark">
+            <strong>Dark!</strong> Dark grey alert.
+          </div>
+          <div class="alert alert-light">
+            <strong>Light!</strong> Light grey alert.
+          </div>
+          <h1>Closing Alerts</h1>
+          <p>The button with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+          <p>The alert-dismissible class adds some extra padding to the close button.</p>
+          <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+          </div>
+          <div class="alert alert-info alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+          </div>
+          <div class="alert alert-warning alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+          </div>
+          <div class="alert alert-danger alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          </div>
+          <div class="alert alert-primary alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Primary!</strong> Indicates an important action.
+          </div>
+          <div class="alert alert-secondary alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Secondary!</strong> Indicates a slightly less important action.
+          </div>
+          <div class="alert alert-dark alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Dark!</strong> Dark grey alert.
+          </div>
+          <div class="alert alert-light alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Light!</strong> Light grey alert.
+          </div>
+          <h2>Animated Alerts</h2>
+          <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
+          <div class="alert alert-success alert-dismissible fade show">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+          </div>
+          <div class="alert alert-info alert-dismissible fade show">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+          </div>
+      </div>
+  </section>
+  <section>
+      <div class="container">
+          <h1>4.5 Breadcrumb</h1>
+      <h2>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h2>
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+      </div>
+  </section>
+  <section>
+      <div class="container">
+          <h1>4.6 Button Styles</h1>
+          <h2>Bootstrap 4 provides different styles of buttons:</h2>
+          <button type="button" class="btn">Basic</button>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-link">Link</button>
+      </div>
+      <br>
+      <div class="container">
+          <h2>Button Elements</h2>
+          <a href="#" class="btn btn-info" role="button">Link Button</a>
+          <button type="button" class="btn btn-info">Button</button>
+          <input type="button" class="btn btn-info" value="Input Button">
+          <input type="submit" class="btn btn-info" value="Submit Button">
+      </div>
+        
+      <div class="container">
+          <h2>Button Outline</h2>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+          <button type="button" class="btn btn-outline-light text-dark">Light</button>
+
+          <h2>Button Sizes</h2>
+          <button type="button" class="btn btn-primary btn-lg">Large</button>
+          <button type="button" class="btn btn-primary btn-md">Default</button>
+          <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+          <br>
+          <button type="button" class="btn btn-primary btn-block">Button 1</button>
+          <button type="button" class="btn btn-success btn-block">Button 2</button>
+          <br>
+          <button type="button" class="btn btn-primary">Primary BTN</button>
+          <button type="button" class="btn btn-primary active">Active Primary</button>
+          <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+          <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+      </div>
+      <div class="container">
+          <h2>Spinner Buttons</h2>
+          <p>Add spinners to buttons:</p>
+                                                
+          <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+          </button>
+        
+          <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+          </button>
+          
+          <button class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+          </button>
+          
+          <button class="btn btn-primary" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Loading..
+          </button>
+      </div>
+      <div class="container">
+          <h1>Group Button</h1>
+          <div class="btn-group btn-group-md">
+              <button type="button" class="btn btn-primary">Apple</button>
+              <button type="button" class="btn btn-primary">Samsung</button>
+              <button type="button" class="btn btn-primary">Sony</button>
+          </div>
+      </div>
+      <br>
+      <div class="container">
+          <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary">Apple</button>
+              <button type="button" class="btn btn-primary">Samsung</button>
+              <button type="button" class="btn btn-primary">Sony</button>
+          </div>
+      </div>
+      <br>
+      <div class="container">
+          <div class="btn-group">
+              <button type="button" class="btn btn-primary">Apple</button>
+              <button type="button" class="btn btn-primary">Samsung</button>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sony
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tablet</a>
+                  <a class="dropdown-item" href="#">Smartphone</a>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Sonami</button>
+              <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                  <span class="caret"></span>
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Heello</a>
+                  <a class="dropdown-item" href="#">DropDOwn</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section>
+      <h1>4.7 Card</h1>
+      <div class="container">
+          <h2>Card Image</h2>
+          <div class="row">
+              <div class="col-lg-4 mx-auto" style="background-color: #B5E5CF;">
+                  <p>Image at the top (card-img-top):</p>
+                  <div class="card" style="width:300px">
+                    <img class="card-img-top" src="image/Head.png" alt="Card image" style="width:300px; height: 400px;">
+                    <div class="card-body">
+                      <h4 class="card-title">John Doe</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mx-auto" style="background-color: #852a35">
+                  <p>Image at the bottom (card-img-bottom):</p>
+                  <div class="card" style="width:300px">
+                  <div class="card-body">
+                      <h4 class="card-title">Jane Doe</h4>
+                      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                  </div>
+                  <img class="card-img-bottom" src="image/puffin.jpg" alt="Card image" style="width:300px; height: 400px;">
+                  </div>                
+              </div>
+          </div>
+        </div>
+      <div class="container">
+          <h2>Basic Card</h2>
+          <div class="card">
+            <div class="card-body">Basic card</div>
+          </div>
+      </div>
+      <div class="container">
+          <h2>Cards with Contextual Classes</h2>
+          <div class="card">
+            <div class="card-body">Basic card</div>
+          </div>
+          <br>
+          <div class="card bg-primary text-white">
+            <div class="card-body">Primary card</div>
+          </div>
+          <br>
+          <div class="card bg-success text-white">
+            <div class="card-body">Success card</div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">Info card</div>
+          </div>
+          <br>
+          <div class="card bg-warning text-white">
+            <div class="card-body">Warning card</div>
+          </div>
+          <br>
+          <div class="card bg-danger text-white">
+            <div class="card-body">Danger card</div>
+          </div>
+          <br>
+          <div class="card bg-secondary text-white">
+            <div class="card-body">Secondary card</div>
+          </div>
+          <br>
+          <div class="card bg-dark text-white">
+            <div class="card-body">Dark card</div>
+          </div>
+          <br>
+          <div class="card bg-light text-dark">
+            <div class="card-body">Light card</div>
+          </div>
+      </div>
+      <div class="container">
+          <h2>Cards Columns</h2>
+          <p>The .card-columns class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
+          <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+          <div class="card-columns">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the second card</p>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the third card</p>
+              </div>
+            </div>
+            <div class="card bg-danger">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the fourth card</p>
+              </div>
+            </div>  
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+              </div>
+            </div>
+            <div class="card bg-info">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the sixth card</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Card Deck</h2>
+          <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
+
+          <div class="card-deck">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+              </div>
+            </div>
+            
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the second card</p>
+              </div>
+            </div>
+
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the third card</p>
+              </div>
+            </div>
+
+            <div class="card bg-danger">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the fourth card</p>
+              </div>
+            </div>  
+
+          </div>
+        </div>
+  </section>
+  <!-- Carousel -->
+  <section>
+      <h1>4.8 Carousel</h1>
+      
+      <div id="demo" class="container carousel slide" data-ride="carousel" style="width: 600px; height:300px;">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/Earth.jpg" alt="Los Angeles" style="width: 600px; height:300px;">
+              <div class="carousel-caption" >
+                <h3>Earth</h3>
+                <p>We love the Big Apple!</p>
+              </div> 
+            </div>
+            <div class="carousel-item">
+              <img src="image/Hero.jpg" alt="Chicago" style="width: 600px; height:300px;" >
+              <div class="carousel-caption" style="color: black;">
+                <h3>Nice</h3>
+                <p>it is Nice! the Big Apple!</p>
+              </div> 
+            </div>
+            <div class="carousel-item">
+              <img src="image/puffin.jpg" alt="New York" style="width: 600px; height:300px;">
+              <div class="carousel-caption" style="color: black;">
+                <h3>Puffin</h3>
+                <p>Last Puffin Ever!</p>
+              </div> 
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </section>
+  <!-- Dropdown -->
+  <section>
+    <h1>Dropdown</h1>
+    
+    <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </div>
+    </div>
 
-      <br>
+    <br>
 
-      <div class="container">
-        <!-- Example single danger button -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Action
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
+    <div class="container">
+      <h1>Single button</h1>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </div>
+    </div>
 
-      <br>
+    <br>
 
-      <div class="container">
-        <!-- Example split danger button -->
-        <h1>Split button</h1>
-        <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of .dropdown-toggle-split for proper spacing around the dropdown caret.</p>
-        <div class="btn-group">
-          <button type="button" class="btn btn-success">Action</button>
-          <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
+    <div class="container">
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
       </div>
+    </div>
 
-      <br>
+    <br>
+
+    <div class="container">
+      <!-- Example split danger button -->
+      <h1>Split button</h1>
+      <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of .dropdown-toggle-split for proper spacing around the dropdown caret.</p>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Action</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="container">
+      <h1>Slize bth-lg (xs sm md lg xl)</h1>
       
-      <div class="container">
-        <h1>Slize bth-lg (xs sm md lg xl)</h1>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Large button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+
+      <!-- Small button groups (default and split) -->
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Small button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1>Drop up & right & left</h1>
+      <!-- Default dropup button -->
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <br>
+      <div class="btn-group dropright">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <br>
+      <div class="btn-group dropleft">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropup
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+
+      <br style="padding-bottom: 30px;">
+      <h1> Menu Item</h1>
+      <p> you can optionally use button elements in your dropdowns instead of just a. </p>
+
+      <h2>Active and Disabled</h2>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+          <a class="dropdown-item active" href="#">Active</a>
+          <a class="dropdown-item" href="#">Another link</a>
+          <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a>
+        </div>
+      </div>
+
+      <br style="padding-bottom: 30px;">
+      <h1> Responsive alignment Menu content Headers</h1>
+      <p> If you want to use responsive alignment, disable dynamic positioning by adding the data-display="static" attribute and use the responsive variation classes. </p>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+          Right-aligned but left aligned when large screen
+        </button>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+          <h5 class="dropdown-header">Dropdown header</h5>
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <!-- Stracked Form -->
+    <div class="container" style="margin-top: 50px;">
+      <h2>Stacked form</h2>
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Inline form -->
+
+    <div class="container" style="margin-top: 50px;">
+      <h2>Inline Form with Utilities</h2>
+      <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
+      <form class="form-inline" action="/action_page.php">
+        <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email">
+        <label for="pwd2" class="mb-2 mr-sm-2">Password:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="Enter password" name="pswd">
+        <div class="form-check mb-2 mr-sm-2">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="remember"> Remember me
+          </label>
+        </div>    
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
+
+    <!-- Form Row/Grid form-row -->
+    <div class="container">
+      <h2>Form Grid</h2>
+      <p>Create two form elements that appear side by side with .row and .col:</p>
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+
+    <!-- Form Validation -->
+    <div class="container" style="margin-top: 50px;">
+      <!-- Form Validation Fail -->
+      <h2>Form Validation Fail</h2>
+      <p>to indicate what's missing before submitting the form:</p>
+      <form action="/action_page.php" class="was-validated">
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Form Validation Success -->
+    <div class="container" style="margin-top: 50px;">
+      <h2>Form Validation Success</h2>
+      <p> which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
+      <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+      <form action="/action_page.php" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    
+    <!-- Form Grid -->
+    <div class="container" style="margin-top: 50px;">
+      <h2>Form Grid</h2>
+      <p>Create two form elements that appear side by side with .row and .col:</p>
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+
+    <br style="padding-top: 50px;">
+    
+
+    <!-- chooce file form -->
+    <div class="container">
+      <h1 >Form-control</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Example file input</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+      </form>
+    </div>
+
+    <!-- form control -->
+
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Default checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Second default radio
+            </label>
+          </div>
+
+
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+              <label class="form-check-label" for="mySwitch">
+                Dark Mode
+              </label>
+          </div>
+
+          <!-- Check inline -->
+          <h2>Check inline</h2>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+            <label class="form-check-label" for="inlineRadio1">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
         
-        <div class="btn-group">
-          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Large button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
         </div>
 
-        <!-- Small button groups (default and split) -->
-        <div class="btn-group">
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Small button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Example multiple select</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <!-- form sizing -->
+    <div class="container">
+      <h1>Form Sizing</h1>
+      <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+      <input class="form-control" type="text" placeholder="Default input">
+      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+    </div>
+    
+    <br style="padding-top: 50px;">
+
+    <!-- Readonly plain text -->
+    <div class="container">
+      <h1>Readonly plain text</h1>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+      </form>
+    </div>
+
+    <br style="padding-top: 50px;">
+    <!-- Range Input -->
+
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="formControlRange">Example Range input</label>
+          <input type="range" class="form-control-range" id="formControlRange">
+        </div>
+      </form>
+    </div>
+
+
+  </section>
+  
+  <section>
+    <div class="container">
+      <h1>Modal</h1>
+      <p>The Modal component is a dialog box/popup window that is displayed on top of the current page:</p>
+      <h2>Modal with fade animat Example</h2>
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal and fad 
+      </button><!-- The Modal -->
+
+      <!-- Fading medal : class ="modal fade" without fad class ="modal" -->
+      <div class="modal fade" id="myModal">
+        <!-- Modal basic: class="modal-dialog" -->
+        <!-- Modal Size can use as class="modal-dialog modal-lg" or modal-lg modal-lx modal-sm -->
+        <!-- Centered Modal Center the modal vertically and horizontally within the page, class="modal-dialog modal-dialog-centered" -->
+        <!-- Scrolling Modal alot of content inside the modal  to only scroll inside the modal, instead of the page itself, class="modal-dialog modal-dialog-scrollable" -->
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h3>Some text to enable scrolling..</h3>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              </p>
+              <p>
+                Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco
+              </p>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              </p>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              </p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <br style="padding-top: 50px;">
+    <!-- Navbar -->
+    <div class="container">
+      <!-- A grey horizontal navbar that becomes vertical on small screens -->
+      <h2>Navbar</h2>
+      <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link1</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+        </ul>
+        <!-- search bar -->
+        <form class="form-inline" style="position: absolute; left:  800px;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+    <br>
+    <div class="container">
+      <!-- Centered Navbar Add the .justify-content-center class="navbar navbar-expand-sm bg-light justify-content-center"-->
+      <h2> Centered Navbar</h2>
+      <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link1</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+        </ul>
+        </form>
+      </nav>
+    </div>
+     
+    <br>
+
+    <!-- Navbar center: class="navbar navbar-expand-sm bg-light justify-content-center" -->
+   
+
+    <div class="container">
+      <h2>Vertical Navbar</h2>
+      <nav class="navbar bg-light">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link3</a>
+          </li>
+        </ul>
+    </nav>
+    </div>
+
+    <br>
+    
+    <div class="container-fluid">
+      <!-- Navbar color schemes: class="navbar navbar-expand-sm bg-success navbar-dark" -->
+      <h2>Collapsing The Navigation Bar and Logo</h2>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <!-- Logo -->
+          <img src="image/Hero.jpg" alt="hero" width="40px" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Hero
+        </a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!-- Navbar active and disable -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Link</a>
+            </li>
+            <!-- Dropdowns in your navbar nav. Dropdown menus require a wrapping element for positioning, -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <!-- Bottum form -->
+            <form class="form-inline">
+              <button class="btn btn-outline-success" type="button">Main button</button>
+              <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+            </form>
+            <!-- Navbar Text -->
+            <span class="navbar-text">
+              text of an inline element
+            </span>
+            <!-- search bar -->
+            <form class="form-inline justify-content-end mx-4" style="padding-left: 50px;">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </ul>
+        </div>
+      </nav>
+
+      <br>
+      <!-- more navbar -->
+
+      <nav class="navbar navbar-expand-sm bg-light mb-3 justify-content-center bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/Shionne.png" style="width: 40px" class="rounded-pill">Shionne</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                  <span class="navbar-text">Hello</span>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link 1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link 2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link 3</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  Link
+                              </a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Zelda</a></li>
+                          <li><a class="dropdown-item" href="#">Another Zelda</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="d-sm-flex mx-4 ms-auto">
+                  <input class="form-control me-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary me-sm-2" type="button">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+    </div>
+  </section>
+  <!-- Pagination -->
+  <section>
+    
+    <div class="container">
+      <h1>Pagination</h1>
+      <nav aria-label="Page navigation example">
+        <!-- sizing class="pagination pagination-lg" -->
+        <!-- Alignment class="pagination justify-content-center; class="pagination justify-content-end"-->
+        <!--  -->
+        <ul class="pagination pagination-lg justify-content-center">
+          <!-- Working with icons support with aria-label attributes. -->
+          <il class="page-item "><a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a></il>
+          <!-- Disabled and active states -->
+          <il class="page-item disabled">
+            <a class="page-link " href="#" >Previous</a>
+          </il>
+          <il class="page-item">
+            <a class="page-link" href="#">1</a>
+          </il>
+          <il class="page-item active">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+          </il>
+          <il class="page-item">
+            <a class="page-link" href="#">3</a>
+          </il>
+          <il class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </il>
+          <il class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a></il>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 4.14 - Spinners -->
+
+  <section>
+    <div class="container">
+      <h1>4.14 - Spinners</h1>
+      <p>Indicate the loading state of a component or page</p>
+
+      <!-- class="spinner-border text-primary" -->
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="sr-only">Loading...</span>
       </div>
       <br>
-      <div class="container">
-        <h1>Drop up & right & left</h1>
-        <!-- Default dropup button -->
-        <div class="btn-group dropup">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropup
-          </button>
-          <div class="dropdown-menu">
-            <!-- Dropdown menu links -->
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </div>
-        <br>
-        <div class="btn-group dropright">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropup
-          </button>
-          <div class="dropdown-menu">
-            <!-- Dropdown menu links -->
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </div>
-        <br>
-        <div class="btn-group dropleft">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropup
-          </button>
-          <div class="dropdown-menu">
-            <!-- Dropdown menu links -->
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </div>
-
-        <br style="padding-bottom: 30px;">
-        <h1> Menu Item</h1>
-        <p> you can optionally use button elements in your dropdowns instead of just a. </p>
-
-        <h2>Active and Disabled</h2>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </button>
-          <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-            <a class="dropdown-item active" href="#">Active</a>
-            <a class="dropdown-item" href="#">Another link</a>
-            <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a>
-          </div>
-        </div>
-
-        <br style="padding-bottom: 30px;">
-        <h1> Responsive alignment Menu content Headers</h1>
-        <p> If you want to use responsive alignment, disable dynamic positioning by adding the data-display="static" attribute and use the responsive variation classes. </p>
-        <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-            Right-aligned but left aligned when large screen
-          </button>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-            <h5 class="dropdown-header">Dropdown header</h5>
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-          </div>
+      <!-- Growing Spinners -->
+      <div class="spinner-grow text-muted"></div>
+      <div class="spinner-grow text-primary"></div>
+      <br>
+      <!-- Alignment: Margin(m-5);  -->
+      <h5>Margin</h5>
+      <div class="spinner-border m-5 text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <!-- Placement: Flex: (class="d-flex justify-content-center"; class="d-flex align-items-center")-->
+      <br>
+      <h5>Flex</h5>
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
-    </section>
+      <!-- Floats class="spinner-border float-right" -->
+      <br>
+      <h5>Floats </h5>
+      <div class="clearfix">
+        <div class="spinner-border float-right" role="status">
+          <span class="sr-only">Loading....</span>
+        </div>   
+      </div>
+      <!-- Size class="spinner-border spinner-border-sm"-->
+      <br>
+      <h5>Size</h5>
+      <div class="spinner-border spinner-border-sm" role="status" class="spinner-grow spinner-grow-sm">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <!-- Buttons spinner by using Span -->
+      <br>
+      <h5>Button spinner</h5>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        <span class="sr-only">Loading...</span>
+      </button>
 
-    <!-- Form -->
-    <section>
-      <!-- Stracked Form -->
-      <div class="container" style="margin-top: 50px;">
-        <h2>Stacked form</h2>
-        <form action="/action_page.php">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-          </div>
-          <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember"> Remember me
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <!-- Toasts -->
+      <h1>Toasts</h1>
+      <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
+      <br>
+      <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+
+      <br style="padding-top: 70px ;">
+
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <strong class="mr-auto text-primary">Toast Header</strong>
+          <small class="text-muted">5 mins ago</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+          Some text inside the toast body
+        </div>
       </div>
 
-      <!-- Inline form -->
-
-      <div class="container" style="margin-top: 50px;">
-        <h2>Inline Form with Utilities</h2>
-        <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
-        <form class="form-inline" action="/action_page.php">
-          <label for="email2" class="mb-2 mr-sm-2">Email:</label>
-          <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email">
-          <label for="pwd2" class="mb-2 mr-sm-2">Password:</label>
-          <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="Enter password" name="pswd">
-          <div class="form-check mb-2 mr-sm-2">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="remember"> Remember me
-            </label>
-          </div>    
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <strong class="mr-auto text-primary">Toast Header</strong>
+          <small class="text-muted">5 mins ago</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+          Some text inside the toast body
+        </div>
       </div>
 
-      <!-- Form Row/Grid form-row -->
-      <div class="container">
-        <h2>Form Grid</h2>
-        <p>Create two form elements that appear side by side with .row and .col:</p>
-        <form action="/action_page.php">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="col">
-              <input type="password" class="form-control" placeholder="Enter password" name="pswd">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
-        </form>
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <img src="image/Icon.png" width="30px" class="rounded mr-2" alt="...">
+          <strong class="mr-auto">Bootstrap</strong>
+          <small class="text-muted">2 seconds ago</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Heads up, toasts will stack automatically
+        </div>
       </div>
 
-      <!-- Form Validation -->
-      <div class="container" style="margin-top: 50px;">
-        <!-- Form Validation Fail -->
-        <h2>Form Validation Fail</h2>
-        <p>to indicate what's missing before submitting the form:</p>
-        <form action="/action_page.php" class="was-validated">
-          <div class="form-group">
-            <label for="uname">Username:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+      <!-- Flexbox container for aligning the toasts -->
+      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+        <!-- Then put toasts within -->
+        <div class="toast" data-autohide="false" role="alert" aria-live="assertive" aria-atomic="false">
+          <div class="toast-header">
+            <img src="image/puffin.jpg" width="40px" class="rounded mr-2" alt="puff">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
           </div>
-          <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Check this checkbox to continue.</div>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
 
-      <!-- Form Validation Success -->
-      <div class="container" style="margin-top: 50px;">
-        <h2>Form Validation Success</h2>
-        <p> which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
-        <p>Try to submit this form before filling out the input fields, to see the effect.</p>
-        <form action="/action_page.php" class="needs-validation" novalidate>
-          <div class="form-group">
-            <label for="uname">Username:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-          </div>
-          <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-          </div>
-          <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Check this checkbox to continue.</div>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+  </div>
+  <script>
+    // $(document).ready(function(){
+    //   $('.toast').toast('show');
+    // });
 
+    document.getElementById("toastbtn").onclick = function() {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show())
+    }
+  </script>
+  </section>
+
+  <section>
+    <!-- color -->
+    <div class="container" style="background-color: white;">
+      <h1>Color</h1>
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+      <p class="text-secondary">Secondary text.</p>
+      <p class="text-dark">This text is dark grey.</p>
+      <p class="text-body">Default body color (often black).</p>
+      <p class="text-light">This text is light grey (on white background).</p>
+      <p class="text-white">This text is white (on white background).</p>
+
+      <br>
+
+      <h2>Opacity Text Colors</h2>
+      <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+      <p class="text-black-50">Black text with 50% opacity on white background</p>
+      <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+
+      <h2>Contextual Backgrounds</h2>
+      <p>Use the contextual background classes to provide "meaning through colors".</p>
+      <p>Note that you can also add a .text-* class if you want a different text color:</p>
+      <p class="bg-primary text-white">This text is important.</p>
+      <p class="bg-success text-white">This text indicates success.</p>
+      <p class="bg-info text-white">This text represents some information.</p>
+      <p class="bg-warning text-white">This text represents a warning.</p>
+      <p class="bg-danger text-white">This text represents danger.</p>
+      <p class="bg-secondary text-white">Secondary background color.</p>
+      <p class="bg-dark text-white">Dark grey background color.</p>
+      <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+  </section>
+
+  <section class="container bg-light" >
+    <!-- Flex -->
+    <h1>Bootstrap Flex</h1>
+    <div class="d-flex p-3 bg-secondary text-white">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <!-- inline flexbox container, -->
+    <h5>inline flexbox container,</h5>
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <!-- Horizontal Direction -->
+    <br>
+    <h5>Horizontal Direction</h5>
+    <div class="d-flex flex-row bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    
+    <div class="d-flex flex-row-reverse bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <!-- Vertical Direction  -->
+    <br>
+    <h5> Vertical Direction</h5>
+    <div class="d-flex flex-column">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <div class="d-flex flex-column-reverse">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <br>
+    <!-- Justify Content  -->
+    <h5> Justify Content </h5>
+    <p>Use the .justify-content-* classes to change the alignment of flex items. Choose from start (default), end, center, between or around:</p>
+    <div class="d-flex justify-content-start bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-end bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-center bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-between bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex justify-content-around bg-secondary mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <!-- Fill / Equal Widths -->
+    <h2>Fill / Equal Widths</h2>
+    <p>Use .flex-fill on flex items to force them into equal widths:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 flex-fill bg-info">Flex item 1</div>
+      <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+      <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+    </div>
+    <p>Example without .flex-fill:</p>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Grow</h2>
+    <p>Use .flex-grow-1 on a flex item to take up the rest of the space:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Order</h2>
+    <p>Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 5:</p>
+    <div class="d-flex mb-3">
+      <div class="p-2 order-3 bg-info">Flex item 1</div>
+      <div class="p-2 order-2 bg-warning">Flex item 2</div>
+      <div class="p-2 order-1 bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h2>Auto Margins</h2>
+    <p>Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items to the left):</p>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2 ms-auto bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex mb-3 bg-secondary">
+      <div class="p-2  bg-info">Flex item 1</div>
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 me-auto bg-primary">Flex item 3</div>
+    </div>
+    <br>
+    <h5>wrap</h5>
+    <div class="d-flex flex-wrap">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+
+    <div class="d-flex flex-wrap-reverse">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+
+    <div class="d-flex flex-nowrap">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+    </div>
+    <h2>Align Content</h2>
+    <p>Control the vertical alignment of gathered flex items with the .align-content-* classes.</p>
+    <p><strong>Note:</strong> This example does not look good on a small devices. Also note that these classes have no effect on single rows of flex items.</p>
+    <p>.align-content-start (default):</p>
+    <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+    
+    </div>
+    <br>
+    <p>.align-content-end:</p>
+    <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
+      <div class="p-2 border">Flex item 9</div>
       
-      <!-- Form Grid -->
-      <div class="container" style="margin-top: 50px;">
-        <h2>Form Grid</h2>
-        <p>Create two form elements that appear side by side with .row and .col:</p>
-        <form action="/action_page.php">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="col">
-              <input type="password" class="form-control" placeholder="Enter password" name="pswd">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
-        </form>
-      </div>
-
+    </div>
+    <br>
+    <p>.align-content-center:</p>
+    <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
       
+    </div>
+    <br>
+    <p>.align-content-around:</p>
+    <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
+      <div class="p-2 border">Flex item 8</div>
+    
+    </div>
+    <br>
+    <p>.align-content-stretch:</p>
+    <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+      <div class="p-2 border">Flex item 1</div>
+      <div class="p-2 border">Flex item 2</div>
+      <div class="p-2 border">Flex item 3</div>
+      <div class="p-2 border">Flex item 4</div>
+      <div class="p-2 border">Flex item 5</div>
+      <div class="p-2 border">Flex item 6</div>
+      <div class="p-2 border">Flex item 7</div>
       
-    </section>
+    </div>
+    <br>
+  </div>
+  <h2>Align Self</h2>
+  <p>Control the vertical alignment of a specific flex item with the .align-self-* classes.</p>
+  <p>.align-self-start:</p>
+  <div class="d-flex bg-light" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border align-self-start">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+  </div>
+  <br>
+  <p>.align-self-end:</p>
+  <div class="d-flex bg-light" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border align-self-end">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+  </div>
+  <br>
 
+  </section>
+  <section>
+    <h1>Display Headings</h1>
+    <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+    <div class="container">
+      <h1>Icon</h1>
+      <p>Others:</p>
+      <i class="fas fa-cloud"></i>
+      <i class="fas fa-coffee"></i>
+      <i class="fas fa-car"></i>
+      <i class="fas fa-file"></i>
+      <i class="fas fa-bars"></i>
+    </div>
+  </section>
   
 
 </body>

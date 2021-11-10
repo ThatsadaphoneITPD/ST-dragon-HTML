@@ -643,6 +643,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+<<<<<<< HEAD
       <!-- links -->
       <div class="collapse navbar-collapse" id="elevator">
         <ul class="navbar-nav mt-3" id="elevator">
@@ -684,6 +685,103 @@
           <button class="btn btn-success" type="submit">Search</button>
         </form>
       </div>
+=======
+        <!-- links -->
+        <div class="collapse navbar-collapse" id="elevator">
+            <ul class="navbar-nav mt-3" id="elevator">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">To Asgar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">To middle Earth</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">To Hell</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                        Click to see more
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">4 th</a>
+                        <a href="#" class="dropdown-item">5 th</a>
+                        <a href="#" class="dropdown-item">6 th</a>
+                    </div>
+                </li>
+
+                <li>
+                    
+                </li>
+                <!-- Form and button -->
+                
+            </ul>
+            <form class="ml-auto form-inline ms-auto" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+>>>>>>> 9cac60b7e44ddc7d1a525551292b08f813fb3b3a
     </nav>
+
+    <!-- Pagination -->
+    <div class="container">
+        <ul class="pagination">
+            <li class="page-item act"><a href="" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">4</a></li>
+            <li class="page-item"><a href="" class="page-link">Next</a></li>
+        </ul>
+    </div>
+
+    <!-- spinner -->
+    <div class="container">
+        <!-- create new spinner -->
+        <div class="spinner-border"></div>
+        <!-- spinner corlor -->
+        <div class="spinner-border text-danger"></div>
+        <!-- growing spinner -->
+        <div class="spinner-grow text-danger"></div>
+        <!-- spinner size  -->
+        <div class="spinner-border spinner-border-sm"></div>
+        <div class="spinner-grow spinner-grow-lg"></div>
+        <!-- spinner button -->
+        <button class="btn btn-primary">
+            <span class="spinner-border"></span>
+            Loading
+        </button>
+        <button class="btn btn-primary">
+            <spam class="spinner-grow text-danger"></spam>
+            Loading....
+        </button>
+    </div>
+
+    <!-- toast -->
+    <div class="container " >
+        <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary">Alert</strong> 
+                <small class="text-muted">5 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                Stop it right there criminal scum.....
+            </div>
+        </div>
+        <!-- js script for showing toast button -->
+        <script>
+            $(document).ready(function(){
+              $("#myBtn").click(function(){
+                $('.toast').toast('show');
+              });
+            });
+        </script>
+    </div>
+
+    
   </body>
 </html>
