@@ -6,9 +6,87 @@
     <meta http-equiv="X-UA-Compaible" content="ie=edge">
     <title>JavaScript Crash Course</title>
     <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+      <!-- <link rel="stylesheet" type="text/css" href="bootstrap-4.6.1-dist/css/bootstrap-grid.css">  -->
+    <link rel="stylesheet" type="text/css" href="stylebootstrap.css" />
+    <title>Testing bootstrap</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <h1>JavaScript Crash Course</h1>
     <script src="main.js"></script>
+
+    <div class="container-fluid">
+        <div class="container my-3">
+            <h2>Introduction</h2>
+            <h3>Change text with function made in HTML</h3>
+            <p id="introduction">Hi im HTML</p>
+        <button type="button" onclick="document.getElementById('introduction').innerHTML = 'This has been taken by JavaScript'"> Click me</button>
+        </div>
+
+        <div class="container my-3">
+            <h3>Change text with function form main.js</h3>
+            <p id="introduction2">This is HTML</p>
+            <button type="button" onclick="ChangeText()"> Click me</button>
+        </div>
+
+        <div class="container my-3">
+            <h3><strong>Dont press the button</strong></h3>
+            <button type="button" onclick="Alert()">Press me UwU</button>
+        </div>
+
+        <div class="container my-3">
+            <h3>Press the button to print</h3>
+            <button type="button" onclick="window.print()"> Press this button to print</button>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="container">
+            <h3>The example of outer variable</h3>
+            <p>If the same variable with the same name, the outer will be changed after the function and based on the local variable with the same name</p>
+            <button type="button" onclick="alert(username)"> Click this, this gonna be Khoa</button>
+            <button type="button" onclick="Showmessage()">This gonna change to local variable</button>
+            <button type="button" onclick="alert(username)"> This gonna be Not Khoa</button>
+        </div>
+
+        <div class="container">
+            <h3>The example of outer variable and local with the same data type</h3>
+            <p>If the same variable with the same name and datatype, the outer will not changed </p>
+            <button type="button" onclick="alert(username2)"> Click this, this gonna be Khoa</button>
+            <button type="button" onclick="Showmessage2()">This gonna change to local variable</button>
+            <button type="button" onclick="alert(username2)"> This gonna be Khoa</button>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="container">
+            <h3>Example for function with custom parameter</h3>
+            <p>This is to demonstrate simple exchange form Farenheight to celsius</p>
+            <p id="multi"></p>
+            <script>
+                function toCelsius(f) {
+                    return (5/9) * (f-32);
+                }
+            </script>
+            <button type="button" onclick="alert(toCelsius(23))">Press this</button>
+        </div>
+
+        <div class="container">
+            <h3>This is the example for the callback</h3>
+            <p>The call back gonna repeat the code</p>
+            <p id="callbackMulti">5+5</p>
+            <button type="button" onclick="calcMulti(5,5,Showmessage3)">Press this</button>
+        </div>
+    </div>
+    <div class="container-fluid my-3">
+        <div class="container">
+            <p>This is to show property in object</p>
+            <button type="button" onclick="alert(person.fullname + ' ' + person.age)">Press this</button>
+        </div>
+    </div>
 </body>
 </html>
