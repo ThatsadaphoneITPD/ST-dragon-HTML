@@ -5,11 +5,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compaible" content="ie=edge">
     <title>JavaScript Crash Course</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="main.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     <title>Bootstrap</title>
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="main.js"></script>
 </head>
-<body>
+<body style="background-color: darkgray;">
     <h1>JavaScript Crash Course</h1>
+
+    <br>
+    
+    <div class="container">
+        <!-- what is JS? -->
+        <h2>5.1 JS</h2>
+        <p class="bg-dark text-white display-5" id="jsdemo">What is JavaScript?</p>
+        <button class="btn btn-dark" type="button" onclick="Myjs()">Define JavaScript</button>
+
+        <!-- more excerise -->
+        <br>
+        <button onclick="On()">Turn on the light</button>
+        <img id="myImage" src="image/light-off.gif" style="width:100px">
+        <button onclick="Off()">Turn off the light</button>
+        <br>
+    
+        
+    </div>
+
+    <!-- JS data type -->
+
+    <div class="container">
+        <h1>5.2 JS Data Type</h1>
+        <p class="bg-dark text-white display-5"> 
+            JavaScript variables can hold different data types: numbers, strings, objects and more: <br>
+            <br>
+            let length = 16;                               // Number <br>
+            let lastName = "Johnson";                      // String <br>
+            let x = {firstName:"John", lastName:"Doe"};    // Object <br>
+        </p>
+        <p class="bg-dark text-white display-5 my-3" id="dt1">
+            let x1 = 16 + "Volvo";<br>
+            let x2 = 16 + 5 + "Volvo";<br>
+            let x3 = "Volvo" + 16 + 78 ; <br>
+            let x4 = 16; <br>                     
+            let x5 = "Johnson";  <br>                 
+            let x6 = {firstName:"John", lastName:"Doe"}; <br>
+            let x8 = 34.00;     // Written with decimals <br>
+            let p = 5; <br>
+            let y = 5; <br>
+            let z = 6; <br>
+            (p == y)       // Returns true <br>
+            (p == z)       // Returns false <br>
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+        </p>
+        <button class="btn btn-dark" type="button" onclick="dt1()">Try any data type</button>
+
+
+
+        <br>
+        <!-- operators -->
+        <h1>5.3 operator</h1>
+        <div class="container" >
+            <img id="myImage" src="image/Arithmetic.png" style="width:400px; height: 400px;"><br>
+            <p class="bg-dark text-white display-5 my-3" id="op1">
+                let x = 5; <br>
+                let y = 2;<br>
+                let z = x * y;<br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="op1()">Get x</button>
+        </div>
+
+        <div class="container" >
+            <img id="myImage" src="image/Assignment.png" style="width:800px; height: 400px;">
+            <br>
+            <p class="bg-dark text-white display-5 my-3" id="op2">
+                var x = 10;<br>
+                x += 5; <br>
+                var x1 = 19;<br>
+                x1 %= 8;<br>
+                let text1 = "What a very "; <br>
+                text1 += "nice day";<br>
+                document.getElementById("demo").innerHTML = x + " , "+ x1 + " , "+ text1 <br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="op2()">Get x</button>
+
+        </div>
+
+        <div class="container" >
+            <img id="myImage" src="image/Comparison.png" style="width:400px; height: 400px;"><br>
+            <p class="bg-dark text-white display-5 my-3" id="op3">
+                let x = 5 + 5;<br>
+                let y = "5" + 5;<br>
+                let z = "Hello" + 5;<br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="op3()">Get x y z</button>
+
+        </div>
+        <div class="container" >
+            <img id="myImage" src="image/logical.png" style="width:300px; height: 200px;"><br>
+            <p class="bg-dark text-white display-5 my-3" id="op4">
+                Input your age and click the button: <br>
+                let age = document.getElementById("age").value;<br>
+                let voteable = (age < 18) ? "Too young":"Old enough";<br>
+            </p>
+            <input id="age" value="18" />
+            <button class="btn btn-dark" type="button" onclick="op4()">Get age</button>
+
+        </div>
+        <div class="container" >
+            <img id="myImage" src="image/Bitwise.png" style="width:800px; height: 400px;"><br>
+            <p class="bg-dark text-white display-5 my-3" id="op5">
+                let x2 = 5 & 1; <br>
+                let x3 = 5 | 1; <br>
+                let x4 = 5 ^ 1; <br>
+                let x5 = ~5; <br>
+                let x6 = 5 << 1; <br>
+                let x7 = -5 >> 1; <br>
+                let x8 = 5 >>> 1; <br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="op5()">Get x</button>
+
+        </div>
+        <br>
+        <!-- variable -->
+        <h1>5.4 vaiable</h1>
+        
+        <p class="bg-dark text-white display-5" id="v1">
+            var i = 5; <br>
+            var y = 6;<br>
+            var z = i + y;<br>
+        </p>
+        <button class="btn btn-dark my-2" type="button" onclick="v1()">get z</button>
+        <p class="bg-dark text-white display-5 my-3" id="v2">
+            var price1 = 5; <br>
+            var price2 = 8; <br>
+            var total = price1 + price2; <br>
+        </p>
+        <button class="btn btn-dark" type="button" onclick="v2()">Get total</button>
+        <p class="bg-dark text-white display-5 my-3" id="v3">
+            var person = "John Doe", carName = "Volvo", price = 200;<br>
+
+            Get carName =, price,
+        </p>
+        <button class="btn btn-dark" type="button" onclick="v3()">Get those</button>
+
+        <p class="bg-dark text-white display-5 my-3" id="v4">
+            The result of adding 2 + 3 + "5";<br>
+
+            var x = 2 + 3 + "5";
+        </p>
+        <button class="btn btn-dark" type="button" onclick="v4()">Get x</button>
+        <br>
+        <!-- fucntion call/callback hell -->
+        <h1>5.5 - Function - Callback/Callback hell)</h1>
+        <p class="bg-dark text-white display-5 my-3">This example calls a function which performs a calculation and returns the result: <br>
+            <h2>Function Return</h2><br>
+            var x = myFunction(4, 3);<br>
+            document.getElementById("demo1").innerHTML = x;<br>
+            function myFunction(a, b) { return a * b;} <br>
+
+            <p class="display-4" id="demo1"></p> <br>
+            <h2>Callback</h2><br>
+            <p class="bg-dark text-white display-5 my-3">A callback is a function passed as an argument to another function <br> This technique allows a function to call another function <br> 
+                A callback function can run after another function has finished <br>
+                functions that use callbacks take some time to produce a result. <br>
+                The word 'asynchronous', aka 'async' just means 'takes some time' or 'happens in the future, not right now'. <br>
+                Usually callbacks are only used when doing I/O, e.g. downloading things, reading files, talking to databases, etc. <br> 
+            </p>
+            <h2>Callback Hell</h2><br>
+            <p class="bg-dark text-white display-5 my-3">
+                Asynchronous JavaScript, or JavaScript that uses callbacks, is hard to get right intuitively. A lot of code ends up <br>
+                the pyramid shape and all the }) at the end? Eek! This is affectionately known as callback hell. <br>
+                The cause of callback hell is when people try to write JavaScript in a way where execution happens visually from top to bottom. <br>
+
+            </p>
+                
+            <h3>Function Sequence</h3> <br>
+            function myDisplayer(some) { document.getElementById("demo2").innerHTML = some; } <br>
+            function myFirst() { myDisplayer("Hello"); } <br>
+            function mySecond() { myDisplayer("Goodbye");} <br>
+            mySecond(); <br>
+            myFirst(); <br>
+
+            <p class="display-4" id="demo2"></p><br>
+
+            <!-- Object -->
+            <h1>5.6 object</h1>
+            <p class="bg-dark text-white display-5 my-3">
+                x = new String();        // Declares x as a String object <br>
+                y = new Number();        // Declares y as a Number object <br>
+                z = new Boolean();       // Declares z as a Boolean object <br>
+            </p>
+
+            </p>
+            <p class="bg-dark text-white display-5 my-3" id="ob1">
+                // Create an object: <br>
+                const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+                // Display some data from the object: <br>
+                document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old."; <br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="ob1()">Get x</button>
+            <h2>Accessing Object Properties by person.lastName or  person["firstName"] </h2>
+            <p class="bg-dark text-white display-5 my-3" id="ob2">
+                const person = { firstName: "John", lastName : "Doe", id :  5566 }; <br>
+                document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " or " + person["firstName"] + " " + person["lastName"]; <br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="ob2()">Get x</button>
+            <h2>object Method as fullName: function(){return...} and Accessing Object Properties by person.fullName() </h2>
+            <p class="bg-dark text-white display-5 my-3" id="ob3">
+                const person = { <br>
+                    firstName: "John", <br>
+                    lastName : "Doe", <br>
+                    id       : 5566, <br>
+                    fullName : function() { <br>
+                    return this.firstName + " " + this.lastName; <br>
+                    }<br>
+                };<br>
+                //Accessing Object Methods
+                // Display data from the object:
+                document.getElementById("demo").innerHTML = person.fullName() + " must not without this () " + person.fullName;
+            </p>
+            <button class="btn btn-dark" type="button" onclick="ob3()">Get x</button>
+            <!-- event -->
+            <h1>5.7 JS Event </h1>
+            <p class="bg-dark text-white display-5 my-3"> 
+                An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events: <br>
+                
+                An HTML web page has finished loading <br>
+                An HTML input field was changed <br>
+                An HTML button was clicked <br>
+                Often, when events happen, you may want to do something. <br>
+                
+                JavaScript lets you execute code when events are detected. HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
+            </p>
+            <h2>Event button onclick</h2>
+            <button class="btn btn-dark" onclick="document.getElementById('evn1').innerHTML=Date()">The time is?</button>
+            <p class="display-4" id="evn1"></p>
+            <h2>Event with Function</h2>
+            <p id="evn2"></p>
+            <button class="btn btn-dark" onclick="displayDate()">The time is?</button>
+            <!-- string Method -->
+            <h1>5.8 String Methods </h1>
+            
+            <p class="bg-dark text-white"> String Methods and Properties Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). <br>
+                But with JavaScript, methods and properties are also available to primitive values,<br>
+                because JavaScript treats primitive values as objects when executing methods and properties. <br>
+                <br>
+                <br>
+                Extracting String Parts <br>
+                There are 3 methods for extracting a part of a string: <br>
+                slice(start, end) <br>
+                substring(start, end) <br>
+                substr(start, length) <br>
+                <br>
+                <br>
+                Extracting String Characters <br>
+                There are 3 methods for extracting string characters: <br>
+                <br>
+                charAt(position) <br>
+                charCodeAt(position) <br>
+                Property access [ ] <br>
+            
+            </p>
+            <h3>Test in Console log</h3>
+            <p class="bg-dark text-white my-3" style="font-size: 20px;" id="str1">
+                let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+                let str1 = "Apple, Banana, Kiwi"; <br>
+                let str2 = "Apple, Banana, Kiwi"; <br>
+                let text = "Please visit Microsoft!"; <br>
+                let text1 = "My under Body is So Some big!"; <br>
+                let text2 = "Hello"; <br>
+                let text3 = "World"; <br>
+                let text4 = "      Hello World!      "; <br>
+                let text5 = "5"; <br>
+                let text6 = "HELLO WORLD"; <br>
+                let text7 = "a,b,c,d,e,f"; <br>
+            </p>
+            <button class="btn btn-dark" type="button" onclick="str1()">Get Str Mothod</button>
+
+            <h1>5.9- Number Methods</h1>
+            <p class="bg-dark text-white">
+                Number Methods and Properties <br>
+                Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects). <br>
+                But with JavaScript, methods and properties are also available to primitive values, <br>
+                because JavaScript treats primitive values as objects when executing methods and properties. <br>
+            </p>
+        
+    </div>
+
     
 </body>
+<script>
+    // Function Return
+var x = myFunction(4, 3);
+document.getElementById("demo1").innerHTML = x;
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+// callback
+function myDisplayer(some) {
+    document.getElementById("demo2").innerHTML = some;
+}
+
+function myFirst() {
+    myDisplayer("Hello");
+}
+
+function mySecond() {
+    myDisplayer("Goodbye");
+}
+mySecond();
+myFirst();
+</script>
 </html>
