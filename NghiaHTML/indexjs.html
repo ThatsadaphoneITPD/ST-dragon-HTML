@@ -1,15 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compaible" content="ie=edge">
-    <title>JavaScript Crash Course</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="main.js"></script>
-</head>
-<body>
-    <h1>JavaScript Crash Course</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- <h1>JavaScript Crash Course</h1> -->
+    <div class="wrapper">
+      <div class="form_wrapper">
+        <form action="" id="form_signin" autocomplete="off">
+          <div class="signin_form signin_form-header">
+            <h2 class="heading">Sign in</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi</p>
+          </div>
+          <div class="signin_form signin_form-body">
+            <div class="form_control">
+              <label for="username" class="form_laybel">Username</label>
+              <input type="text" id="username" placeholder="Username" />
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <span class="form_message"></span>
+            </div>
+            <div class="form_control">
+              <label for="password" class="form_laybel">Password</label>
+              <input type="password" id="password" placeholder="Password" />
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <span class="form_message"></span>
+            </div>
+          </div>
+          <input type="submit" class="form_submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <!-- //Interal JS -->
+    <script>
+      //   DOM
+      // let header1 = document.querySelector("h1");
+      // header1.innerText += " After Query";
+
+      // let headercolor = "red";
+      // header1.style.color = stylecolor;
+    </script>
+
+    <!-- //Extteral JS -->
+    <script src="./script.js"></script>
+  </body>
 </html>
