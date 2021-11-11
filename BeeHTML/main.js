@@ -100,7 +100,7 @@ function op3(){
     let x = 5 + 5;
     let y = "5" + 5;
     let z = "Hello" + 5;
-    document.getElementById("op2").innerHTML = ` x: ${x}; y: ${y}; z:${z} ` ;
+    document.getElementById("op3").innerHTML = ` x: ${x}; y: ${y}; z:${z} ` ;
 }
 function op4() {
     let age = document.getElementById("age").value;
@@ -248,9 +248,279 @@ function str1(){
     text6[0]: ${text6[0]}; ${"<br>"}
     text7.split(","): ${text7.split(",")}; ${"<br>"}
     text6.split(""): ${text6.split("")}; ${"<br>"}
-    ` 
-    
+    `
     ;
 }
+
+function num1(){
+    let x = 567;
+    let x1 = 9.656;
+    let x6 = 6;
+
+
+    document.getElementById("num1").innerHTML = 
+    `
+    (100 + 23).toString(): ${"sample"}; ${"<Br>"}
+    x.toString(): ${x.toString() }; ${"<Br>"}
+    (123).toString(): ${(123).toString()}; ${"<Br>"}
+    (100 + 23).toString(): ${(100 + 253).toString() }; ${"<Br>"}
+    
+    x1.toExponential(2): ${x1.toExponential(2)}; ${"<Br>"}
+    x1.toExponential(4): ${x1.toExponential(4)}; ${"<Br>"}
+    x1.toExponential(6): ${x1.toExponential(6)}; ${"<Br>"}
+    x1.toFixed(0): ${x1.toFixed(0)}; ${"<Br>"}
+    x1.toFixed(2): ${x1.toFixed(2)}; ${"<Br>"}
+    x1.toFixed(4): ${x1.toFixed(4)}; ${"<Br>"}
+    x1.toFixed(6): ${x1.toFixed(6)}; ${"<Br>"}
+    x1.toPrecision(): ${x1.toPrecision()}; ${"<Br>"}
+    x1.toPrecision(2): ${x1.toPrecision(2)}; ${"<Br>"}
+    x1.toPrecision(4): ${x1.toPrecision(4)}; ${"<Br>"}
+    x1.toPrecision(6): ${x1.toPrecision(6)}; ${"<Br>"}
+    x.valueOf(): ${x.valueOf()}; ${"<Br>"}
+    (123).valueOf(): ${(123).valueOf()}; ${"<Br>"}
+    (100 + 23).valueOf(): ${(100 + 23).valueOf()}; ${"<Br>"}
+    Number(true): ${Number(true)}; ${"<Br>"}
+    Number(false); ${Number(false)}; ${"<Br>"}
+    Number("10"): ${Number("10")}; ${"<Br>"}
+    Number("  10"): ${Number("  10")}; ${"<Br>"}
+    Number("10.33"): ${Number("10.33")}; ${"<Br>"}
+    Number("10,33"): ${Number("10,33")}; ${"<Br>"}
+    Number("10 33"): ${Number("10 33")}; ${"<Br>"}
+    Number("John"): ${Number("John")}; ${"<Br>"}
+    Number(new Date("1970-01-01")): ${Number(new Date("1970-01-01"))}; ${"<Br>"}
+    Number(new Date("2017-09-30")): ${Number(new Date("2017-09-30"))}; ${"<Br>"}
+    parseInt("-10"): ${parseInt("-10")}; ${"<Br>"}
+    parseInt("-10.33"): ${parseInt("-10.33")}; ${"<Br>"}
+    parseInt("10"): ${parseInt("10")}; ${"<Br>"}
+    parseInt("10.33"): ${parseInt("10.33")}; ${"<Br>"}
+    parseInt("10 20 30"): ${parseInt("10 20 33")}; ${"<Br>"}
+    parseInt("10 years"): ${parseInt("10 years")}; ${"<Br>"}
+    parseInt("years 10"): ${parseInt("years 10")}; ${"<Br>"}
+    parseFloat("10"): ${parseFloat("10")}; ${"<Br>"}
+    parseFloat("10.33"): ${parseFloat("10.33")}; ${"<Br>"}
+    parseFloat("10 20 30"): ${parseFloat("10 20 30")}; ${"<Br>"}
+    parseFloat("10 years"): ${parseFloat("10 years")}; ${"<Br>"}
+    parseFloat("years 10"): ${parseFloat("years 10")}; ${"<Br>"}
+    let x = Number.MAX_VALUE; ${Number.MAX_VALUE}; ${"<Br>"}
+    let x = Number.MIM_VALUE; ${Number.MIM_VALUE}; ${"<Br>"}
+    let x = 1/0;: ${1/0}; ${"<Br>"}
+    let x = Number.NEGATIVE_INFINITY;: ${Number.NEGATIVE_INFINITY}; ${"<Br>"}
+    let x = -1/0; ${-1/0};: ${"<Br>"}
+    let x = Number.NaN: ${Number.NaN}; ${"<Br>"}
+    let x = 100 / "Apple";: ${100/"Apple"}; ${"<Br>"}
+    x6.MAX_VALUE;: ${x6.MAX_VALUE}; ${"<Br>"}
+    `
+    ;
+}
+
+ //Arraay Methob 
+ function Arr1(){
+    const fruits = ["Banana", "Orange", "Apple", "Mango", "Melo", "Pei", "Arrow","Semi", "Onikiri"];
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const arr1 = ["Cecilie", "Lone"];
+    const arr2 = ["Emil", "Tobias", "Linus"];
+    const arr3 = ["Robin", "Morgan"];
+
+    document.getElementById("Arr1").innerHTML = 
+    `
+    fruits.toString(): ${fruits.toString()}; ${"<Br>"}
+    fruits.join(): ${fruits.join(" * ")}; ${"<Br>"}
+    fruits.pop(): ${fruits.pop() + "<br>"}; ${"<Br>"}
+    fruits : ${fruits}; <br><br>
+    fruits.push(): ${fruits.push() + "<br>"}; ${"<Br>"}
+    fruits : ${fruits}; <br><br>
+    let fruit = fruits.shift(): ${fruits.shift() + "<br>"}; <br>
+    fruits : ${fruits}; <br><br>
+    fruits.unshift("Lemon"): ${fruits.unshift("Lemon") + "<br>"}; ${"<Br>"}
+    fruits : ${fruits}; <br><br>
+    fruits[0] = "Kiwi"; : ${fruits[0] = "Kiwi" }; <br><br>
+    fruits : ${fruits}; ${"<br>"} ${"<br>"}
+    fruits[fruits.length] = "Kiwi";: ${fruits[fruits.length] = "kiwi"}; <br><br>
+    fruits : ${fruits}; ${"<br>"} ${"<br>"}
+    delete fruits[0]: ${delete fruits[0] + "<br>"}; <br>
+    fruits : ${fruits}; <br><br>
+    Add em by fruits.splice(2, 2, "LemonWine", "SemiKiwi"); : ${fruits.splice(2, 2, "LemonWine", "SemiKiwi")}; <br><br>
+    fruits : ${fruits}; <br> <br>
+    Remove without hole by fruits.splice(0, 1); : ${fruits.splice(0, 1)}; <br><br>
+    fruits : ${fruits}; <br> <br>
+    const myChildren = myGirls.concat(myBoys); : ${ myGirls.concat(myBoys)}; <br> <br>
+    Merge multi arr by arr1.concat(arr2, arr3); : ${arr1.concat(arr2, arr3)}; <br><br>
+    Merge single str by arr1.concat("Peter"); : ${arr1.concat("Peter")}; <br><br>
+    fruits : ${fruits}; <br><br>
+    const citrus = fruits.slice(1); : ${fruits.slice(1)}; <br><br>
+    const citrus = fruits.slice(1, 3); : ${fruits.slice(1, 3)}; <br><br>
+
+    `;
+}
+
+//Condition
+function cond(){
+    if (new Date().getHours() < 18) {
+        document.getElementById("Hours").innerHTML = "Good day with @_@ Google!!";
+    }
+}
+function cond1() {
+    let hour = document.getElementById("Hour").value;
+    if ( hour < 18) {
+        document.getElementById("hourcon").innerHTML = "Good day with Google of Holy fucker ";
+        
+    }
+}
+function cond2() {
+    let hour = document.getElementById("HourC2").value;
+    if ( hour < 20) {
+        document.getElementById("Hourss").innerHTML = "Good day with Google Know? ";
+    }
+    else{
+        document.getElementById("Hourss").innerHTML = "Bad day with Google stock Market Know? ";
+    }
+}
+
+function cond3() {
+    let hour = document.getElementById("HourC3").value;
+    if ( hour < 15) {
+        document.getElementById("Hoursss").innerHTML = "Good day with Google Know? ";
+    }
+    else if(hour >20 ){
+        document.getElementById("Hoursss").innerHTML = "Worth day for Buy all Stock market ";
+    }
+    else{
+        document.getElementById("Hoursss").innerHTML = "Bad day with Google stock Market Know? ";
+    }
+}
+//Js For loop
+function loopstrArr(){
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+    let text = "";
+    for (let i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+    }
+
+    document.getElementById("lp").innerHTML = text;
+
+}
+function loopNum(){
+    let text = "";
+
+    for (let i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+    }
+    document.getElementById("lp").innerHTML = text
+}
+
+function loopInitVar(){
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i, len, text;
+    for (i = 0, len = cars.length, text = ""; i < len; i++) {
+    text += cars[i] + "<br>";
+    }
+    document.getElementById("lp").innerHTML = text;
+}
+function LoopEvaluCondiIniVar(){
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i = 2;
+    let len = cars.length;
+    let text = "";
+    for (; i< len; i++){
+        text += cars[i] + "<br>";
+        // text = text + cars[i] + "<br>";
+    }
+    document.getElementById("lp").innerHTML = text
+}
+function loopIncreValue(){
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i = 0;
+    let len = cars.length;
+    let text = "";
+
+    for (; i < len; ) {
+    text += cars[i] + "<br>";
+    i++;
+    }
+    document.getElementById("lp").innerHTML = text;
+}
+function LoopscopeVar(){
+    var i = 5;
+    var word = "have"
+    var text = ""
+    for (var i = 0; i < 10; i++) {
+    
+      text+= word + i +" "
+      // some statements 
+    }
+    document.getElementById("lp").innerHTML = text + "<br>" + i;
+}
+function LoopscopeLet(){
+    let i = 5;
+    for (let i = 0; i < 10; i++) {
+    // some statements
+    }
+    document.getElementById("lp").innerHTML = i;
+}
+//for loop in
+function LoopIn(){
+    const person = {fname:"John", lname:"Doe", age:25}; 
+
+    let txt = "";
+    for (let x in person) {
+    txt += person[x] + " ";
+    }
+    const numbers = [45, 4, 9, 16, 25];
+
+    let txt1 = "";
+    for (let n in numbers) {
+    txt1 += numbers[n];
+    }
+    document.getElementById("lp").innerHTML = `Loopin person: <br>${txt} <br> LoopIn numbers: <br> ${txt1} `;
+}
+
+function LoopArrforEach(){
+    const numbers = [45, 4, 9, 16, 25];
+    let txt = "";
+    function MyValArr(value, index, array){
+        txt += value+ "<br>"
+    }
+    numbers.forEach(MyValArr);
+    document.getElementById("lp").innerHTML = txt;
+}
+
+//for loop in
+function LoopOf(){
+    const cars = ["BMW", "Volvo", "Mini"];
+
+    let text = "";
+    for (let x of cars) {
+    text += x + "<br>";
+    }
+    let language = "JavaScript";
+    let text1 = "";
+    for (let n of language) {
+    text1 += n + "<br>";
+    }
+    document.getElementById("lp").innerHTML = `Loopof cars's obj: <br>${text} <br> LoopOf str language : <br> ${text1} `;;
+}
+
+//function 
+function LoopWhile(){
+    let text = "";
+    let i = 0;
+    while (i < 10) {
+    text += "<br>The number is " + i;
+    i++;
+    }
+
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let n = 0;
+    let text1 = "";
+    while (cars[n]) {
+    text1 += cars[n] + "<br>";
+    n++;
+    }
+    document.getElementById("lp").innerHTML = `LoopoWhile number: <br>${text} <br> LoopWhile car's obj : <br> ${text1} `;;
+}
+
+
 
 
