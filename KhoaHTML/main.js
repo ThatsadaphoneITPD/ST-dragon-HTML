@@ -55,3 +55,64 @@ function calcMulti(num1,num2,cbMulti) {
 }
 
 const person= {fullname: "Khoa", age: "23"};
+
+//string
+let str  = "Can u locate the word \"u\" ? ";
+
+function findWord() {
+    
+    text1 = document.getElementById("findword").innerHTML = str.indexOf("u");
+}
+
+function sliceWord() {
+    
+    text2 = document.getElementById("findword").innerHTML = str.slice(4,6);
+}
+
+//number
+x = 50
+y = 6.96969
+
+function numberPlus() {
+    num1 = x + y ;
+    document.getElementById("number").innerHTML = num1;
+}
+
+function toFixed() {
+    num2 = document.getElementById("number").innerHTML = y.toFixed(3)
+}
+
+function toPrecision() {
+    document.getElementById("number").innerHTML = 
+    y.toPrecision() + "<br>" +
+    y.toPrecision(2) + "<br>" +
+    y.toPrecision(4) + "<br>" +
+    y.toPrecision(6);  
+}
+
+//array
+const fruits = ["Mango" , "Durian" , "Lemon" , "Apple"]
+
+function fruitList() {
+    document.getElementById("arrayDisplay").innerHTML = fruits.toString() + "<br>" + "damn this ugly";
+}
+
+function fruitList1() {
+    document.getElementById("arrayDisplay").innerHTML = fruits.join(", ")
+}
+
+function fruitPop(){
+    document.getElementById("arrayDisplay").innerHTML = "Imma take the fruit" + " " +
+    fruits.pop() + '<br>' +
+    'u only have : ' + fruits.join(", "); //pop take away the last element of the array, shifting gonna take the first one of the array
+}
+
+function fruitPush() {
+    document.getElementById("arrayDisplay").innerHTML = "I'll give u my kiwi " + 
+    fruits.push('kiwi') + '<br>' +
+    'u only have : ' + fruits.join(", "); //push add the last element of the array, unshift gonna add to the last element of the array
+}
+
+function fruitSort() {
+    document.getElementById("arrayDisplay").innerHTML =  fruits.sort()
+}
