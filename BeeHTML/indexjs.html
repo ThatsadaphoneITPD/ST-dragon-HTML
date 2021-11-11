@@ -163,7 +163,8 @@
         <br>
         <!-- fucntion call/callback hell -->
         <h1>5.5 - Function - Callback/Callback hell)</h1>
-        <p class="bg-dark text-white display-5 my-3">This example calls a function which performs a calculation and returns the result: <br>
+        <p class="bg-dark text-white display-5 my-3">
+            This example calls a function which performs a calculation and returns the result: <br>
             <h2>Function Return</h2><br>
             var x = myFunction(4, 3);<br>
             document.getElementById("demo1").innerHTML = x;<br>
@@ -193,109 +194,264 @@
             myFirst(); <br>
 
             <p class="display-4" id="demo2"></p><br>
+        </p>
 
-            <!-- Object -->
-            <h1>5.6 object</h1>
-            <p class="bg-dark text-white display-5 my-3">
-                x = new String();        // Declares x as a String object <br>
-                y = new Number();        // Declares y as a Number object <br>
-                z = new Boolean();       // Declares z as a Boolean object <br>
-            </p>
+        <!-- Object -->
+        <h1>5.6 object</h1>
+        <p class="bg-dark text-white display-5 my-3">
+            x = new String();        // Declares x as a String object <br>
+            y = new Number();        // Declares y as a Number object <br>
+            z = new Boolean();       // Declares z as a Boolean object <br>
+        </p>
 
-            </p>
-            <p class="bg-dark text-white display-5 my-3" id="ob1">
-                // Create an object: <br>
-                const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
-                // Display some data from the object: <br>
-                document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old."; <br>
-            </p>
-            <button class="btn btn-dark" type="button" onclick="ob1()">Get x</button>
-            <h2>Accessing Object Properties by person.lastName or  person["firstName"] </h2>
-            <p class="bg-dark text-white display-5 my-3" id="ob2">
-                const person = { firstName: "John", lastName : "Doe", id :  5566 }; <br>
-                document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " or " + person["firstName"] + " " + person["lastName"]; <br>
-            </p>
-            <button class="btn btn-dark" type="button" onclick="ob2()">Get x</button>
-            <h2>object Method as fullName: function(){return...} and Accessing Object Properties by person.fullName() </h2>
-            <p class="bg-dark text-white display-5 my-3" id="ob3">
-                const person = { <br>
-                    firstName: "John", <br>
-                    lastName : "Doe", <br>
-                    id       : 5566, <br>
-                    fullName : function() { <br>
-                    return this.firstName + " " + this.lastName; <br>
-                    }<br>
-                };<br>
-                //Accessing Object Methods
-                // Display data from the object:
-                document.getElementById("demo").innerHTML = person.fullName() + " must not without this () " + person.fullName;
-            </p>
-            <button class="btn btn-dark" type="button" onclick="ob3()">Get x</button>
-            <!-- event -->
-            <h1>5.7 JS Event </h1>
-            <p class="bg-dark text-white display-5 my-3"> 
-                An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events: <br>
-                
-                An HTML web page has finished loading <br>
-                An HTML input field was changed <br>
-                An HTML button was clicked <br>
-                Often, when events happen, you may want to do something. <br>
-                
-                JavaScript lets you execute code when events are detected. HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
-            </p>
-            <h2>Event button onclick</h2>
-            <button class="btn btn-dark" onclick="document.getElementById('evn1').innerHTML=Date()">The time is?</button>
-            <p class="display-4" id="evn1"></p>
-            <h2>Event with Function</h2>
-            <p id="evn2"></p>
-            <button class="btn btn-dark" onclick="displayDate()">The time is?</button>
-            <!-- string Method -->
-            <h1>5.8 String Methods </h1>
+        </p>
+        <p class="bg-dark text-white display-5 my-3" id="ob1">
+            // Create an object: <br>
+            const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+            // Display some data from the object: <br>
+            document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old."; <br>
+        </p>
+        <button class="btn btn-dark" type="button" onclick="ob1()">Get x</button>
+        <h2>Accessing Object Properties by person.lastName or  person["firstName"] </h2>
+        <p class="bg-dark text-white display-5 my-3" id="ob2">
+            const person = { firstName: "John", lastName : "Doe", id :  5566 }; <br>
+            document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " or " + person["firstName"] + " " + person["lastName"]; <br>
+        </p>
+        <button class="btn btn-dark" type="button" onclick="ob2()">Get x</button>
+        <h2>object Method as fullName: function(){return...} and Accessing Object Properties by person.fullName() </h2>
+        <p class="bg-dark text-white display-5 my-3" id="ob3">
+            const person = { <br>
+                firstName: "John", <br>
+                lastName : "Doe", <br>
+                id       : 5566, <br>
+                fullName : function() { <br>
+                return this.firstName + " " + this.lastName; <br>
+                }<br>
+            };<br>
+            //Accessing Object Methods
+            // Display data from the object:
+            document.getElementById("demo").innerHTML = person.fullName() + " must not without this () " + person.fullName;
+        </p>
+        <button class="btn btn-dark" type="button" onclick="ob3()">Get x</button>
+        <!-- event -->
+        <h1>5.7 JS Event </h1>
+        <p class="bg-dark text-white display-5 my-3"> 
+            An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events: <br>
             
-            <p class="bg-dark text-white"> String Methods and Properties Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). <br>
-                But with JavaScript, methods and properties are also available to primitive values,<br>
-                because JavaScript treats primitive values as objects when executing methods and properties. <br>
-                <br>
-                <br>
-                Extracting String Parts <br>
-                There are 3 methods for extracting a part of a string: <br>
-                slice(start, end) <br>
-                substring(start, end) <br>
-                substr(start, length) <br>
-                <br>
-                <br>
-                Extracting String Characters <br>
-                There are 3 methods for extracting string characters: <br>
-                <br>
-                charAt(position) <br>
-                charCodeAt(position) <br>
-                Property access [ ] <br>
+            An HTML web page has finished loading <br>
+            An HTML input field was changed <br>
+            An HTML button was clicked <br>
+            Often, when events happen, you may want to do something. <br>
             
-            </p>
-            <h3>Test in Console log</h3>
-            <p class="bg-dark text-white my-3" style="font-size: 20px;" id="str1">
-                let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
-                let str1 = "Apple, Banana, Kiwi"; <br>
-                let str2 = "Apple, Banana, Kiwi"; <br>
-                let text = "Please visit Microsoft!"; <br>
-                let text1 = "My under Body is So Some big!"; <br>
-                let text2 = "Hello"; <br>
-                let text3 = "World"; <br>
-                let text4 = "      Hello World!      "; <br>
-                let text5 = "5"; <br>
-                let text6 = "HELLO WORLD"; <br>
-                let text7 = "a,b,c,d,e,f"; <br>
-            </p>
-            <button class="btn btn-dark" type="button" onclick="str1()">Get Str Mothod</button>
-
-            <h1>5.9- Number Methods</h1>
-            <p class="bg-dark text-white">
-                Number Methods and Properties <br>
-                Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects). <br>
-                But with JavaScript, methods and properties are also available to primitive values, <br>
-                because JavaScript treats primitive values as objects when executing methods and properties. <br>
-            </p>
+            JavaScript lets you execute code when events are detected. HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
+        </p>
+        <h2>Event button onclick</h2>
+        <button class="btn btn-dark" onclick="document.getElementById('evn1').innerHTML=Date()">The time is?</button>
+        <p class="display-4" id="evn1"></p>
+        <h2>Event with Function</h2>
+        <p id="evn2"></p>
+        <button class="btn btn-dark" onclick="displayDate()">The time is?</button>
+        <!-- string Method -->
+        <h1>5.8 String Methods </h1>
         
+        <p class="bg-dark text-white"> String Methods and Properties Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). <br>
+            But with JavaScript, methods and properties are also available to primitive values,<br>
+            because JavaScript treats primitive values as objects when executing methods and properties. <br>
+            <br>
+            <br>
+            Extracting String Parts <br>
+            There are 3 methods for extracting a part of a string: <br>
+            slice(start, end) <br>
+            substring(start, end) <br>
+            substr(start, length) <br>
+            <br>
+            <br>
+            Extracting String Characters <br>
+            There are 3 methods for extracting string characters: <br>
+            <br>
+            charAt(position) <br>
+            charCodeAt(position) <br>
+            Property access [ ] <br>
+        
+        </p>
+        <h3>Test in Console log</h3>
+        <p class="bg-dark text-white my-3" style="font-size: 20px;" id="str1">
+            let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            let str1 = "Apple, Banana, Kiwi"; <br>
+            let str2 = "Apple, Banana, Kiwi"; <br>
+            let text = "Please visit Microsoft!"; <br>
+            let text1 = "My under Body is So Some big!"; <br>
+            let text2 = "Hello"; <br>
+            let text3 = "World"; <br>
+            let text4 = "      Hello World!      "; <br>
+            let text5 = "5"; <br>
+            let text6 = "HELLO WORLD"; <br>
+            let text7 = "a,b,c,d,e,f"; <br>
+        </p>
+        <button class="btn btn-dark" type="button" onclick="str1()">Get Str Mothod</button>
+
+        <h1>5.9- Number Methods</h1>
+        <p class="bg-dark text-white">
+            Number Methods and Properties <br>
+            Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects). <br>
+            But with JavaScript, methods and properties are also available to primitive values, <br>
+            because JavaScript treats primitive values as objects when executing methods and properties. <br>
+            <br>
+            The toString() Method returns a number as a string. <br>
+            All number methods can be used on any type of numbers (literals, variables, or expressions) <br>
+            <br>
+            The toExponential() Method returns a string, with a number rounded and written using exponential notation. <br>
+            A parameter defines the number of characters behind the decimal point: <br>
+            <br>
+            The toFixed() Method returns a string, with the number written with a specified number of decimals <br>
+            <br>
+            The toPrecision() Method returns a string, with a number written with a specified length <br>
+            <br>
+            The valueOf() Method returns a number as a number. <br>
+
+            <h2>Converting Variables to Numbers</h2>
+            <img id="myImage" src="image/ConvertingVartoNumbers.png" style="width:500px; height: 200px;"><br>
+            <h2>Converting Variables to Numbers</h2>
+            <img id="myImage" src="image/Number Properties.png" style="width:500px; height: 300px;"><br>
+
+
+        </p>
+        <p class="bg-dark text-white my-3" style="font-size: 18px;" id="num1">
+            let x = 567; <br>
+            let x1 = 9.656; <br>
+            let x6 = 6; <br>
+            
+        </p>
+        <button class="btn btn-dark" type="button" onclick="num1()">Get Number method</button>
+        <h1>5.10 Array Methob</h1>
+        <p class="bg-dark text-white my-3">
+            method toString() converts an array to a string of (comma separated) array values. <br> <br>
+            The pop() method removes the last element from an array then returns the value that was "popped out" <br> <br>
+            The push() method adds a new element to an array (at the end) ad  returns the new array length  <br> <br>
+            The shift() method removes the first array element and "shifts" all other elements to a lower index. returns the value that was "shifted out": <br> <br>
+            The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements and returns the new array length. <br> <br>
+            Array indexes start with 0: <br>
+            [0] is the first array element <br>
+            [1] is the second <br>
+            [2] is the third ... <br> <br>
+            The length property provides an easy way to append a new element to an array: <br> <br>
+            Warning ! <br>
+            Array elements can be deleted using the JavaScript operator delete. Using delete leaves undefined holes in the array. <br>
+            Use pop() or shift() instead. <br> <br>
+            The splice() method can be used to add new items to an array then returns an array with the deleted items: <br> <br>
+            The concat() method creates a new array by merging (concatenating) existing arrays. this method does not change the existing arrays. It always returns a new array <br>
+            and The concat() method can take any number of array arguments: <br> <br>
+            he slice() method slices out a piece of an array into a new array. The slice() method creates a new array. It does not remove any elements from the source array. <br> <br>
+        </p>
+        <p class="bg-dark text-white my-3" style="font-size: 18px;" id="Arr1">
+            const fruits = ["Banana", "Orange", "Apple", "Mango", "Melo", "Pei", "Arrow","Semi", "Onikiri"]; <br>
+            const myGirls = ["Cecilie", "Lone"]; <br>
+            const myBoys = ["Emil", "Tobias", "Linus"]; <br>
+            const arr1 = ["Cecilie", "Lone"]; <br>
+            const arr2 = ["Emil", "Tobias", "Linus"]; <br>
+            const arr3 = ["Robin", "Morgan"]; <br>
+            
+        </p>
+        <button class="btn btn-dark" type="button" onclick="Arr1()">Get Number method</button>
+        <h1>5.11 Condition</h1>
+        <p class="bg-dark text-white my-3">
+            Conditional Statements <br>
+            In JavaScript we have the following conditional statements: <br>
+            <br>
+            Use <strong> if (cndition){}</strong> to specify a block of code to be executed, if a specified condition is true <br>
+            Use <strong> else {}</strong> to specify a block of code to be executed, if the same condition is false <br>
+            Use <strong> else if {}</strong> to specify a new condition to test, if the first condition is false 
+            <br>
+        </p>
+        <h2>if() {}</h2>
+        <p class="bg-dark text-white my-3" style="font-size: 18px;">
+            if (new Date().getHours() < 18) {
+                document.getElementById("demo").innerHTML = "Good day!";
+              }
+        </p>
+        <p class="bg-success text-white my-3" id="Hours"> if (coditon)</p>
+        <button class="btn btn-dark my-3" type="button" onclick="cond()">Good</button>
+        <br>
+        <p  class="bg-dark text-white my-3" id="hourcon">Example(IF) Nice Day with input less > 18 pls</p>
+        <input id="Hour" value="18" /> <br>
+        <button class="btn btn-dark my-3" type="button" onclick="cond1()">Get Number method</button>
+        <br>
+        <h2>if() {} else {}</h2>
+        <p class="bg-dark text-white my-3" style="font-size: 18px;">
+            if (new Date().getHours() < 18) {
+                document.getElementById("demo").innerHTML = "Good day!";
+              } <br>
+              else{
+                document.getElementById("demo").innerHTML = "bad day!";
+
+              }
+        </p>
+        
+        <p class="bg-success text-white my-3" id="Hourss"> if (coditon){expex...} else{}</p>
+        <input id="HourC2" value="20" /> <br>
+        <button class="btn btn-dark my-3" type="button" onclick="cond2()">Good or Bad</button>
+        <h2>if(){} esle if(){} else{}</h2>
+        <p class="bg-dark text-white my-3" style="font-size: 18px;">
+            if (time < 10) { <br>
+                greeting = "Good morning"; <br>
+              } else if (time < 20) { <br>
+                greeting = "Good day"; <br>
+              } else { <br>
+                greeting = "Good evening"; <br>
+              }
+        </p>
+        <p class="bg-success text-white my-3" id="Hoursss"> if (coditon){expression...} else if(){expression...} else{}</p>
+        <input id="HourC3" value="20" /> <br>
+        <button class="btn btn-dark my-3" type="button" onclick="cond3()">Good or Bad or Worth</button>
+        <h1>5.12 Loop for </h1>
+        <p class="bg-dark text-white my-3">
+            Loops can execute a block of code a number of times. <br>
+            Loops are handy, if you want to run the same code over and over again, each time with a different value. <br>
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="loopstrArr()">loopstrArr</button>
+        <button class="btn btn-dark my-3" type="button" onclick="loopNum()">loopNum</button>
+        <button class="btn btn-dark my-3" type="button" onclick="loopInitVar()">loopInitVar</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopEvaluCondiIniVar()">LoopEvaluCondiIniVar</button>
+        <button class="btn btn-dark my-3" type="button" onclick="loopIncreValue()">loopIncreValue</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopscopeVar()">LoopscopeVar</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopscopeLet()">LoopscopeLet</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopIn()">LoopIn</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopArrforEach()">LoopArrforEach</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopOf()">LoopOf</button>
+        <button class="btn btn-dark my-3" type="button" onclick="LoopWhile()">LoopWhile</button><br>
+        <p class="bg-dark text-white my-3" id="lp">
+            loopstrArr <br> <br>
+            const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+            loopNum <br>
+            loopInitVar <br>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"]; <br>
+            LoopEvaluCondiIniVar <br>
+            loopIncreValue<br> <br>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];<br>
+            let i = 0;<br>
+            let len = cars.length;<br>
+            let text = "";<br>
+            LoopscopeVar<br> <br>
+            var i = 5;<br>
+            var word = "have"<br>
+            var text = ""<br>
+            LoopIn<br> <br>
+            const person = {fname:"John", lname:"Doe", age:25};<br>
+            const numbers = [45, 4, 9, 16, 25];<br>
+            LoopArrforEach<br> <br>
+            const numbers = [45, 4, 9, 16, 25];<br>
+            LoopOf<br> <br>
+            const cars = ["BMW", "Volvo", "Mini"];<br>
+            let language = "JavaScript";<br>
+            LoopWhile<br> <br>
+            let text = "";<br>
+            let i = 0;<br>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];<br>
+            let i = 0;<br>
+        </p>
+
+        <h1>5.10 Array Methob</h1>
+        <p class="bg-dark text-white my-3">
     </div>
 
     
