@@ -247,7 +247,11 @@
         </p>
         <h2>Event button onclick</h2>
         <button class="btn btn-dark" onclick="document.getElementById('evn1').innerHTML=Date()">The time is?</button>
+        <button class="btn btn-dark" onclick="HourTime()">Houre time</button>
+        <button class="btn btn-dark" onclick="fullDateTime()">Full Date Time</button>
         <p class="display-4" id="evn1"></p>
+        <p class="display-4" id="Date1">Houre time 00:00 AM/PM</p>
+        <p class="display-4" id="Date2">Full Date Time 00/00/00/ 00:00 AM/PM</p>
         <h2>Event with Function</h2>
         <p id="evn2"></p>
         <button class="btn btn-dark" onclick="displayDate()">The time is?</button>
@@ -450,8 +454,88 @@
             let i = 0;<br>
         </p>
 
-        <h1>5.10 Array Methob</h1>
+        <h1>5.13 Convertion Type </h1>
         <p class="bg-dark text-white my-3">
+            Converting Strings to Numbers
+            Converting Numbers to Strings
+            Converting Dates to Numbers
+            Converting Numbers to Dates
+            Converting Booleans to Numbers
+            Converting Numbers to Booleans
+        </p>
+        <h2>Converting Strings to Numbers</h2>
+        <p class="bg-dark text-white my-3">
+            The global method Number() can convert strings to numbers. <br>
+            Strings containing numbers (like "3.14") convert to numbers (like 3.14). <br>
+            Empty strings convert to 0. but, Anything else converts to NaN (Not a Number). <br>
+        </p>
+        <img id="myImage" src="image/ConvertStrToNum.png" style="width:500px; height: 200px;"><br>
+
+        <button class="btn btn-dark my-3" type="button" onclick="convertStrToNum()">Convert Str To Number</button><br>
+        <p class="bg-dark text-white my-3" id="Convert1">
+            Number("3.14")    // returns 3.14 <br>
+            Number(" ")       // returns 0 <br>
+            Number("")        // returns 0 <br> 
+            Number("99 88")   // returns NaN <br>
+        </p>
+
+        <h2>Converting Numbers to Strings</h2>
+        <p class="bg-dark text-white my-3">
+            The global method String() can convert numbers to strings.It can be used on any type of numbers, literals, variables, or expressions
+        </p>
+        <img id="myImage" src="image/ConvertNumToStr.png" style="width:500px; height: 200px;"><br>
+        <button class="btn btn-dark my-3" type="button" onclick="converNumToStr()">Convert Number to Str</button><br>
+        <p class="bg-dark text-white my-3" id="Convert2">
+            let x = 1234555888 <br>
+            String(x) <br>
+            String(123) <br>
+            String(100 + 23) <br>
+            x.toString() <br>
+            (123).toString()<br>
+            (100 + 23).toString();
+        </p>
+        
+
+
+        <h2>Converting Dates to Numbers</h2>
+        <p class="bg-dark text-white my-3">
+            The global method Number() can be used to convert dates to numbers.
+        </p>
+        <h2>Converting Dates to Strings</h2>
+        <p class="bg-dark text-white my-3">
+            The global method String() can convert dates to strings.
+        </p>
+        <img id="myImage" src="image/ConvertDatetoStr.png" style="width:500px; height: 200px;"><br>
+        <button class="btn btn-dark my-3" type="button" onclick="DateToNum()">Convert Date To Number</button>
+        <button class="btn btn-dark my-3" type="button" onclick="DateToStr()">Convert Date To String</button>
+        <p class="bg-dark text-white my-3" id="Convert3">
+            
+        </p>
+
+        <h2>Converting Booleans to Numbers</h2>
+        <p class="bg-dark text-white my-3">
+            The global method Number() can also convert booleans to numbers.
+        </p>
+        <h2>Converting Booleans to Strings</h2>
+        <p class="bg-dark text-white my-3">
+            The global method String() can convert booleans to strings.
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="convertBooleamsToNum()">Booleans to Numbers</button>
+        <button class="btn btn-dark my-3" type="button" onclick="convertBooleamsToStr()">Booleans to Strings</button>
+        <p class="bg-dark text-white my-3" id="Convert4">
+
+
+        <h2>Automatic Type Conversion</h2>
+        <p class="bg-dark text-white my-3">
+            When JavaScript tries to operate on a "wrong" data type, it will try to convert the value to a "right" type.
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="AutomaticTypeConvert()">Automatic Type Conversion</button>
+        <p class="bg-dark text-white my-3" id="Convert5">
+
+
+
+
+        
     </div>
 
     

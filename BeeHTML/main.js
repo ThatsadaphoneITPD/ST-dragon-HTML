@@ -207,6 +207,17 @@ const person = {
 function displayDate() {
     document.getElementById("evn2").innerHTML = Date();
 }
+//formate Date
+function HourTime() {
+    var d = new Date();
+    var n = d.toLocaleString([], { hour: '2-digit', minute: '2-digit' });
+    document.getElementById("Date1").innerHTML = n;
+}
+function fullDateTime() {
+    var d = new Date();          
+    var n = d.toLocaleString([], { hour12: true});
+    document.getElementById("Date2").innerHTML = n;
+}
 
 // string method
 function str1(){
@@ -521,6 +532,89 @@ function LoopWhile(){
     document.getElementById("lp").innerHTML = `LoopoWhile number: <br>${text} <br> LoopWhile car's obj : <br> ${text1} `;;
 }
 
+// convert str to number
+
+function convertStrToNum(){
+    document.getElementById("Convert1").innerHTML = 
+    `Convert Str to number: <br>
+    Number("3.14"):  ${Number("3.14")} <br> 
+    Number(" "):  ${Number(" ")} <br>
+    Number(""):  ${Number("")} <br>
+    Number("99 88"):  ${Number("99 88")} <br>
+    `;
+}
+
+function converNumToStr(){
+    let x = 1234555888;
+    document.getElementById("Convert2").innerHTML = 
+    `Covert number to Str: <br>
+    let x = 1234555888 <br>
+    String(x):  ${String(x)} <br> 
+    String(123567):  ${String(123567)} <br>
+    String(123 + 44):  ${String(123 + 44)} <br>
+    x.toString(): ${x.toString()} <br>
+    (123).toString(): ${(123).toString()} <br>
+    (100 + 37).toString(): ${(100 + 37).toString()} <br>
+    `;
+}
+
+function convertStrToNum(){
+    document.getElementById("Convert1").innerHTML = 
+    `Convert Str to number: <br>
+    Number("3.14"):  ${Number("3.14")} <br> 
+    Number(" "):  ${Number(" ")} <br>
+    Number(""):  ${Number("")} <br>
+    Number("99 88"):  ${Number("99 88")} <br>
+    `;
+}
+
+// Convert  Date  and fotmate to Full data /Am/pm
+
+function DateToNum(){
+    document.getElementById("Convert3").innerHTML = 
+    `Convert Date to number: <br>
+    DateHourTIme: ${new Date().toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")} <br>
+    d = new Date();:  ${d = new Date()} <br> 
+    Number(d):  ${Number(d)} <br>
+    d.getTime():  ${d.getTime()} <br>
+    `;
+}
+function DateToStr(){
+    document.getElementById("Convert3").innerHTML = 
+    `Convert Date to Str: <br>
+    DateHourTIme: ${new Date().toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")} <br>
+    String(Date()):  ${String(Date())} <br> 
+    Date().toString() :  ${Date().toString()} <br>
+    `;
+}
+
+function convertBooleamsToNum(){
+    document.getElementById("Convert4").innerHTML = 
+    `Convert Booleams to number: <br>
+    Number(false):  ${Number(false)}; <br>
+    Number(true):  ${Number(true)}: <br>
+    `;
+}
+function convertBooleamsToStr(){
+    document.getElementById("Convert4").innerHTML = 
+    `Convert Booleams to Str: <br>
+    String(false):  ${String(false)} <br> 
+    String(true):  ${String(true)} <br>
+    false.toString():  ${false.toString()} <br>
+    true.toString():  ${true.toString()} <br>
+    `;
+}
+function AutomaticTypeConvert(){
+    document.getElementById("Convert5").innerHTML = 
+    `Automatic Type Conversion: <br>
+    (5 + null):::   ${(5 + null)}<br>
+    ("5" + null):::   ${("5" + null)}<br>
+    ("5" + 2):::   ${("5" + 2)}<br>
+    ("5" - 2):::   ${("5" - 2)}<br>
+    ("5" * "2"):::   ${("5" * "2")}<br>
+    ("5" / "2"):::  ${("5" / "2")}<br>
+    `;
+}
 
 
 
