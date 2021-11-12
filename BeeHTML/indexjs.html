@@ -7,7 +7,6 @@
     <title>JavaScript Crash Course</title>
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="main.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
      <title>Bootstrap</title>
       <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -455,13 +454,13 @@
         </p>
 
         <h1>5.13 Convertion Type </h1>
-        <p class="bg-dark text-white my-3">
-            Converting Strings to Numbers
-            Converting Numbers to Strings
-            Converting Dates to Numbers
-            Converting Numbers to Dates
-            Converting Booleans to Numbers
-            Converting Numbers to Booleans
+        <p class="bg-dark text-white my-3"> 
+            Converting Strings to Numbers <br> <br>
+            Converting Numbers to Strings <br> <br>
+            Converting Dates to Numbers <br> <br>
+            Converting Numbers to Dates <br> <br>
+            Converting Booleans to Numbers <br> <br>
+            Converting Numbers to Booleans <br> <br>
         </p>
         <h2>Converting Strings to Numbers</h2>
         <p class="bg-dark text-white my-3">
@@ -530,12 +529,164 @@
             When JavaScript tries to operate on a "wrong" data type, it will try to convert the value to a "right" type.
         </p>
         <button class="btn btn-dark my-3" type="button" onclick="AutomaticTypeConvert()">Automatic Type Conversion</button>
-        <p class="bg-dark text-white my-3" id="Convert5">
+        <p class="bg-dark text-white my-3" id="Convert5"> </p>
+        <h1>5.14 - ECMAScript 6 - ES6</h1>
+        <h3>Arrow Functions</h3>
+        <p class="bg-dark text-white my-3">
+            Arrow functions allows a short syntax for writing function expressions. <br>
+            You don't need the function keyword, the return keyword, and the curly brackets. <br>
+            They are not well suited for defining object methods. <br>Arrow functions are not hoisted. They must be defined before they are used. <br>Using const is safer than using var, because a function expression is always a constant value. <br>You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="arrowFun()">Arrow Function</button>
+        <p class="bg-dark text-white my-3" id="ES6">
+            // ES5 <br>
+            var x = function(x, y) { <br>
+            return x * y; <br>
+            } <br>
+            // ES6  <br> <br>
+            const x = (x, y) => x * y; <br>
+        </p>
+        <h3>JavaScript Classes</h3>
+        <p class="bg-dark text-white my-3">
+            Classes are templates for JavaScript Objects. Use the keyword class to create a class.Always add a method named constructor():
+        </p>
+        <input id="Name" value="" placeholder="Name Car" /> <br>
+        <input id="Year" value="" placeholder="Year"/> <br>
+        <button class="btn btn-dark my-3" type="button" onclick="CarClass()">Class Car</button>
+        <p class="bg-dark text-white my-3" id="class1"></p>
 
 
+        <h3>JavaScript Promises</h3>
+        <p class="bg-dark text-white my-3">
+            A Promise is a JavaScript object that links "Producing Code" and "Consuming Code". <br>
+            "Producing Code" can take some time and "Consuming Code" must wait for the result.
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="Promises()">Convert Date To String</button>
+        <p class="bg-dark text-white my-3" id="Promises1">
+            const myPromise = new Promise(function(myResolve, myReject) {<br>
+                // "Producing Code" (May take some time)<br>
+                
+                  myResolve(); // when successful<br>
+                  myReject();  // when error<br>
+                });<br>
+                
+                // "Consuming Code" (Must wait for a fulfilled Promise).<br>
+                myPromise.then(<br>
+                  function(value) { /* code if successful */ },<br>
+                  function(error) { /* code if some error */ }<br>
+                );<br>
+        </p>
 
 
-        
+        <h3>The Symbol Type </h3>
+        <p class="bg-dark text-white my-3">
+            A JavaScript Symbol is a primitive datatype just like Number, String, or Boolean. <br>
+            It represents a unique "hidden" identifier that no other code can accidentally access. <br>
+            For instance, if different coders want to add a person.id property to a person object belonging to a third-party code, they could mix each others values. <br>
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="SymbolMet()">Class Car</button>
+        <p class="bg-dark text-white my-3" id="Symbol1"></p>
+
+        <h3>String.includes()</h3>
+        <p class="bg-dark text-white my-3">
+            The includes() method returns true if a string contains a specified value, otherwise false:
+        </p>
+        <h3>String.startsWith()</h3>
+        <p class="bg-dark text-white my-3">
+            The startsWith() method returns true if a string begins with a specified value, otherwise false:
+        </p>
+        <h3>String.endsWith()</h3>
+        <p class="bg-dark text-white my-3">
+            The endsWith() method returns true if a string ends with a specified value, otherwise false:
+        </p>
+        <input style="width: 500px;" value="Hello world, welcome to the universe. Jon Doe"/><br>
+
+        <button class="btn btn-dark my-3" type="button" onclick="Strinclu()">Include World?</button>
+        <button class="btn btn-dark my-3" type="button" onclick="Strstrat()">Start Hello?</button>
+        <button class="btn btn-dark my-3" type="button" onclick="Strend()">End Doe?</button>
+        <p class="bg-dark text-white my-3" id="Strtext"></p> <br>
+       
+
+
+        <h3>Array.from()</h3>
+        <p class="bg-dark text-white my-3">
+            The Array.from() method returns an Array object from any object with a length property or any iterable object.
+        </p>
+        <h3>Array.Keys()</h3>
+        <p class="bg-dark text-white my-3">
+            The Array.keys() method returns an Array Iterator object with the keys of an array.
+        </p>
+        <h3>Array.find()</h3>
+        <p class="bg-dark text-white my-3">
+            The find() method returns the value of the first array element that passes a test function.
+            <br>
+             This example finds (returns the value of ) the first element that is larger than 18:
+        </p>
+        <h3>Array.findIndex()</h3>
+        <p class="bg-dark text-white my-3">
+            The findIndex() method returns the index of the first array element that passes a test function.
+            <br> This example finds the index of the first element that is larger than 18:
+        </p>
+        <h3>Array.findIndex()</h3>
+        <p class="bg-dark text-white my-3">
+            The findIndex() method returns the index of the first array element that passes a test function.
+            <br> This example finds the index of the first element that is larger than 18:
+        </p>
+        <button class="btn btn-dark my-3" type="button" onclick="Es6Arr()">Array.form() Array.keys() .find() .findIndex()</button>
+        <p class="bg-dark text-white my-3" id="Array1"></p> <br>
+        <h3>Math Methods</h3>
+        <p class="bg-dark text-white my-3">
+            ES6 added the following methods to the Math object: <br> <br>
+            Math.trunc(x) returns the integer part of x: <br>Math.trunc(4.9);    // returns 4<br> <br>
+            Math.sign(x)  returns if x is negative, null or positive: <br>
+            Math.sign(-4);    // returns -1 <br> 
+            Math.sign(0);    // returns 0<br><br>
+
+            Math.cbrt(x) returns the cube root of x: <br>Math.cbrt(8);    // returns 2 <br><br>
+            Math.log2(x) returns the base 2 logarithm of x: <br>Math.log2(2);    // returns 1 <br><br>
+            Math.log10(x) returns the base 10 logarithm of x: <br>Math.log10(10);    // returns 1<br><br>
+        </p>
+        <h3>Number Properties</h3>
+        <p class="bg-dark text-white my-3">
+            ES6 added the following properties to the Number object:  <br> <br>
+
+            EPSILON: <br> let x = Number.EPSILON; ==> 2.220446049250313e-16 <br> <br>
+            MIN_SAFE_INTEGER: <br> let  x = Number.MIN_SAFE_INTEGER; ==> -9007199254740991 <br> <br>
+            MAX_SAFE_INTEGER: <br> let  x = Number.MAX_SAFE_INTEGER; ==> 9007199254740991 <br> <br>
+        </p>
+        <h3>Number Methods</h3>
+        <p class="bg-dark text-white my-3">
+            Number.isInteger() <br>
+            Number.isSafeInteger() <br><br>
+
+
+            Number.isInteger() method returns true if the argument is an integer.<br>
+            Number.isInteger(10);        // returns true<br>
+            Number.isInteger(10.5);      // returns false<br><br>
+
+            Number.isSafeInteger() Method A safe integer is an integer that can be exactly represented as a double precision number.<br>
+            Number.isSafeInteger() method returns true if the argument is a safe integer.<br><br>
+
+            Number.isSafeInteger(10);    // returns true<br>
+            Number.isSafeInteger(12345678901234567890);  // returns false<br>
+
+        </p>
+        <h3>New Global Methods</h3>
+        <p class="bg-dark text-white my-3">
+            ES6 added 2 new global number methods:<br><br>
+
+            isFinite()<br>
+            isNaN()<br><br>
+
+            isFinite() method returns false if the argument is Infinity or NaN. Otherwise it returns true:<br><br>
+            isFinite(10/0);       // returns false<br>
+            isFinite(10/1);       // returns true<br><br>
+
+            isNaN() method returns true if the argument is NaN. Otherwise it returns false:<br><br>
+            isNaN("Hello");       // returns true<br>
+        </p>
+
+    
     </div>
 
     

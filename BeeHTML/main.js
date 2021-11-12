@@ -491,7 +491,7 @@ function LoopArrforEach(){
     const numbers = [45, 4, 9, 16, 25];
     let txt = "";
     function MyValArr(value, index, array){
-        txt += value+ "<br>"
+        txt += value+ "<br>";
     }
     numbers.forEach(MyValArr);
     document.getElementById("lp").innerHTML = txt;
@@ -615,6 +615,116 @@ function AutomaticTypeConvert(){
     ("5" / "2"):::  ${("5" / "2")}<br>
     `;
 }
+//arraow function 
+
+function arrowFun(){
+    const arrowMulti = (x,y) => x*y;
+    const arrowMulCur = (x, y) => { return x * y };
+    document.getElementById("ES6").innerHTML = 
+    `Arrow Function: <br>
+    const arrowMulti = (x , y) => x*y; use by arrowMulti(5 , 5) :  ${arrowMulti(5,5)}; <br>
+    const arrowMulCur = (x , y) => { return x * y };  buse by arrowMulCur(6 , 7):  ${arrowMulCur(6,7)}: <br>
+    `;
+}
+//js class
+class Car{
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+}
+function CarClass(){
+    const Name = document.getElementById("Name").value;
+    const Year = document.getElementById("Year").value;
+    const d = new Date().toLocaleString([], { hour12: true});
+    //add info in Car to variable
+    const MyownCar = new Car(Name, Year);
+    document.getElementById("class1").innerHTML= `CLass Car: Name: ${MyownCar.name + " Sold out : " + MyownCar.year} <br> ${"Date: " + d} `;
+    //on console
+    const C = MyownCar.name + " " + MyownCar.year;
+    console.log(C)
+}
+
+// Promises
+function Promises()
+{
+    const myPromise = new Promise(function(myResolve, myReject) {
+        // "Producing Code" (May take some time)
+        setTimeout(function(){ myResolve("I love You !!take time 3second/3000 to say"); myReject("i don't Love u bitch");}, 3000);
+    });
+      // "Consuming Code" (Must wait for a fulfilled Promise).
+      
+      myPromise.then(function(value) {
+        document.getElementById("Promises1").innerHTML = value;
+      });
+
+}
+//Symbol
+function SymbolMet(){
+    const person = {
+        firstName: "Bee",
+        lastName: "BabyDriver",
+        age: 21,
+        eyeColor:"BullEye"
+    }
+
+    let Id = Symbol("id");
+    person[Id] = 3201999;
+
+    document.getElementById("Symbol1").innerHTML =  `let Id = Symbol("id"); <br> person[Id] = 3201999; <br> person[Id]: ${person[Id]} <br> person.id: ${person.Id}`;
+    console.log(person[Id] + " " + person.Id)
+}
+// String in ES6
+var text = "Hello world, welcome to the universe. Jon Doe";
+
+function Strinclu(){
+    var inclu = text.includes("World");
+    document.getElementById("Strtext").innerHTML = inclu;
+}
+function Strstrat(){
+    var star = text.startsWith("Hello");
+    document.getElementById("Strtext").innerHTML = star;
+}
+function Strend(){
+    var end = text.endsWith("Doe");
+    document.getElementById("Strtext").innerHTML = end;
+}
+
+
+function Es6Arr(){
+    //Arry.from()
+    const text1 = "ABCDEFGHIJKL";
+    const myArr = Array.from(text1);
+    //Array.Key()
+    const fruits = ["Banana", "Papaya", "Milk", "SexOntheBreach", "Mango"]
+    
+    const keys = fruits.keys();
+    let text = "";
+    for (let x of keys) {
+    text += x + "<br>";
+    }
+
+    //Array.find() and Array.findIndex()
+    const numbers = [4, 9, 16, 25, 29];
+    function myFind(value, index, array) {
+        return value > 18;
+    }
+    
+    let fin = numbers.find(myFind);
+    let finindex = numbers.findIndex(myFind);
+    document.getElementById("Array1").innerHTML =  
+    `
+    <br><br>Array.from("ABCDEFG"): <br>Output: <br> ${myArr}
+    <br><br>fruits.keys(): <br>Output: <br> ${keys}
+    <br><br>let text = "" of fruits.keys(): <br>Output: <br> ${text}
+    <br><br> numbers.find(myFind): <br>Output: <br>${fin}
+    <br><br> numbers.findIndex(myFind): <br>Output: <br>${finindex}
+    `;
+}
+
+
+
+
 
 
 
