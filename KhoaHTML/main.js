@@ -116,3 +116,61 @@ function fruitPush() {
 function fruitSort() {
     document.getElementById("arrayDisplay").innerHTML =  fruits.sort()
 }
+
+function HourTime() {
+    var d = new Date();
+    var n = d.toLocaleString([], { hour: '2-digit', minute: '2-digit' });
+    document.getElementById("Date1").innerHTML = n;
+}
+function fullDateTime() {
+    var d = new Date();          
+    var n = d.toLocaleString([], { hour12: true});
+    document.getElementById("Date1").innerHTML = n;
+}
+
+function hourGreeting() {
+    if(new Date().getHours() < 18) {
+        document.getElementById("Date1").innerHTML = "Go back to work u lazy bum"
+    }
+}
+
+function dayGreeting() {
+    var hour = new Date().getHours();
+    let greeting;
+    if(hour<11) {
+        greeting = "Good Morning" ;
+    } else if (hour<18) {
+        greeting = "Good Afternoon"
+    }else {
+        greeting = "Good Night"
+    }
+    document.getElementById("Date1").innerHTML = greeting;
+}
+
+// switch
+function dayWhat(){
+    let day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+    }
+    document.getElementById("Date1").innerHTML= "Today is" + " " + day;
+}
