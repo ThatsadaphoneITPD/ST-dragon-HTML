@@ -5,11 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compaible" content="ie=edge">
     <title>JavaScript Crash Course</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style1.css">
     <script src="main.js"></script>
 </head>
 <body>
     <h1>JavaScript Crash Course</h1>
-    
+    <div class="buttonjs">
+        <button onclick="showImage('image/meot1.jpg')">Previous</button>
+        <img id="img_meo"src="image/meot2.jpg" width="200px" height="200px" alt="meo">
+        <button onclick="showImage('image/meot3.jpg')">Next</button>
+    </div>
+    <div>
+        <button onclick="printName()">Click to show</button>
+        <p id="displayName"></p>
+    </div>
+
+    <div class="testFilterlist">
+        <h2>Filter List?</h2>
+ 
+         <input type="text" id="myInput" placeholder="Search for City.." title="Type in a name of City">
+ 
+        <ul id="myUL">
+            <li><a href="#">Athens</a></li>
+            <li><a href="#">Amsterdam</a></li>
+            <li><a href="#">Atlanta</a></li>
+            <li><a href="#">Alaska</a></li>
+            <li><a href="#">Barcelona</a></li>
+            <li><a href="#">Bologna</a></li>
+            <li><a href="#">Berlin</a></li>
+            <li><a href="#">Bordeaux</a></li>
+            <li><a href="#">Copenhagen</a></li>
+            <li><a href="#">Cardiff</a></li>
+            <li><a href="#">Caen</a></li>
+            <li><a href="#">Cannes</a></li>
+         </ul>
+    </div>
+
+    <div class="testAnimation">
+        <h2>Animation?</h2>
+        <button id="btn" onclick="myMove()">Xem kết quả</button>
+        <div id ="myAnimation1">
+            <div id ="myAnimation"></div>
+        </div>
+    </div>
+
+    <div class="testE">
+        <ul>
+            <li><a href="#" class="show">hahahaha</a></li>
+            <li><a href="#">heheheheh</a></li>
+            <li><a href="#" class="show">hohohooh</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>

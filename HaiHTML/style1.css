@@ -1,0 +1,104 @@
+div.testcarousel {
+width: 75%;
+}
+#imge {
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .testFilterlist {
+    width: 500px;
+    margin: auto;
+  }
+   
+  #myInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+   
+  #myUL {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+   
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; 
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+   
+  #myUL li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+  }
+   
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+  .container {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+#myContainer {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  background: #222222;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #FF0000;
+}
+#btn {
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+}
+
+
+
+
+.testAnimation {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  #myAnimation1 {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    background: #222222;
+  }
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #FF0000;
+  }
+  #btn {
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+  }
